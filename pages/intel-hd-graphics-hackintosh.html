@@ -1,0 +1,2412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>macOS AMD Graphics</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="keywords" content="Установка macOS на ПК">
+    <meta name="keywords" content="macOS Установка macOS, Hackintosh, Open Core, помощь в установке macOS (Mac OS X) на РС!, Хакинтош (или OSx86), самая простая установка macOS, Asus, Gigabyte, MSI, i3, i5, i7, applelife, mymacos.site, Clover, kexts, virtualsmc, applealc, lilu, IntelHD, AMD, UHD, Retina, iMac, MacPro, macmini, MakBook, купить хакинтош">
+    <meta name="description" content="Установка Mac OS на PC или ноутбук. Установка Mac OS на ноутбук. Установка хакинтош">
+    <link rel="canonical" href="https://mymacos.site" />
+    <link rel="publisher" href="https://www.google.com/mymacos"/>
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Установка macOS на ПК, Hackintosh, установка macOS на ноутбук" />
+    <meta property="og:description" content="На нашем сайте Вы найдете все нужное для хакинтош и macOS" />
+    <meta property="og:url" content="http://mymacos.site" />
+    <meta property="og:site_name" content="mymacos" />
+    <meta property="og:image" content="/assets/img/display_small.jpg" />
+    <!--    <link rel="apple-touch-icon" sizes="144x144" href="/144.png" />-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/180.png" />
+    <link rel="icon" type="image/png" href="/192.png" sizes="192x192"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <!--    <link rel="stylesheet" href="../../assets/slider/css/slider.css">-->
+    <!--    <link rel="stylesheet" href="../../assets/slider/css/fractionslider.css">-->
+    <link rel="stylesheet" href="/css/testimonials.css">
+    <link rel="stylesheet" href="/assets/css/landing.css">
+    <link rel="stylesheet" href="/assets/css/stars.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/assets/owl.carousel.min.css'>
+    <link rel='stylesheet' href='https://themes.audemedia.com/html/goodgrowth/css/owl.theme.default.min.css'>
+    <!--    <link rel="stylesheet" href="/css/mediaelementplayer.min.css">-->
+    <!--    <link rel="stylesheet" href="/css/bootstrap.min.css">-->
+    <!--    <link rel="stylesheet" href="/css/magnific-popup.css">  Resource style -->
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/fonts/font-awesome.min.css">
+    <!--    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">-->
+    <!--    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet">-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <!--    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700,500' rel='stylesheet' type='text/css'>-->
+    <!--    <link rel="stylesheet" href="../assets/css/reset.css">-->
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/main.built.css">
+    <link rel="stylesheet" href="/assets/css/Pretty-Footer.css">
+    <link rel="stylesheet" href="/css/main-b.css">
+    <!--    <link rel="stylesheet" href="../../assets/css/bug-sur.css">-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
+    <!--    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+    <!--    <link href="assets/fonts/fontawesome/css/all.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="/assets/css/styles.min.css">
+    <link rel="shortcut icon" type="image/png" href="/favicon.ico">
+    <meta name="yandex-verification" content="500cc68f3331411d" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <!-- Google Analytics -->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-XXXXX-Y', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <!-- End Google Analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148111752-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-148111752-1');
+    </script>
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(55354972, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true,
+            trackHash:true,
+            ecommerce:"dataLayer"
+        });
+    </script>
+    <noscript>
+        <div>
+            <img src="https://mc.yandex.ru/watch/55354972" style="position:absolute; left:-9999px;" alt="" />
+        </div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#menu").on("click","a", function (event) {
+                event.preventDefault();
+                var id  = $(this).attr('href'),
+                    top = $(id).offset().top;
+                $('body,html').animate({scrollTop: top}, 1500);
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#search').click(function(){
+                $('.menu-item').addClass('hide-item')
+                $('.search-form').addClass('active')
+                $('.close').addClass('active')
+                $('#search').hide()
+            })
+            $('.close').click(function(){
+                $('.menu-item').removeClass('hide-item')
+                $('.search-form').removeClass('active')
+                $('.close').removeClass('active')
+                $('#search').show()
+            })
+
+        })
+
+    </script>
+</head>
+<body>
+<nav class="fixed-top apple-nav" style="border-bottom: 1px solid rgba(250, 250, 250, 0.9);box-shadow: 0 0 15px rgba(66,66,66,0.1);">
+    <div class="nav-content">
+        <a href="/" class="logo">
+            <img src="../assets/img/logo.svg" width="23px" height="44" display="block" alt="my-macos-logo" style="opacity: 0.8; color: #ffffff">
+            <!--            <svg width="18" height="44" display="block">-->
+            <!--                <circle cx="9" cy="22" r="8" stroke="white" stroke-width="1.5" fill="white" />-->
+            <!--            </svg>-->
+        </a>
+        <!--        <a href="javascript:void(0)" class="icon">-->
+        <div class="nav-icon">
+            <div class="bar one"></div>
+            <div class="bar two"></div>
+        </div>
+        <!--        </a>-->
+
+        <div class="nav-links">
+
+            <a class="ac-gn-item-menu" href="#hackintosh" data-analytics-title="Хакинтош" style="text-decoration: none;font-size: 1em;">Хакинтош</a>
+
+
+
+            <a class="ac-gn-item-menu" href="#uslugi" data-analytics-title="Услуги" style="text-decoration: none;font-size: 1em;">Услуги</a>
+
+            <a class="ac-gn-item-menu" href="#files" data-analytics-title="Файлы" style="text-decoration: none;font-size: 1em;">Файлы</a>
+
+            <!--            <a class="ac-gn-item-menu" class="modal-lg" data-toggle="modal" data-target="#myModal" href="" data-analytics-title="Контакты" style="text-decoration: none;font-size: 1em;">Контакты</a>-->
+
+            <a class="ac-gn-item-menu" href="../pages/faq.html" onclick="location.reload()" data-analytics-title="FAQ" style="text-decoration: none;font-size: 1em;">FAQ</a>
+            <a class="ac-gn-item-menu" href="#customers" data-analytics-title="Отзывы" style="text-decoration: none;font-size: 1em;">Отзывы</a>
+            <a class="ac-gn-item-menu" class="modal-lg" data-toggle="modal" data-target="#myModal" href="" data-analytics-title="Контакты" style="text-decoration: none;font-size: 1em;">Контакты</a>
+
+        </div>
+
+        <a class="search-icon" href="../pages/order.html" data-analytics-title="Заказать">
+            <img src="../assets/img/image_small-bag.svg" height="48" width="17" alt="bag">
+            <!--        <svg viewBox="0 0 3.7041668 11.641667" height="44" width="14">-->
+            <!--            <g transform="matrix(0.97865947,0,0,0.97865947,-18.209185,-74.390797)">-->
+            <!--                <path d="m 19.070369,80.532362 c -0.618144,0.618143 -0.619255,1.62581 -7.32e-4,2.244333 0.570867,0.570865 1.473777,0.613735 2.095614,0.131181 l 0.945308,0.945309 0.280633,-0.280633 -0.945308,-0.945309 c 0.482552,-0.621838 0.439684,-1.524746 -0.131182,-2.095613 -0.618523,-0.618523 -1.62619,-0.617413 -2.244333,7.32e-4 z m 0.280632,0.280632 c 0.466517,-0.466515 1.216631,-0.467898 1.683433,-0.0011 0.466802,0.466801 0.466882,1.218378 3.64e-4,1.684894 -0.466512,0.466513 -1.21809,0.466436 -1.684892,-3.67e-4 -0.466803,-0.466801 -0.465418,-1.216918 0.0011,-1.683432 z" fill="white" />-->
+            <!--            </g>-->
+            <!--        </svg>-->
+        </a>
+    </div>
+</nav>
+
+<a style='position: fixed; bottom: 60px; left: 10px; cursor:pointer; display:none; z-index: 88;'
+   href='#' id='Go_Top'>
+    <img src="../assets/img/up.png" alt="Up" title="Up">
+</a>
+<a style='position: fixed; bottom: 20px; left: 10px; cursor:pointer; display:none; z-index: 88;'
+   href='#' id='Go_Bottom'>
+    <img src="../assets/img/bottom.png" alt="Down" title="Down">
+</a>
+
+<div id="myModal" class="modal fade" role="dialog" style="-webkit-backdrop-filter: saturate(180%) blur(40px);
+    backdrop-filter: saturate(180%) blur(40px); background: rgba(0, 0, 0, 0.1);background-size: cover;width: 100%;padding-right: 0">
+
+    <div class="modal-dialog" style="z-index: 999;margin-top: 100px;">
+
+        <!-- Modal content-->
+        <div class="modal-content" style="z-index: 999;background: rgba(255, 255, 255, 0.7);background-size: cover;width: 100%;border-radius: 40px">
+
+            <div class="modal-body" style="text-align: center;margin-top: 4rem;margin-bottom: 4rem">
+
+                <div class="btn-group" style="margin-top: 1rem;margin-bottom: 1rem">
+                    <a href="https://t.me/Hackintosh_RU" style="text-shadow: 0 0 0 white, 0 0 1em white;text-decoration: none;font-size: 50px;color: #21a2e2;margin-right: 15px;margin-left: 15px;">
+                        <img src="../../assets/img/telegram.svg" style="width: 65px;background-color: dodgerblue" alt="https://t.me/Hackintosh_RU">
+                        <p style="text-align: center;color: #333333;font-weight: bold;font-size: small">Telegram</p>
+                    </a>
+                    <a href="https://vk.com/hackintosh_osx" style="text-shadow: 0 0 0 white, 0 0 1em white;text-decoration: blink;font-size: 50px;color: #309cf0;margin-right: 15px;margin-left: 15px;">
+                        <img src="../../assets/img/vk.svg" style="width: 65px;background-color: #005cbf" alt="https://vk.com/hackintosh_osx">
+                        <p style="text-align: center;color: #333333;font-weight: bold;font-size: small">VK</p>
+                    </a>
+                </div>
+                <div class="btn-group" style="margin-top: 1rem;margin-bottom: 1rem">
+                    <a href="skype:alexandr.r5" style="text-shadow: 0 0 0 white, 0 0 1em white;text-decoration: blink;font-size: 50px;color: #01aceb;margin-right: 15px;margin-left: 15px;">
+                        <img src="../../assets/img/skype.svg" style="width: 65px;background-color: #21a2e2" alt="skype hackintosh_osx">
+                        <p style="text-align: center;color: #333333;font-weight: bold;font-size: small">Skype</p>
+                    </a>
+                    <a href="mailto:my.macos.vk@gmail.com" style="text-shadow: 0 0 0 white, 0 0 1em white;text-decoration: blink;font-size: 50px;color: #2881e5;margin-right: 15px;margin-left: 15px;">
+                        <img src="../../assets/img/mail.svg" style="width: 65px;background-color: #333333" alt="email hackintosh">
+                        <p style="text-align: center;color: #333333;font-weight: bold;font-size: small">E-mail</p>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<section id="intel_hd" class="product help" style="max-width: 80%;margin-left: 10%;">
+    <h1>Intel® HD Graphics</h1>
+    <h2 style="font-size: 23px;margin-bottom: 20px;">Настройка графики Intel</h2>
+    <img src="../../assets/img/intel logo vector.svg" alt="Настройка Intel HD Graphics hackintosh" style="width: 10%;margin-bottom: 20px">
+    <small class="form-text text-center text-muted" style="margin-bottom: 10px;font-size: 16px;">1. Выбрать в BIOS необходимое значение памяти для нужд видеоподсистемы (DVMT Pre-Allocated): 32MB, 64MB, 96MB и т.д. (зависит от фрейма).
+        Суммарный объем памяти DVMT (DVMT Total) выбрать: MAX.
+        bios_rus.
+        Некоторые кривые биос завышают показываемое значение, а реально выделяют меньше, в таком случаи ставьте значение на ступень больше. Особенно этим грешат ноутбуки Dell, биос рапортует 64МБ, а реально выделяет 32МБ и поменять нет возможности, как поступать в таком случаи будет показано ниже.
+    </small>
+    <small
+            class="form-text text-center text-muted" style="margin-bottom: 10px;font-size: 16px;">2. Добавить в Clover в папку Other Lilu.kext и WhateverGreen.kext
+    </small>
+    <small class="form-text text-center text-muted" style="margin-bottom: 10px;font-size: 16px;">3. Удалить(если использовались ранее) кексты:<br>
+        IntelGraphicsFixup.kext,<br>
+        NvidiaGraphicsFixup.kext,<br>
+        CoreDisplayFixup.kext,<br>
+        Shiki.kext,<br>
+        IntelGraphicsDVMTFixup.kext,<br>
+        AzulPatcher4600.kext,<br>
+        AppleBacklightFixup.kext,<br>
+        FakePCIID_Intel_HD_Graphics.kext,<br>
+        FakePCIID_Intel_HDMI_Audio.kext,<br>
+        а также FakePCIID.kext(если нет других плагинов FakePCIID).
+    </small>
+    <small
+            class="form-text text-center text-muted" style="margin-bottom: 10px;font-size: 16px;">4. Выключить все инжекты графики в Clover (именно выключить, а не закомментировать).
+    </small>
+    <small class="form-text text-center text-muted" style="margin-bottom: 10px;font-size: 16px;">5. Выключить фиксы DSDT Clover:<br>
+        — AddHDMI<br>
+        — FixDisplay<br>
+        — FixIntelGfx<br>
+        — AddIMEI (включить, если требуется подмена device-id IMEI на Ivy и Sandy)<br>
+        — FixHDA<br>
+    </small>
+    <small
+            class="form-text text-center text-muted" style="margin-bottom: 10px;font-size: 16px;">6. Выключить UseIntelHDMI. &nbsp;<br>
+    </small>
+    <small
+            class="form-text text-center text-muted" style="margin-bottom: 10px;font-size: 16px;">7. Выключить Devices - Inject (обычно этот параметр отсутствует и это хорошо, но если вдруг есть, то выключаем или удаляем).<br>
+    </small>
+    <small
+            class="form-text text-center text-muted" style="margin-bottom: 10px;font-size: 16px;">8. Удалить бут аргумент: -disablegfxfirmware (если был).<br>
+    </small>
+    <small
+            class="form-text text-center text-muted" style="margin-bottom: 10px;font-size: 16px;">9. Удалите или закомментируйте параметры FakeID IntelGFX и IMEI.<br>
+    </small>
+    <small
+            class="form-text text-center text-muted" style="margin-bottom: 10px;font-size: 16px;">10. Удалите или закомментируйте параметр ig-platform-id.<br>
+    </small>
+    <small
+            class="form-text text-center text-muted" style="margin-bottom: 10px;font-size: 16px;">11. Полностью удалить Arbitrary, AddProperties, а также свойства для IGPU, IMEI, HDEF и HDMI звука из SSDT, DSDT (если вы их туда добавляли).<br>
+    </small>
+    <small
+            class="form-text text-center text-muted" style="margin-bottom: 10px;font-size: 16px;">12. Удалите или отключите бинарные патчи DSDT: GFX0 to IGPU, PEGP to GFX0, HECI to IMEI, MEI to IMEI, HDAS to HDEF, B0D3 to HDAU.
+        Для инжекции свойств используйте Properties.<br><br>
+        Максимум, что может там быть прописано:<br>
+        — фрейм AAPL,ig-platform-id (AAPL,snb-platform-id)<br>
+        — device-id для IGPU (если необходима подмена)<br>
+        — device-id для IMEI (если необходима подмена)<br>
+        — свойства для патчей (если необходимы)<br><br>
+        Минимум — ничего. Например: подошёл фрейм по умолчанию или задан через аргумент загрузки (boot-arg), а подмена device-id не требуется.<br>
+        Значения параметров в Properties, записываются побайтно задом наперёд. Например: 0x0166000B в Properties должно быть записано как 0B006601.<br><br>
+
+        Общий шаблон Properties для секций IGPU и IMEI, конкретнее описано ниже для каждого семейства процессоров по отдельности.<br>
+        Внимание! Не оставляйте свойство c пустым значением, например если какое-то свойство не требуется, то удалите всю строку! Удалите строку PciRoot, если нет ни одного свойства.
+        <br>
+
+        Выбор фрейма. В первую очередь пробуйте те, которые указаны как рекомендуемые. Если с ними успех не достигнут, то методом перебора остальных. Кроме пустых фреймов (0 connectors), про них отдельная тема.<br>
+        При подборе подходящего фрейма его также можно задать с помощью аргумента загрузки (boot-arg), тогда секция с фреймом в Properties игнорируется.<br>
+        Например: igfxframe=0x0166000B<br>
+        Внимание! В отличие от Properties используется нормальный порядок байт и префикс 0x.<br>
+        — Если фрейм не задан явно каким-либо способом, то будет проинжектирован фрейм по умолчанию.<br>
+        — Если фрейм не задан и в системе имеется дискретная видеокарта, то будет проинжектирован пустой фрейм.<br>
+    </small>
+    <div id="accordion" style="" alt="Настройка графики Intel (hackintosh osx)">
+        <div class="card">
+            <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        Sandy Bridge
+                    </button>
+                </h5>
+            </div>
+
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body" style="text-align: left;">
+                    Поддерживаются, начиная с Mac OS X 10.7.x и заканчивая macOS 10.13.6.<br> Поддержка Metal отсутствует.<br><br>
+                    Список фреймов snb-platform-id (AAPL,snb-platform-id):<br>
+                    0x00010000 (mobile, 4 connectors, no fbmem)<br>
+                    0x00020000 (mobile, 1 connectors, no fbmem)<br>
+                    0x00030010 (desktop, 3 connectors, no fbmem)<br>
+                    0x00030020 (desktop, 3 connectors, no fbmem)<br>
+                    0x00030030 (desktop, 0 connectors, no fbmem)<br>
+                    0x00040000 (mobile, 3 connectors, no fbmem)<br>
+                    0x00050000 (desktop, 0 connectors, no fbmem)<br><br>
+
+                    AppleIntelSNBGraphicsFB.kext<br><br>
+
+                    ID: SNB0 0x10000, STOLEN: 0 bytes, FBMEM: 0 bytes, VRAM: 0 bytes, Flags: 0x00000000<br>
+                    TOTAL STOLEN: 0 bytes, TOTAL CURSOR: 1 MB, MAX STOLEN: 0 bytes, MAX OVERALL: 1 MB (1064960 bytes)<br>
+                    Camelia: CameliaUnsupported (255), Freq: 1808 Hz, FreqMax: 1808 Hz<br>
+                    Mobile: 1, PipeCount: 2, PortCount: 4, FBMemoryCount: 0<br>
+                    [5] busId: 0x03, pipe: 0, type: 0x00000002, flags: 0x00000030 - ConnectorLVDS<br>
+                    [2] busId: 0x05, pipe: 0, type: 0x00000400, flags: 0x00000007 - ConnectorDP<br>
+                    [3] busId: 0x04, pipe: 0, type: 0x00000400, flags: 0x00000009 - ConnectorDP<br>
+                    [4] busId: 0x06, pipe: 0, type: 0x00000400, flags: 0x00000009 - ConnectorDP<br>
+                    05030000 02000000 30000000<br>
+                    02050000 00040000 07000000<br>
+                    03040000 00040000 09000000<br>
+                    04060000 00040000 09000000<br><br>
+
+                    ID: SNB1 0x20000, STOLEN: 0 bytes, FBMEM: 0 bytes, VRAM: 0 bytes, Flags: 0x00000000<br>
+                    TOTAL STOLEN: 0 bytes, TOTAL CURSOR: 1 MB, MAX STOLEN: 0 bytes, MAX OVERALL: 1 MB (1052672 bytes)<br>
+                    Camelia: CameliaUnsupported (255), Freq: 1808 Hz, FreqMax: 1808 Hz<br>
+                    Mobile: 1, PipeCount: 2, PortCount: 1, FBMemoryCount: 0<br>
+                    [5] busId: 0x03, pipe: 0, type: 0x00000002, flags: 0x00000030 - ConnectorLVDS<br>
+                    05030000 02000000 30000000<br><br>
+
+                    ID: SNB2 0x30010 or 0x30020, STOLEN: 0 bytes, FBMEM: 0 bytes, VRAM: 0 bytes, Flags: 0x00000000<br>
+                    TOTAL STOLEN: 0 bytes, TOTAL CURSOR: 1 MB, MAX STOLEN: 0 bytes, MAX OVERALL: 1 MB (1060864 bytes)<br>
+                    Camelia: CameliaUnsupported (255), Freq: 0 Hz, FreqMax: -1 Hz<br>
+                    Mobile: 0, PipeCount: 2, PortCount: 3, FBMemoryCount: 0<br>
+                    [2] busId: 0x05, pipe: 0, type: 0x00000400, flags: 0x00000007 - ConnectorDP<br>
+                    [3] busId: 0x04, pipe: 0, type: 0x00000400, flags: 0x00000009 - ConnectorDP<br>
+                    [4] busId: 0x06, pipe: 0, type: 0x00000800, flags: 0x00000006 - ConnectorHDMI<br>
+                    02050000 00040000 07000000<br>
+                    03040000 00040000 09000000<br>
+                    04060000 00080000 06000000<br><br>
+
+                    ID: SNB3 0x30030, STOLEN: 0 bytes, FBMEM: 0 bytes, VRAM: 0 bytes, Flags: 0x00000000<br>
+                    TOTAL STOLEN: 0 bytes, TOTAL CURSOR: 0 bytes, MAX STOLEN: 0 bytes, MAX OVERALL: 0 bytes<br>
+                    Camelia: CameliaUnsupported (255), Freq: 0 Hz, FreqMax: 0 Hz<br>
+                    Mobile: 0, PipeCount: 0, PortCount: 0, FBMemoryCount: 0<br><br>
+
+                    ID: SNB4 0x40000, STOLEN: 0 bytes, FBMEM: 0 bytes, VRAM: 0 bytes, Flags: 0x00000000<br>
+                    TOTAL STOLEN: 0 bytes, TOTAL CURSOR: 1 MB, MAX STOLEN: 0 bytes, MAX OVERALL: 1 MB (1060864 bytes)<br>
+                    Camelia: CameliaUnsupported (255), Freq: 1808 Hz, FreqMax: 1808 Hz<br>
+                    Mobile: 1, PipeCount: 2, PortCount: 3, FBMemoryCount: 0<br>
+                    [1] busId: 0x00, pipe: 0, type: 0x00000002, flags: 0x00000030 - ConnectorLVDS<br>
+                    [2] busId: 0x05, pipe: 0, type: 0x00000400, flags: 0x00000007 - ConnectorDP<br>
+                    [3] busId: 0x04, pipe: 0, type: 0x00000400, flags: 0x00000009 - ConnectorDP<br>
+                    01000000 02000000 30000000<br>
+                    02050000 00040000 07000000<br>
+                    03040000 00040000 09000000<br><br>
+
+                    ID: SNB5 0x50000, STOLEN: 0 bytes, FBMEM: 0 bytes, VRAM: 0 bytes, Flags: 0x00000000<br>
+                    TOTAL STOLEN: 0 bytes, TOTAL CURSOR: 0 bytes, MAX STOLEN: 0 bytes, MAX OVERALL: 0 bytes<br>
+                    Camelia: CameliaUnsupported (255), Freq: 0 Hz, FreqMax: 0 Hz<br>
+                    Mobile: 0, PipeCount: 0, PortCount: 0, FBMemoryCount: 0<br><br>
+
+                    ID: SNB6 Not addressible, STOLEN: 0 bytes, FBMEM: 0 bytes, VRAM: 0 bytes, Flags: 0x00000000<br>
+                    TOTAL STOLEN: 0 bytes, TOTAL CURSOR: 512 KB, MAX STOLEN: 0 bytes, MAX OVERALL: 512 KB<br>
+                    Camelia: CameliaUnsupported (255), Freq: 0 Hz, FreqMax: 0 Hz<br>
+                    Mobile: 0, PipeCount: 1, PortCount: 0, FBMemoryCount: 0<br><br>
+
+                    ID: SNB7 Not addressible, STOLEN: 0 bytes, FBMEM: 0 bytes, VRAM: 0 bytes, Flags: 0x00000000<br>
+                    TOTAL STOLEN: 0 bytes, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 0 bytes, MAX OVERALL: 1 MB (1589248 bytes)<br>
+                    Camelia: CameliaUnsupported (255), Freq: 1808 Hz, FreqMax: 1808 Hz<br>
+                    Mobile: 1, PipeCount: 3, PortCount: 4, FBMemoryCount: 0<br>
+                    [1] busId: 0x00, pipe: 0, type: 0x00000400, flags: 0x00000030 - ConnectorDP<br>
+                    [2] busId: 0x05, pipe: 0, type: 0x00000400, flags: 0x00000007 - ConnectorDP<br>
+                    [3] busId: 0x04, pipe: 0, type: 0x00000400, flags: 0x00000009 - ConnectorDP<br>
+                    [4] busId: 0x06, pipe: 0, type: 0x00000800, flags: 0x00000006 - ConnectorHDMI<br>
+                    01000000 00040000 30000000<br>
+                    02050000 00040000 07000000<br>
+                    03040000 00040000 09000000<br>
+                    04060000 00080000 06000000<br><br>
+
+                    Default SNB, DVMT: 0 bytes, FBMEM: 0 bytes, VRAM: 0 bytes, Flags: 0x00000000<br>
+                    Camelia: CameliaUnsupported (255), Freq: 1808 Hz, FreqMax: 1808 Hz<br>
+                    Mobile: 1, PipeCount: 3, PortCount: 4, FBMemoryCount: 0<br>
+                    [1] busId: 0x00, pipe: 0, type: 0x00000400, flags: 0x00000030 - ConnectorDP<br>
+                    [2] busId: 0x05, pipe: 0, type: 0x00000400, flags: 0x00000007 - ConnectorDP<br>
+                    [3] busId: 0x04, pipe: 0, type: 0x00000400, flags: 0x00000009 - ConnectorDP<br>
+                    [4] busId: 0x06, pipe: 0, type: 0x00000800, flags: 0x00000006 - ConnectorHDMI<br>
+                    01000000 00040000 30000000<br>
+                    02050000 00040000 07000000<br>
+                    03040000 00040000 09000000<br>
+                    04060000 00080000 06000000<br><br>
+
+
+                    Note, that without AAPL,snb-platform-id the following models will use predefined IDs:<br>
+                    Mac-94245B3640C91C81 -> SNB0 (MacBookPro8,1)<br>
+                    Mac-94245AF5819B141B -> SNB0<br>
+                    Mac-94245A3940C91C80 -> SNB0 (MacBookPro8,2)<br>
+                    Mac-942459F5819B171B -> SNB0 (MacBookPro8,3)<br>
+                    Mac-8ED6AF5B48C039E1 -> SNB2 (Macmini5,1)<br>
+                    Mac-7BA5B2794B2CDB12 -> SNB2 (Macmini5,3)<br>
+                    Mac-4BC72D62AD45599E -> SNB3 (Macmini5,2) -> no ports<br>
+                    Mac-742912EFDBEE19B3 -> SNB4 (MacBookAir4,2)<br>
+                    Mac-C08A6BB70A942AC2 -> SNB4 (MacBookAir4,1)<br>
+                    Mac-942B5BF58194151B -> SNB5 (iMac12,1) -> no ports<br>
+                    Mac-942B5B3A40C91381 -> SNB5 -> no ports<br>
+                    Mac-942B59F58194171B -> SNB5 (iMac12,2) -> no ports<br><br>
+                    Рекомендуемые фреймы: десктоп 0x00030010 (по умолчанию); ноутбук 0x00010000 (по умолчанию).
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingTwo" alt="Intel HD Graphics (хакинтош)">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Ivy Bridge
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body" style="text-align: left;">
+                    Поддерживаются, начиная с OS X 10.8.x<br><br>
+                    Список фреймов ig-platform-id:<br>
+                    0x01660000 (desktop, 4 connectors, 24 MB)<br>
+                    0x01620006 (desktop, 0 connectors, no fbmem, 0 bytes)<br>
+                    0x01620007 (desktop, 0 connectors, no fbmem, 0 bytes)<br>
+                    0x01620005 (desktop, 3 connectors, 16 MB)<br>
+                    0x01660001 (mobile, 4 connectors, 24 MB)<br>
+                    0x01660002 (mobile, 1 connectors, 24 MB)<br>
+                    0x01660008 (mobile, 3 connectors, 16 MB)<br>
+                    0x01660009 (mobile, 3 connectors, 16 MB)<br>
+                    0x01660003 (mobile, 4 connectors, 16 MB)<br>
+                    0x01660004 (mobile, 1 connectors, 16 MB)<br>
+                    0x0166000A (desktop, 3 connectors, 16 MB)<br>
+                    0x0166000B (desktop, 3 connectors, 16 MB)<br><br>
+
+                    AppleIntelFramebufferCapri.kext<br><br>
+
+                    ID: 01660000, STOLEN: 96 MB, FBMEM: 24 MB, VRAM: 1024 MB, Flags: 0x00000000<br>
+                    TOTAL STOLEN: 24 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 72 MB, MAX OVERALL: 73 MB (77086720 bytes)<br>
+                    Camelia: CameliaUnsupported (255), Freq: 1808 Hz, FreqMax: 1808 Hz<br>
+                    Mobile: 0, PipeCount: 3, PortCount: 4, FBMemoryCount: 3<br>
+                    [1] busId: 0x00, pipe: 0, type: 0x00000002, flags: 0x00000030 - ConnectorLVDS<br>
+                    [2] busId: 0x05, pipe: 0, type: 0x00000400, flags: 0x00000007 - ConnectorDP<br>
+                    [3] busId: 0x04, pipe: 0, type: 0x00000400, flags: 0x00000007 - ConnectorDP<br>
+                    [4] busId: 0x06, pipe: 0, type: 0x00000400, flags: 0x00000007 - ConnectorDP<br>
+                    01000000 02000000 30000000<br>
+                    02050000 00040000 07000000<br>
+                    03040000 00040000 07000000<br>
+                    04060000 00040000 07000000<br><br>
+
+                    ID: 01620006, STOLEN: 0 bytes, FBMEM: 0 bytes, VRAM: 256 MB, Flags: 0x00000000<br>
+                    TOTAL STOLEN: 0 bytes, TOTAL CURSOR: 0 bytes, MAX STOLEN: 0 bytes, MAX OVERALL: 0 bytes<br>
+                    Camelia: CameliaUnsupported (255), Freq: 1808 Hz, FreqMax: 1808 Hz<br>
+                    Mobile: 0, PipeCount: 0, PortCount: 0, FBMemoryCount: 0<br><br>
+
+                    ID: 01620007, STOLEN: 0 bytes, FBMEM: 0 bytes, VRAM: 256 MB, Flags: 0x00000000<br>
+                    TOTAL STOLEN: 0 bytes, TOTAL CURSOR: 0 bytes, MAX STOLEN: 0 bytes, MAX OVERALL: 0 bytes<br>
+                    Camelia: CameliaUnsupported (255), Freq: 1808 Hz, FreqMax: 1808 Hz<br>
+                    Mobile: 0, PipeCount: 0, PortCount: 0, FBMemoryCount: 0<br><br>
+
+                    ID: 01620005, STOLEN: 32 MB, FBMEM: 16 MB, VRAM: 1536 MB, Flags: 0x00000000<br>
+                    TOTAL STOLEN: 16 MB, TOTAL CURSOR: 1 MB, MAX STOLEN: 32 MB, MAX OVERALL: 33 MB (34615296 bytes)<br>
+                    Camelia: CameliaUnsupported (255), Freq: 1808 Hz, FreqMax: 1808 Hz<br>
+                    Mobile: 0, PipeCount: 2, PortCount: 3, FBMemoryCount: 2<br>
+                    [2] busId: 0x05, pipe: 0, type: 0x00000400, flags: 0x00000011 - ConnectorDP<br>
+                    [3] busId: 0x04, pipe: 0, type: 0x00000400, flags: 0x00000107 - ConnectorDP<br>
+                    [4] busId: 0x06, pipe: 0, type: 0x00000400, flags: 0x00000107 - ConnectorDP<br>
+                    02050000 00040000 11000000<br>
+                    03040000 00040000 07010000<br>
+                    04060000 00040000 07010000<br><br>
+
+                    ID: 01660001, STOLEN: 96 MB, FBMEM: 24 MB, VRAM: 1536 MB, Flags: 0x00000000<br>
+                    TOTAL STOLEN: 24 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 72 MB, MAX OVERALL: 73 MB (77086720 bytes)<br>
+                    Camelia: CameliaUnsupported (255), Freq: 1808 Hz, FreqMax: 1808 Hz<br>
+                    Mobile: 1, PipeCount: 3, PortCount: 4, FBMemoryCount: 3<br>
+                    [1] busId: 0x00, pipe: 0, type: 0x00000002, flags: 0x00000030 - ConnectorLVDS<br>
+                    [2] busId: 0x05, pipe: 0, type: 0x00000800, flags: 0x00000006 - ConnectorHDMI<br>
+                    [3] busId: 0x04, pipe: 0, type: 0x00000400, flags: 0x00000107 - ConnectorDP<br>
+                    [4] busId: 0x06, pipe: 0, type: 0x00000400, flags: 0x00000107 - ConnectorDP<br>
+                    01000000 02000000 30000000<br>
+                    02050000 00080000 06000000<br>
+                    03040000 00040000 07010000<br>
+                    04060000 00040000 07010000<br><br>
+
+                    ID: 01660002, STOLEN: 64 MB, FBMEM: 24 MB, VRAM: 1536 MB, Flags: 0x00000000<br>
+                    TOTAL STOLEN: 24 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 24 MB, MAX OVERALL: 25 MB (26742784 bytes)<br>
+                    Camelia: CameliaUnsupported (255), Freq: 1808 Hz, FreqMax: 1808 Hz<br>
+                    Mobile: 1, PipeCount: 3, PortCount: 1, FBMemoryCount: 1<br>
+                    [1] busId: 0x00, pipe: 0, type: 0x00000002, flags: 0x00000030 - ConnectorLVDS<br>
+                    01000000 02000000 30000000<br><br>
+
+                    ID: 01660008, STOLEN: 64 MB, FBMEM: 16 MB, VRAM: 1536 MB, Flags: 0x00000000<br>
+                    TOTAL STOLEN: 16 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 48 MB, MAX OVERALL: 49 MB (51916800 bytes)<br>
+                    Camelia: CameliaUnsupported (255), Freq: 1808 Hz, FreqMax: 1808 Hz<br>
+                    Mobile: 1, PipeCount: 3, PortCount: 3, FBMemoryCount: 3<br>
+                    [1] busId: 0x00, pipe: 0, type: 0x00000002, flags: 0x00000030 - ConnectorLVDS<br>
+                    [2] busId: 0x05, pipe: 0, type: 0x00000400, flags: 0x00000107 - ConnectorDP<br>
+                    [3] busId: 0x04, pipe: 0, type: 0x00000400, flags: 0x00000107 - ConnectorDP<br>
+                    01000000 02000000 30000000<br>
+                    02050000 00040000 07010000<br>
+                    03040000 00040000 07010000<br><br>
+
+                    ID: 01660009, STOLEN: 64 MB, FBMEM: 16 MB, VRAM: 1536 MB, Flags: 0x00000000<br>
+                    TOTAL STOLEN: 16 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 48 MB, MAX OVERALL: 49 MB (51916800 bytes)<br>
+                    Camelia: CameliaUnsupported (255), Freq: 1808 Hz, FreqMax: 1808 Hz<br>
+                    Mobile: 1, PipeCount: 3, PortCount: 3, FBMemoryCount: 3<br>
+                    [1] busId: 0x00, pipe: 0, type: 0x00000002, flags: 0x00000030 - ConnectorLVDS<br>
+                    [2] busId: 0x05, pipe: 0, type: 0x00000400, flags: 0x00000107 - ConnectorDP<br>
+                    [3] busId: 0x04, pipe: 0, type: 0x00000400, flags: 0x00000107 - ConnectorDP<br>
+                    01000000 02000000 30000000<br>
+                    02050000 00040000 07010000<br>
+                    03040000 00040000 07010000<br><br>
+
+                    ID: 01660003, STOLEN: 64 MB, FBMEM: 16 MB, VRAM: 1536 MB, Flags: 0x00000000<br>
+                    TOTAL STOLEN: 16 MB, TOTAL CURSOR: 1 MB, MAX STOLEN: 32 MB, MAX OVERALL: 33 MB (34619392 bytes)<br>
+                    Camelia: CameliaUnsupported (255), Freq: 1808 Hz, FreqMax: 1808 Hz<br>
+                    Mobile: 1, PipeCount: 2, PortCount: 4, FBMemoryCount: 2<br>
+                    [5] busId: 0x03, pipe: 0, type: 0x00000002, flags: 0x00000030 - ConnectorLVDS<br>
+                    [2] busId: 0x05, pipe: 0, type: 0x00000400, flags: 0x00000407 - ConnectorDP<br>
+                    [3] busId: 0x04, pipe: 0, type: 0x00000400, flags: 0x00000081 - ConnectorDP<br>
+                    [4] busId: 0x06, pipe: 0, type: 0x00000400, flags: 0x00000081 - ConnectorDP<br>
+                    05030000 02000000 30000000<br>
+                    02050000 00040000 07040000<br>
+                    03040000 00040000 81000000<br>
+                    04060000 00040000 81000000<br><br>
+
+                    ID: 01660004, STOLEN: 32 MB, FBMEM: 16 MB, VRAM: 1536 MB, Flags: 0x00000000<br>
+                    TOTAL STOLEN: 16 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 16 MB, MAX OVERALL: 17 MB (18354176 bytes)<br>
+                    Camelia: CameliaUnsupported (255), Freq: 1808 Hz, FreqMax: 1808 Hz<br>
+                    Mobile: 1, PipeCount: 3, PortCount: 1, FBMemoryCount: 1<br>
+                    [5] busId: 0x03, pipe: 0, type: 0x00000002, flags: 0x00000230 - ConnectorLVDS<br>
+                    05030000 02000000 30020000<br><br>
+
+                    ID: 0166000A, STOLEN: 32 MB, FBMEM: 16 MB, VRAM: 1536 MB, Flags: 0x00000000<br>
+                    TOTAL STOLEN: 16 MB, TOTAL CURSOR: 1 MB, MAX STOLEN: 32 MB, MAX OVERALL: 33 MB (34615296 bytes)<br>
+                    Camelia: CameliaUnsupported (255), Freq: 1808 Hz, FreqMax: 1808 Hz<br>
+                    Mobile: 0, PipeCount: 2, PortCount: 3, FBMemoryCount: 2<br>
+                    [2] busId: 0x05, pipe: 0, type: 0x00000400, flags: 0x00000107 - ConnectorDP<br>
+                    [3] busId: 0x04, pipe: 0, type: 0x00000400, flags: 0x00000107 - ConnectorDP<br>
+                    [4] busId: 0x06, pipe: 0, type: 0x00000800, flags: 0x00000006 - ConnectorHDMI<br>
+                    02050000 00040000 07010000<br>
+                    03040000 00040000 07010000<br>
+                    04060000 00080000 06000000<br><br>
+
+                    ID: 0166000B, STOLEN: 32 MB, FBMEM: 16 MB, VRAM: 1536 MB, Flags: 0x00000000<br>
+                    TOTAL STOLEN: 16 MB, TOTAL CURSOR: 1 MB, MAX STOLEN: 32 MB, MAX OVERALL: 33 MB (34615296 bytes)<br>
+                    Camelia: CameliaUnsupported (255), Freq: 1808 Hz, FreqMax: 1808 Hz<br>
+                    Mobile: 0, PipeCount: 2, PortCount: 3, FBMemoryCount: 2<br>
+                    [2] busId: 0x05, pipe: 0, type: 0x00000400, flags: 0x00000107 - ConnectorDP<br>
+                    [3] busId: 0x04, pipe: 0, type: 0x00000400, flags: 0x00000107 - ConnectorDP<br>
+                    [4] busId: 0x06, pipe: 0, type: 0x00000800, flags: 0x00000006 - ConnectorHDMI<br>
+                    02050000 00040000 07010000<br>
+                    03040000 00040000 07010000<br>
+                    04060000 00080000 06000000<br><br>
+
+                    Рекомендуемые фреймы: десктоп 0x0166000A (по умолчанию), 0x01620005; ноутбук 0x01660003 (по умолчанию), 0x01660009, 0x01660004.
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Haswell
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="card-body" style="text-align: left;">
+                    Поддерживаются, начиная с OS X 10.9.x<br><br>
+                    Список фреймов ig-platform-id:<br>
+                    0x0C060000 (desktop, 3 connectors, 209 MB)<br>
+                    0x0C160000 (desktop, 3 connectors, 209 MB)<br>
+                    0x0C260000 (desktop, 3 connectors, 209 MB)<br>
+                    0x04060000 (desktop, 3 connectors, 209 MB)<br>
+                    0x04160000 (desktop, 3 connectors, 209 MB)<br>
+                    0x04260000 (desktop, 3 connectors, 209 MB)<br>
+                    0x0D260000 (desktop, 3 connectors, 209 MB)<br>
+                    0x0A160000 (desktop, 3 connectors, 209 MB)<br>
+                    0x0A260000 (desktop, 3 connectors, 209 MB)<br>
+                    0x0A260005 (mobile, 3 connectors, 52 MB)<br>
+                    0x0A260006 (mobile, 3 connectors, 52 MB)<br>
+                    0x0A2E0008 (mobile, 3 connectors, 99 MB)<br>
+                    0x0A16000C (mobile, 3 connectors, 99 MB)<br>
+                    0x0D260007 (mobile, 4 connectors, 99 MB)<br>
+                    0x0D220003 (desktop, 3 connectors, 52 MB)<br>
+                    0x0A2E000A (desktop, 3 connectors, 52 MB)<br>
+                    0x0A26000A (desktop, 3 connectors, 52 MB)<br>
+                    0x0A2E000D (desktop, 2 connectors, 131 MB)<br>
+                    0x0A26000D (desktop, 2 connectors, 131 MB)<br>
+                    0x04120004 (desktop, 0 connectors, no fbmem, 1 MB)<br>
+                    0x0412000B (desktop, 0 connectors, no fbmem, 1 MB)<br>
+                    0x0D260009 (mobile, 1 connectors, 99 MB)<br>
+                    0x0D26000E (mobile, 4 connectors, 131 MB)<br>
+                    0x0D26000F (mobile, 1 connectors, 131 MB)<br><br>
+
+                    AppleIntelFramebufferAzul.kext<br><br>
+
+                    ID: 0C060000, STOLEN: 64 MB, FBMEM: 16 MB, VRAM: 1024 MB, Flags: 0x00000004<br>
+                    TOTAL STOLEN: 209 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 209 MB, MAX OVERALL: 210 MB (220737536 bytes)<br>
+                    Camelia: CameliaDisabled (0), Freq: 5273 Hz, FreqMax: 5273 Hz<br>
+                    Mobile: 0, PipeCount: 3, PortCount: 3, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000030 - ConnectorLVDS<br>
+                    [1] busId: 0x05, pipe: 9, type: 0x00000004, flags: 0x00000004 - ConnectorDigitalDVI<br>
+                    [2] busId: 0x04, pipe: 9, type: 0x00000800, flags: 0x00000082 - ConnectorHDMI<br>
+                    00000800 02000000 30000000<br>
+                    01050900 04000000 04000000<br>
+                    02040900 00080000 82000000<br><br>
+
+                    ID: 0C160000, STOLEN: 64 MB, FBMEM: 16 MB, VRAM: 1024 MB, Flags: 0x00000004<br>
+                    TOTAL STOLEN: 209 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 209 MB, MAX OVERALL: 210 MB (220737536 bytes)<br>
+                    Camelia: CameliaDisabled (0), Freq: 5273 Hz, FreqMax: 5273 Hz<br>
+                    Mobile: 0, PipeCount: 3, PortCount: 3, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000030 - ConnectorLVDS<br>
+                    [1] busId: 0x05, pipe: 9, type: 0x00000004, flags: 0x00000004 - ConnectorDigitalDVI<br>
+                    [2] busId: 0x04, pipe: 9, type: 0x00000800, flags: 0x00000082 - ConnectorHDMI<br>
+                    00000800 02000000 30000000<br>
+                    01050900 04000000 04000000<br>
+                    02040900 00080000 82000000<br><br>
+
+                    ID: 0C260000, STOLEN: 64 MB, FBMEM: 16 MB, VRAM: 1024 MB, Flags: 0x00000004<br>
+                    TOTAL STOLEN: 209 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 209 MB, MAX OVERALL: 210 MB (220737536 bytes)<br>
+                    Camelia: CameliaDisabled (0), Freq: 5273 Hz, FreqMax: 5273 Hz<br>
+                    Mobile: 0, PipeCount: 3, PortCount: 3, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000030 - ConnectorLVDS<br>
+                    [1] busId: 0x05, pipe: 9, type: 0x00000004, flags: 0x00000004 - ConnectorDigitalDVI<br>
+                    [2] busId: 0x04, pipe: 9, type: 0x00000800, flags: 0x00000082 - ConnectorHDMI<br>
+                    00000800 02000000 30000000<br>
+                    01050900 04000000 04000000<br>
+                    02040900 00080000 82000000<br><br>
+
+                    ID: 04060000, STOLEN: 64 MB, FBMEM: 16 MB, VRAM: 1024 MB, Flags: 0x00000004<br>
+                    TOTAL STOLEN: 209 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 209 MB, MAX OVERALL: 210 MB (220737536 bytes)<br>
+                    Camelia: CameliaDisabled (0), Freq: 5273 Hz, FreqMax: 5273 Hz<br>
+                    Mobile: 0, PipeCount: 3, PortCount: 3, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000030 - ConnectorLVDS<br>
+                    [1] busId: 0x05, pipe: 9, type: 0x00000004, flags: 0x00000004 - ConnectorDigitalDVI<br>
+                    [2] busId: 0x04, pipe: 9, type: 0x00000800, flags: 0x00000082 - ConnectorHDMI<br>
+                    00000800 02000000 30000000<br>
+                    01050900 04000000 04000000<br>
+                    02040900 00080000 82000000<br><br>
+
+                    ID: 04160000, STOLEN: 64 MB, FBMEM: 16 MB, VRAM: 1024 MB, Flags: 0x00000004<br>
+                    TOTAL STOLEN: 209 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 209 MB, MAX OVERALL: 210 MB (220737536 bytes)<br>
+                    Camelia: CameliaDisabled (0), Freq: 5273 Hz, FreqMax: 5273 Hz<br>
+                    Mobile: 0, PipeCount: 3, PortCount: 3, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000030 - ConnectorLVDS<br>
+                    [1] busId: 0x05, pipe: 9, type: 0x00000004, flags: 0x00000004 - ConnectorDigitalDVI<br>
+                    [2] busId: 0x04, pipe: 9, type: 0x00000800, flags: 0x00000082 - ConnectorHDMI<br>
+                    00000800 02000000 30000000<br>
+                    01050900 04000000 04000000<br>
+                    02040900 00080000 82000000<br><br>
+
+                    ID: 04260000, STOLEN: 64 MB, FBMEM: 16 MB, VRAM: 1024 MB, Flags: 0x00000004<br>
+                    TOTAL STOLEN: 209 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 209 MB, MAX OVERALL: 210 MB (220737536 bytes)<br>
+                    Camelia: CameliaDisabled (0), Freq: 5273 Hz, FreqMax: 5273 Hz<br>
+                    Mobile: 0, PipeCount: 3, PortCount: 3, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000030 - ConnectorLVDS<br>
+                    [1] busId: 0x05, pipe: 9, type: 0x00000004, flags: 0x00000004 - ConnectorDigitalDVI<br>
+                    [2] busId: 0x04, pipe: 9, type: 0x00000800, flags: 0x00000082 - ConnectorHDMI<br>
+                    00000800 02000000 30000000<br>
+                    01050900 04000000 04000000<br>
+                    02040900 00080000 82000000<br><br>
+
+                    ID: 0D260000, STOLEN: 64 MB, FBMEM: 16 MB, VRAM: 1024 MB, Flags: 0x00000004<br>
+                    TOTAL STOLEN: 209 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 209 MB, MAX OVERALL: 210 MB (220737536 bytes)<br>
+                    Camelia: CameliaDisabled (0), Freq: 5273 Hz, FreqMax: 5273 Hz<br>
+                    Mobile: 0, PipeCount: 3, PortCount: 3, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000030 - ConnectorLVDS<br>
+                    [1] busId: 0x05, pipe: 9, type: 0x00000004, flags: 0x00000004 - ConnectorDigitalDVI<br>
+                    [2] busId: 0x04, pipe: 9, type: 0x00000800, flags: 0x00000082 - ConnectorHDMI<br>
+                    00000800 02000000 30000000<br>
+                    01050900 04000000 04000000<br>
+                    02040900 00080000 82000000<br><br>
+
+                    ID: 0A160000, STOLEN: 64 MB, FBMEM: 16 MB, VRAM: 1024 MB, Flags: 0x00000004<br>
+                    TOTAL STOLEN: 209 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 209 MB, MAX OVERALL: 210 MB (220737536 bytes)<br>
+                    Camelia: CameliaDisabled (0), Freq: 2777 Hz, FreqMax: 2777 Hz<br>
+                    Mobile: 0, PipeCount: 3, PortCount: 3, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000030 - ConnectorLVDS<br>
+                    [1] busId: 0x05, pipe: 9, type: 0x00000004, flags: 0x00000004 - ConnectorDigitalDVI<br>
+                    [2] busId: 0x04, pipe: 9, type: 0x00000800, flags: 0x00000082 - ConnectorHDMI<br>
+                    00000800 02000000 30000000<br>
+                    01050900 04000000 04000000<br>
+                    02040900 00080000 82000000<br><br>
+
+                    ID: 0A260000, STOLEN: 64 MB, FBMEM: 16 MB, VRAM: 1024 MB, Flags: 0x00000004<br>
+                    TOTAL STOLEN: 209 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 209 MB, MAX OVERALL: 210 MB (220737536 bytes)<br>
+                    Camelia: CameliaDisabled (0), Freq: 2777 Hz, FreqMax: 2777 Hz<br>
+                    Mobile: 0, PipeCount: 3, PortCount: 3, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000030 - ConnectorLVDS<br>
+                    [1] busId: 0x05, pipe: 9, type: 0x00000004, flags: 0x00000004 - ConnectorDigitalDVI<br>
+                    [2] busId: 0x04, pipe: 9, type: 0x00000800, flags: 0x00000082 - ConnectorHDMI<br>
+                    00000800 02000000 30000000<br>
+                    01050900 04000000 04000000<br>
+                    02040900 00080000 82000000<br><br>
+
+                    ID: 0A260005, STOLEN: 32 MB, FBMEM: 19 MB, VRAM: 1536 MB, Flags: 0x0000000F<br>
+                    TOTAL STOLEN: 52 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 116 MB, MAX OVERALL: 117 MB (123219968 bytes)<br>
+                    Camelia: CameliaDisabled (0), Freq: 2777 Hz, FreqMax: 2777 Hz<br>
+                    Mobile: 1, PipeCount: 3, PortCount: 3, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000030 - ConnectorLVDS<br>
+                    [1] busId: 0x05, pipe: 9, type: 0x00000400, flags: 0x00000087 - ConnectorDP<br>
+                    [2] busId: 0x04, pipe: 9, type: 0x00000400, flags: 0x00000087 - ConnectorDP<br>
+                    00000800 02000000 30000000<br>
+                    01050900 00040000 87000000<br>
+                    02040900 00040000 87000000<br><br>
+
+                    ID: 0A260006, STOLEN: 32 MB, FBMEM: 19 MB, VRAM: 1536 MB, Flags: 0x0000000F<br>
+                    TOTAL STOLEN: 52 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 116 MB, MAX OVERALL: 117 MB (123219968 bytes)<br>
+                    Camelia: CameliaDisabled (0), Freq: 2777 Hz, FreqMax: 2777 Hz<br>
+                    Mobile: 1, PipeCount: 3, PortCount: 3, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000030 - ConnectorLVDS<br>
+                    [1] busId: 0x05, pipe: 9, type: 0x00000400, flags: 0x00000087 - ConnectorDP<br>
+                    [2] busId: 0x04, pipe: 9, type: 0x00000400, flags: 0x00000087 - ConnectorDP<br>
+                    00000800 02000000 30000000<br>
+                    01050900 00040000 87000000<br>
+                    02040900 00040000 87000000<br><br>
+
+                    ID: 0A2E0008, STOLEN: 64 MB, FBMEM: 34 MB, VRAM: 1536 MB, Flags: 0x0000021E<br>
+                    TOTAL STOLEN: 99 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 227 MB, MAX OVERALL: 228 MB (239611904 bytes)<br>
+                    Camelia: CameliaV1 (1), Freq: 1388 Hz, FreqMax: 1388 Hz<br>
+                    Mobile: 1, PipeCount: 3, PortCount: 3, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000030 - ConnectorLVDS<br>
+                    [1] busId: 0x05, pipe: 9, type: 0x00000400, flags: 0x00000107 - ConnectorDP<br>
+                    [2] busId: 0x04, pipe: 10, type: 0x00000400, flags: 0x00000107 - ConnectorDP<br>
+                    00000800 02000000 30000000<br>
+                    01050900 00040000 07010000<br>
+                    02040A00 00040000 07010000<br><br>
+
+                    ID: 0A16000C, STOLEN: 64 MB, FBMEM: 34 MB, VRAM: 1536 MB, Flags: 0x0000001E<br>
+                    TOTAL STOLEN: 99 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 227 MB, MAX OVERALL: 228 MB (239611904 bytes)<br>
+                    Camelia: CameliaDisabled (0), Freq: 1388 Hz, FreqMax: 1388 Hz<br>
+                    Mobile: 1, PipeCount: 3, PortCount: 3, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000030 - ConnectorLVDS<br>
+                    [1] busId: 0x05, pipe: 9, type: 0x00000400, flags: 0x00000107 - ConnectorDP<br>
+                    [2] busId: 0x04, pipe: 10, type: 0x00000400, flags: 0x00000107 - ConnectorDP<br>
+                    00000800 02000000 30000000<br>
+                    01050900 00040000 07010000<br>
+                    02040A00 00040000 07010000<br><br>
+
+                    ID: 0D260007, STOLEN: 64 MB, FBMEM: 34 MB, VRAM: 1536 MB, Flags: 0x0000031E<br>
+                    TOTAL STOLEN: 99 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 227 MB, MAX OVERALL: 228 MB (239616000 bytes)<br>
+                    Camelia: CameliaDisabled (0), Freq: 1953 Hz, FreqMax: 1953 Hz<br>
+                    Mobile: 1, PipeCount: 3, PortCount: 4, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000030 - ConnectorLVDS<br>
+                    [1] busId: 0x05, pipe: 11, type: 0x00000400, flags: 0x00000107 - ConnectorDP<br>
+                    [2] busId: 0x04, pipe: 11, type: 0x00000400, flags: 0x00000107 - ConnectorDP<br>
+                    [3] busId: 0x06, pipe: 3, type: 0x00000800, flags: 0x00000006 - ConnectorHDMI<br>
+                    00000800 02000000 30000000<br>
+                    01050B00 00040000 07010000<br>
+                    02040B00 00040000 07010000<br>
+                    03060300 00080000 06000000<br><br>
+
+                    ID: 0D220003, STOLEN: 32 MB, FBMEM: 19 MB, VRAM: 1536 MB, Flags: 0x00000402<br>
+                    TOTAL STOLEN: 52 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 116 MB, MAX OVERALL: 117 MB (123219968 bytes)<br>
+                    Camelia: CameliaDisabled (0), Freq: 5273 Hz, FreqMax: 5273 Hz<br>
+                    Mobile: 0, PipeCount: 3, PortCount: 3, FBMemoryCount: 3<br>
+                    [1] busId: 0x05, pipe: 9, type: 0x00000400, flags: 0x00000087 - ConnectorDP<br>
+                    [2] busId: 0x04, pipe: 10, type: 0x00000400, flags: 0x00000087 - ConnectorDP<br>
+                    [3] busId: 0x06, pipe: 8, type: 0x00000400, flags: 0x00000011 - ConnectorDP<br>
+                    01050900 00040000 87000000<br>
+                    02040A00 00040000 87000000<br>
+                    03060800 00040000 11000000<br><br>
+
+                    ID: 0A2E000A, STOLEN: 32 MB, FBMEM: 19 MB, VRAM: 1536 MB, Flags: 0x000000D6<br>
+                    TOTAL STOLEN: 52 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 116 MB, MAX OVERALL: 117 MB (123219968 bytes)<br>
+                    Camelia: CameliaDisabled (0), Freq: 5273 Hz, FreqMax: 5273 Hz<br>
+                    Mobile: 0, PipeCount: 3, PortCount: 3, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000011 - ConnectorLVDS<br>
+                    [1] busId: 0x05, pipe: 9, type: 0x00000400, flags: 0x00000087 - ConnectorDP<br>
+                    [2] busId: 0x04, pipe: 10, type: 0x00000400, flags: 0x00000087 - ConnectorDP<br>
+                    00000800 02000000 11000000<br>
+                    01050900 00040000 87000000<br>
+                    02040A00 00040000 87000000<br><br>
+
+                    ID: 0A26000A, STOLEN: 32 MB, FBMEM: 19 MB, VRAM: 1536 MB, Flags: 0x000000D6<br>
+                    TOTAL STOLEN: 52 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 116 MB, MAX OVERALL: 117 MB (123219968 bytes)<br>
+                    Camelia: CameliaDisabled (0), Freq: 5273 Hz, FreqMax: 5273 Hz<br>
+                    Mobile: 0, PipeCount: 3, PortCount: 3, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000011 - ConnectorLVDS<br>
+                    [1] busId: 0x05, pipe: 9, type: 0x00000400, flags: 0x00000087 - ConnectorDP<br>
+                    [2] busId: 0x04, pipe: 10, type: 0x00000400, flags: 0x00000087 - ConnectorDP<br>
+                    00000800 02000000 11000000<br>
+                    01050900 00040000 87000000<br>
+                    02040A00 00040000 87000000<br><br>
+
+                    ID: 0A2E000D, STOLEN: 96 MB, FBMEM: 34 MB, VRAM: 1536 MB, Flags: 0x0000040E<br>
+                    TOTAL STOLEN: 131 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 227 MB, MAX OVERALL: 228 MB (239607808 bytes)<br>
+                    Camelia: CameliaDisabled (0), Freq: 5273 Hz, FreqMax: 5273 Hz<br>
+                    Mobile: 0, PipeCount: 3, PortCount: 2, FBMemoryCount: 2<br>
+                    [1] busId: 0x05, pipe: 9, type: 0x00000400, flags: 0x00000107 - ConnectorDP<br>
+                    [2] busId: 0x04, pipe: 10, type: 0x00000400, flags: 0x00000107 - ConnectorDP<br>
+                    01050900 00040000 07010000<br>
+                    02040A00 00040000 07010000<br><br>
+
+                    ID: 0A26000D, STOLEN: 96 MB, FBMEM: 34 MB, VRAM: 1536 MB, Flags: 0x0000040E<br>
+                    TOTAL STOLEN: 131 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 227 MB, MAX OVERALL: 228 MB (239607808 bytes)<br>
+                    Camelia: CameliaDisabled (0), Freq: 5273 Hz, FreqMax: 5273 Hz<br>
+                    Mobile: 0, PipeCount: 3, PortCount: 2, FBMemoryCount: 2<br>
+                    [1] busId: 0x05, pipe: 9, type: 0x00000400, flags: 0x00000107 - ConnectorDP<br>
+                    [2] busId: 0x04, pipe: 10, type: 0x00000400, flags: 0x00000107 - ConnectorDP<br>
+                    01050900 00040000 07010000<br>
+                    02040A00 00040000 07010000<br><br>
+
+                    ID: 04120004, STOLEN: 32 MB, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x00000000<br>
+                    TOTAL STOLEN: 1 MB, TOTAL CURSOR: 0 bytes, MAX STOLEN: 1 MB, MAX OVERALL: 1 MB<br>
+                    Camelia: CameliaDisabled (0), Freq: 0 Hz, FreqMax: 0 Hz<br>
+                    Mobile: 0, PipeCount: 0, PortCount: 0, FBMemoryCount: 0<br><br>
+
+                    ID: 0412000B, STOLEN: 32 MB, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x00000000<br>
+                    TOTAL STOLEN: 1 MB, TOTAL CURSOR: 0 bytes, MAX STOLEN: 1 MB, MAX OVERALL: 1 MB<br>
+                    Camelia: CameliaDisabled (0), Freq: 0 Hz, FreqMax: 0 Hz<br>
+                    Mobile: 0, PipeCount: 0, PortCount: 0, FBMemoryCount: 0<br><br>
+
+                    ID: 0D260009, STOLEN: 64 MB, FBMEM: 34 MB, VRAM: 1536 MB, Flags: 0x0000001E<br>
+                    TOTAL STOLEN: 99 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 99 MB, MAX OVERALL: 100 MB (105385984 bytes)<br>
+                    Camelia: CameliaDisabled (0), Freq: 1953 Hz, FreqMax: 1953 Hz<br>
+                    Mobile: 1, PipeCount: 3, PortCount: 1, FBMemoryCount: 1<br>
+                    [0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000030 - ConnectorLVDS<br>
+                    00000800 02000000 30000000<br><br>
+
+                    ID: 0D26000E, STOLEN: 96 MB, FBMEM: 34 MB, VRAM: 1536 MB, Flags: 0x0000031E<br>
+                    TOTAL STOLEN: 131 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 323 MB, MAX OVERALL: 324 MB (340279296 bytes)<br>
+                    Camelia: CameliaV2 (2), Freq: 1953 Hz, FreqMax: 1953 Hz<br>
+                    Mobile: 1, PipeCount: 3, PortCount: 4, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000030 - ConnectorLVDS<br>
+                    [1] busId: 0x05, pipe: 11, type: 0x00000400, flags: 0x00000107 - ConnectorDP<br>
+                    [2] busId: 0x04, pipe: 11, type: 0x00000400, flags: 0x00000107 - ConnectorDP<br>
+                    [3] busId: 0x06, pipe: 3, type: 0x00000800, flags: 0x00000006 - ConnectorHDMI<br>
+                    00000800 02000000 30000000<br>
+                    01050B00 00040000 07010000<br>
+                    02040B00 00040000 07010000<br>
+                    03060300 00080000 06000000<br><br>
+
+                    ID: 0D26000F, STOLEN: 96 MB, FBMEM: 34 MB, VRAM: 1536 MB, Flags: 0x0000001E<br>
+                    TOTAL STOLEN: 131 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 131 MB, MAX OVERALL: 132 MB (138940416 bytes)<br>
+                    Camelia: CameliaV2 (2), Freq: 1953 Hz, FreqMax: 1953 Hz<br>
+                    Mobile: 1, PipeCount: 3, PortCount: 1, FBMemoryCount: 1<br>
+                    [0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000030 - ConnectorLVDS<br>
+                    00000800 02000000 30000000<br><br>
+
+                    Рекомендуемые фреймы: десктоп 0x0D220003 (по умолчанию); ноутбук 0x0A160000 (по умолчанию), 0x0A260005 (рекомендуется), 0x0A260006 (рекомендуется).
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingFour">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Broadwell
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                <div class="card-body" style="text-align: left;">
+                    Поддерживаются, начиная с OS X 10.10.2<br><br>
+                    Список фреймов ig-platform-id:<br>
+                    0x16060000 (desktop, 3 connectors, 32 MB)<br>
+                    0x160E0000 (desktop, 3 connectors, 32 MB)<br>
+                    0x16160000 (desktop, 3 connectors, 32 MB)<br>
+                    0x161E0000 (desktop, 3 connectors, 32 MB)<br>
+                    0x16260000 (desktop, 3 connectors, 32 MB)<br>
+                    0x162B0000 (desktop, 3 connectors, 32 MB)<br>
+                    0x16220000 (desktop, 3 connectors, 32 MB)<br>
+                    0x160E0001 (mobile, 3 connectors, 60 MB)<br>
+                    0x161E0001 (mobile, 3 connectors, 60 MB)<br>
+                    0x16060002 (mobile, 3 connectors, 56 MB)<br>
+                    0x16160002 (mobile, 3 connectors, 56 MB)<br>
+                    0x16260002 (mobile, 3 connectors, 56 MB)<br>
+                    0x16220002 (mobile, 3 connectors, 56 MB)<br>
+                    0x162B0002 (mobile, 3 connectors, 56 MB)<br>
+                    0x16120003 (mobile, 4 connectors, 56 MB)<br>
+                    0x162B0004 (desktop, 3 connectors, 56 MB)<br>
+                    0x16260004 (desktop, 3 connectors, 56 MB)<br>
+                    0x16220007 (desktop, 3 connectors, 77 MB)<br>
+                    0x16260005 (mobile, 3 connectors, 56 MB)<br>
+                    0x16260006 (mobile, 3 connectors, 56 MB)<br>
+                    0x162B0008 (desktop, 2 connectors, 69 MB)<br>
+                    0x16260008 (desktop, 2 connectors, 69 MB)<br><br>
+
+                    AppleIntelBDWGraphicsFramebuffer.kext<br>
+                    <br>
+                    ID: 16060000, STOLEN: 16 MB, FBMEM: 15 MB, VRAM: 1024 MB, Flags: 0x00000B06<br>
+                    TOTAL STOLEN: 32 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 64 MB, MAX OVERALL: 65 MB (68694016 bytes)<br>
+                    Camelia: CameliaDisabled (0), Freq: 5273 Hz, FreqMax: 5273 Hz<br>
+                    Mobile: 0, PipeCount: 3, PortCount: 3, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000230 - ConnectorLVDS<br>
+                    [1] busId: 0x05, pipe: 9, type: 0x00000004, flags: 0x00000004 - ConnectorDigitalDVI<br>
+                    [2] busId: 0x04, pipe: 9, type: 0x00000800, flags: 0x00000082 - ConnectorHDMI<br>
+                    00000800 02000000 30020000<br>
+                    01050900 04000000 04000000<br>
+                    02040900 00080000 82000000<br>
+                    <br>
+                    ID: 160E0000, STOLEN: 16 MB, FBMEM: 15 MB, VRAM: 1024 MB, Flags: 0x00000706<br>
+                    TOTAL STOLEN: 32 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 64 MB, MAX OVERALL: 65 MB (68694016 bytes)<br>
+                    Camelia: CameliaDisabled (0), Freq: 5273 Hz, FreqMax: 5273 Hz<br>
+                    Mobile: 0, PipeCount: 3, PortCount: 3, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000230 - ConnectorLVDS<br>
+                    [1] busId: 0x05, pipe: 9, type: 0x00000004, flags: 0x00000004 - ConnectorDigitalDVI<br>
+                    [2] busId: 0x04, pipe: 9, type: 0x00000800, flags: 0x00000082 - ConnectorHDMI<br>
+                    00000800 02000000 30020000<br>
+                    01050900 04000000 04000000<br>
+                    02040900 00080000 82000000<br>
+                    <br>
+                    ID: 16160000, STOLEN: 16 MB, FBMEM: 15 MB, VRAM: 1024 MB, Flags: 0x00000B06<br>
+                    TOTAL STOLEN: 32 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 64 MB, MAX OVERALL: 65 MB (68694016 bytes)<br>
+                    Camelia: CameliaDisabled (0), Freq: 5273 Hz, FreqMax: 5273 Hz<br>
+                    Mobile: 0, PipeCount: 3, PortCount: 3, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000230 - ConnectorLVDS<br>
+                    [1] busId: 0x05, pipe: 9, type: 0x00000004, flags: 0x00000004 - ConnectorDigitalDVI<br>
+                    [2] busId: 0x04, pipe: 9, type: 0x00000800, flags: 0x00000082 - ConnectorHDMI<br>
+                    00000800 02000000 30020000<br>
+                    01050900 04000000 04000000<br>
+                    02040900 00080000 82000000<br>
+                    <br>
+                    ID: 161E0000, STOLEN: 16 MB, FBMEM: 15 MB, VRAM: 1024 MB, Flags: 0x00000716<br>
+                    TOTAL STOLEN: 32 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 64 MB, MAX OVERALL: 65 MB (68694016 bytes)<br>
+                    Camelia: CameliaDisabled (0), Freq: 5273 Hz, FreqMax: 5273 Hz<br>
+                    Mobile: 0, PipeCount: 3, PortCount: 3, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000230 - ConnectorLVDS<br>
+                    [1] busId: 0x05, pipe: 9, type: 0x00000004, flags: 0x00000004 - ConnectorDigitalDVI<br>
+                    [2] busId: 0x04, pipe: 9, type: 0x00000800, flags: 0x00000082 - ConnectorHDMI<br>
+                    00000800 02000000 30020000<br>
+                    01050900 04000000 04000000<br>
+                    02040900 00080000 82000000<br>
+                    <br>
+                    ID: 16260000, STOLEN: 16 MB, FBMEM: 15 MB, VRAM: 1024 MB, Flags: 0x00000B06<br>
+                    TOTAL STOLEN: 32 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 64 MB, MAX OVERALL: 65 MB (68694016 bytes)<br>
+                    Camelia: CameliaDisabled (0), Freq: 5273 Hz, FreqMax: 5273 Hz<br>
+                    Mobile: 0, PipeCount: 3, PortCount: 3, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000230 - ConnectorLVDS<br>
+                    [1] busId: 0x05, pipe: 9, type: 0x00000004, flags: 0x00000004 - ConnectorDigitalDVI<br>
+                    [2] busId: 0x04, pipe: 9, type: 0x00000800, flags: 0x00000082 - ConnectorHDMI<br>
+                    00000800 02000000 30020000<br>
+                    01050900 04000000 04000000<br>
+                    02040900 00080000 82000000<br>
+                    <br>
+                    ID: 162B0000, STOLEN: 16 MB, FBMEM: 15 MB, VRAM: 1024 MB, Flags: 0x00000B06<br>
+                    TOTAL STOLEN: 32 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 64 MB, MAX OVERALL: 65 MB (68694016 bytes)<br>
+                    Camelia: CameliaDisabled (0), Freq: 5273 Hz, FreqMax: 5273 Hz<br>
+                    Mobile: 0, PipeCount: 3, PortCount: 3, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000230 - ConnectorLVDS<br>
+                    [1] busId: 0x05, pipe: 9, type: 0x00000004, flags: 0x00000004 - ConnectorDigitalDVI<br>
+                    [2] busId: 0x04, pipe: 9, type: 0x00000800, flags: 0x00000082 - ConnectorHDMI<br>
+                    00000800 02000000 30020000<br>
+                    01050900 04000000 04000000<br>
+                    02040900 00080000 82000000<br>
+                    <br>
+                    ID: 16220000, STOLEN: 16 MB, FBMEM: 15 MB, VRAM: 1024 MB, Flags: 0x0000110E<br>
+                    TOTAL STOLEN: 32 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 64 MB, MAX OVERALL: 65 MB (68694016 bytes)<br>
+                    Camelia: CameliaDisabled (0), Freq: 5273 Hz, FreqMax: 5273 Hz<br>
+                    Mobile: 0, PipeCount: 3, PortCount: 3, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000230 - ConnectorLVDS<br>
+                    [1] busId: 0x05, pipe: 9, type: 0x00000004, flags: 0x00000004 - ConnectorDigitalDVI<br>
+                    [2] busId: 0x04, pipe: 9, type: 0x00000800, flags: 0x00000082 - ConnectorHDMI<br>
+                    00000800 02000000 30020000<br>
+                    01050900 04000000 04000000<br>
+                    02040900 00080000 82000000<br>
+                    <br>
+                    ID: 160E0001, STOLEN: 38 MB, FBMEM: 21 MB, VRAM: 1536 MB, Flags: 0x00000702<br>
+                    TOTAL STOLEN: 60 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 136 MB, MAX OVERALL: 137 MB (144191488 bytes)<br>
+                    Camelia: CameliaV2 (2), Freq: 1388 Hz, FreqMax: 1388 Hz<br>
+                    Mobile: 1, PipeCount: 3, PortCount: 3, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000230 - ConnectorLVDS<br>
+                    [1] busId: 0x05, pipe: 9, type: 0x00000400, flags: 0x00001001 - ConnectorDP<br>
+                    [2] busId: 0x04, pipe: 10, type: 0x00000400, flags: 0x00003001 - ConnectorDP<br>
+                    00000800 02000000 30020000<br>
+                    01050900 00040000 01100000<br>
+                    02040A00 00040000 01300000<br>
+                    <br>
+                    ID: 161E0001, STOLEN: 38 MB, FBMEM: 21 MB, VRAM: 1536 MB, Flags: 0x00000702<br>
+                    TOTAL STOLEN: 60 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 136 MB, MAX OVERALL: 137 MB (144191488 bytes)<br>
+                    Camelia: CameliaV2 (2), Freq: 1388 Hz, FreqMax: 1388 Hz<br>
+                    Mobile: 1, PipeCount: 3, PortCount: 3, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000230 - ConnectorLVDS<br>
+                    [1] busId: 0x05, pipe: 9, type: 0x00000400, flags: 0x00001001 - ConnectorDP<br>
+                    [2] busId: 0x04, pipe: 10, type: 0x00000400, flags: 0x00003001 - ConnectorDP<br>
+                    00000800 02000000 30020000<br>
+                    01050900 00040000 01100000<br>
+                    02040A00 00040000 01300000<br>
+                    <br>
+                    ID: 16060002, STOLEN: 34 MB, FBMEM: 21 MB, VRAM: 1536 MB, Flags: 0x00004B02<br>
+                    TOTAL STOLEN: 56 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 124 MB, MAX OVERALL: 125 MB (131608576 bytes)<br>
+                    Camelia: CameliaV2 (2), Freq: 1388 Hz, FreqMax: 1388 Hz<br>
+                    Mobile: 1, PipeCount: 3, PortCount: 3, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000230 - ConnectorLVDS<br>
+                    [1] busId: 0x05, pipe: 9, type: 0x00000400, flags: 0x00000507 - ConnectorDP<br>
+                    [2] busId: 0x04, pipe: 10, type: 0x00000400, flags: 0x00000507 - ConnectorDP<br>
+                    00000800 02000000 30020000<br>
+                    01050900 00040000 07050000<br>
+                    02040A00 00040000 07050000<br>
+                    <br>
+                    ID: 16160002, STOLEN: 34 MB, FBMEM: 21 MB, VRAM: 1536 MB, Flags: 0x00004B02<br>
+                    TOTAL STOLEN: 56 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 124 MB, MAX OVERALL: 125 MB (131608576 bytes)<br>
+                    Camelia: CameliaV2 (2), Freq: 1388 Hz, FreqMax: 1388 Hz<br>
+                    Mobile: 1, PipeCount: 3, PortCount: 3, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000230 - ConnectorLVDS<br>
+                    [1] busId: 0x05, pipe: 9, type: 0x00000400, flags: 0x00000507 - ConnectorDP<br>
+                    [2] busId: 0x04, pipe: 10, type: 0x00000400, flags: 0x00000507 - ConnectorDP<br>
+                    00000800 02000000 30020000<br>
+                    01050900 00040000 07050000<br>
+                    02040A00 00040000 07050000<br>
+                    <br>
+                    ID: 16260002, STOLEN: 34 MB, FBMEM: 21 MB, VRAM: 1536 MB, Flags: 0x00004B0A<br>
+                    TOTAL STOLEN: 56 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 124 MB, MAX OVERALL: 125 MB (131608576 bytes)<br>
+                    Camelia: CameliaV2 (2), Freq: 1388 Hz, FreqMax: 1388 Hz<br>
+                    Mobile: 1, PipeCount: 3, PortCount: 3, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000230 - ConnectorLVDS<br>
+                    [1] busId: 0x05, pipe: 9, type: 0x00000400, flags: 0x00000507 - ConnectorDP<br>
+                    [2] busId: 0x04, pipe: 10, type: 0x00000400, flags: 0x00000507 - ConnectorDP<br>
+                    00000800 02000000 30020000<br>
+                    01050900 00040000 07050000<br>
+                    02040A00 00040000 07050000<br>
+                    <br>
+                    ID: 16220002, STOLEN: 34 MB, FBMEM: 21 MB, VRAM: 1536 MB, Flags: 0x00004B0A<br>
+                    TOTAL STOLEN: 56 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 124 MB, MAX OVERALL: 125 MB (131608576 bytes)<br>
+                    Camelia: CameliaV2 (2), Freq: 1388 Hz, FreqMax: 1388 Hz<br>
+                    Mobile: 1, PipeCount: 3, PortCount: 3, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000230 - ConnectorLVDS<br>
+                    [1] busId: 0x05, pipe: 9, type: 0x00000400, flags: 0x00000507 - ConnectorDP<br>
+                    [2] busId: 0x04, pipe: 10, type: 0x00000400, flags: 0x00000507 - ConnectorDP<br>
+                    00000800 02000000 30020000<br>
+                    01050900 00040000 07050000<br>
+                    02040A00 00040000 07050000<br>
+                    <br>
+                    ID: 162B0002, STOLEN: 34 MB, FBMEM: 21 MB, VRAM: 1536 MB, Flags: 0x00004B0A<br>
+                    TOTAL STOLEN: 56 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 124 MB, MAX OVERALL: 125 MB (131608576 bytes)<br>
+                    Camelia: CameliaV2 (2), Freq: 1388 Hz, FreqMax: 1388 Hz<br>
+                    Mobile: 1, PipeCount: 3, PortCount: 3, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000230 - ConnectorLVDS<br>
+                    [1] busId: 0x05, pipe: 9, type: 0x00000400, flags: 0x00000507 - ConnectorDP<br>
+                    [2] busId: 0x04, pipe: 10, type: 0x00000400, flags: 0x00000507 - ConnectorDP<br>
+                    00000800 02000000 30020000<br>
+                    01050900 00040000 07050000<br>
+                    02040A00 00040000 07050000<br>
+                    <br>
+                    ID: 16120003, STOLEN: 34 MB, FBMEM: 21 MB, VRAM: 1536 MB, Flags: 0x00001306<br>
+                    TOTAL STOLEN: 56 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 124 MB, MAX OVERALL: 125 MB (131612672 bytes)<br>
+                    Camelia: CameliaV1 (1), Freq: 1953 Hz, FreqMax: 1953 Hz<br>
+                    Mobile: 1, PipeCount: 3, PortCount: 4, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000230 - ConnectorLVDS<br>
+                    [1] busId: 0x05, pipe: 11, type: 0x00000400, flags: 0x00000507 - ConnectorDP<br>
+                    [2] busId: 0x04, pipe: 11, type: 0x00000400, flags: 0x00000507 - ConnectorDP<br>
+                    [3] busId: 0x06, pipe: 3, type: 0x00000800, flags: 0x00000006 - ConnectorHDMI<br>
+                    00000800 02000000 30020000<br>
+                    01050B00 00040000 07050000<br>
+                    02040B00 00040000 07050000<br>
+                    03060300 00080000 06000000<br>
+                    <br>
+                    ID: 162B0004, STOLEN: 34 MB, FBMEM: 21 MB, VRAM: 1536 MB, Flags: 0x00040B46<br>
+                    TOTAL STOLEN: 56 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 124 MB, MAX OVERALL: 125 MB (131608576 bytes)<br>
+                    Camelia: CameliaDisabled (0), Freq: 5273 Hz, FreqMax: 5273 Hz<br>
+                    Mobile: 0, PipeCount: 3, PortCount: 3, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000211 - ConnectorLVDS<br>
+                    [1] busId: 0x05, pipe: 9, type: 0x00000400, flags: 0x00000507 - ConnectorDP<br>
+                    [2] busId: 0x04, pipe: 10, type: 0x00000400, flags: 0x00000507 - ConnectorDP<br>
+                    00000800 02000000 11020000<br>
+                    01050900 00040000 07050000<br>
+                    02040A00 00040000 07050000<br>
+                    <br>
+                    ID: 16260004, STOLEN: 34 MB, FBMEM: 21 MB, VRAM: 1536 MB, Flags: 0x00040B46<br>
+                    TOTAL STOLEN: 56 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 124 MB, MAX OVERALL: 125 MB (131608576 bytes)<br>
+                    Camelia: CameliaDisabled (0), Freq: 5273 Hz, FreqMax: 5273 Hz<br>
+                    Mobile: 0, PipeCount: 3, PortCount: 3, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000211 - ConnectorLVDS<br>
+                    [1] busId: 0x05, pipe: 9, type: 0x00000400, flags: 0x00000507 - ConnectorDP<br>
+                    [2] busId: 0x04, pipe: 10, type: 0x00000400, flags: 0x00000507 - ConnectorDP<br>
+                    00000800 02000000 11020000<br>
+                    01050900 00040000 07050000<br>
+                    02040A00 00040000 07050000<br>
+                    <br>
+                    ID: 16220007, STOLEN: 38 MB, FBMEM: 38 MB, VRAM: 1536 MB, Flags: 0x000BB306<br>
+                    TOTAL STOLEN: 77 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 153 MB, MAX OVERALL: 154 MB (162017280 bytes)<br>
+                    Camelia: CameliaDisabled (0), Freq: 5273 Hz, FreqMax: 5273 Hz<br>
+                    Mobile: 0, PipeCount: 3, PortCount: 3, FBMemoryCount: 3<br>
+                    [1] busId: 0x05, pipe: 9, type: 0x00000400, flags: 0x00000507 - ConnectorDP<br>
+                    [2] busId: 0x04, pipe: 10, type: 0x00000400, flags: 0x00000507 - ConnectorDP<br>
+                    [3] busId: 0x06, pipe: 8, type: 0x00000400, flags: 0x00000011 - ConnectorDP<br>
+                    01050900 00040000 07050000<br>
+                    02040A00 00040000 07050000<br>
+                    03060800 00040000 11000000<br>
+                    <br>
+                    ID: 16260005, STOLEN: 34 MB, FBMEM: 21 MB, VRAM: 1536 MB, Flags: 0x00000B0B<br>
+                    TOTAL STOLEN: 56 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 124 MB, MAX OVERALL: 125 MB (131608576 bytes)<br>
+                    Camelia: CameliaDisabled (0), Freq: 2777 Hz, FreqMax: 2777 Hz<br>
+                    Mobile: 1, PipeCount: 3, PortCount: 3, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000230 - ConnectorLVDS<br>
+                    [1] busId: 0x05, pipe: 11, type: 0x00000400, flags: 0x00000507 - ConnectorDP<br>
+                    [2] busId: 0x04, pipe: 11, type: 0x00000400, flags: 0x00000507 - ConnectorDP<br>
+                    00000800 02000000 30020000<br>
+                    01050B00 00040000 07050000<br>
+                    02040B00 00040000 07050000<br>
+                    <br>
+                    ID: 16260006, STOLEN: 34 MB, FBMEM: 21 MB, VRAM: 1536 MB, Flags: 0x00000B0B<br>
+                    TOTAL STOLEN: 56 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 124 MB, MAX OVERALL: 125 MB (131608576 bytes)<br>
+                    Camelia: CameliaDisabled (0), Freq: 2777 Hz, FreqMax: 2777 Hz<br>
+                    Mobile: 1, PipeCount: 3, PortCount: 3, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000230 - ConnectorLVDS<br>
+                    [1] busId: 0x05, pipe: 11, type: 0x00000400, flags: 0x00000507 - ConnectorDP<br>
+                    [2] busId: 0x04, pipe: 11, type: 0x00000400, flags: 0x00000507 - ConnectorDP<br>
+                    00000800 02000000 30020000<br>
+                    01050B00 00040000 07050000<br>
+                    02040B00 00040000 07050000<br>
+                    <br>
+                    ID: 162B0008, STOLEN: 34 MB, FBMEM: 34 MB, VRAM: 1536 MB, Flags: 0x00002B0E<br>
+                    TOTAL STOLEN: 69 MB, TOTAL CURSOR: 1 MB, MAX STOLEN: 103 MB, MAX OVERALL: 104 MB (109060096 bytes)<br>
+                    Camelia: CameliaDisabled (0), Freq: 5273 Hz, FreqMax: 5273 Hz<br>
+                    Mobile: 0, PipeCount: 2, PortCount: 2, FBMemoryCount: 2<br>
+                    [1] busId: 0x05, pipe: 9, type: 0x00000400, flags: 0x00000507 - ConnectorDP<br>
+                    [2] busId: 0x04, pipe: 10, type: 0x00000400, flags: 0x00000507 - ConnectorDP<br>
+                    01050900 00040000 07050000<br>
+                    02040A00 00040000 07050000<br>
+                    <br>
+                    ID: 16260008, STOLEN: 34 MB, FBMEM: 34 MB, VRAM: 1536 MB, Flags: 0x00002B0E<br>
+                    TOTAL STOLEN: 69 MB, TOTAL CURSOR: 1 MB, MAX STOLEN: 103 MB, MAX OVERALL: 104 MB (109060096 bytes)<br>
+                    Camelia: CameliaDisabled (0), Freq: 5273 Hz, FreqMax: 5273 Hz<br>
+                    Mobile: 0, PipeCount: 2, PortCount: 2, FBMemoryCount: 2<br>
+                    [1] busId: 0x05, pipe: 9, type: 0x00000400, flags: 0x00000507 - ConnectorDP<br>
+                    [2] busId: 0x04, pipe: 10, type: 0x00000400, flags: 0x00000507 - ConnectorDP<br>
+                    01050900 00040000 07050000<br>
+                    02040A00 00040000 07050000<br><br>
+
+                    Рекомендуемые фреймы: десктоп 0x16220007 (по умолчанию); ноутбук 0x16260006 (по умолчанию).
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingFive">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        Sky Lake
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                <div class="card-body" style="text-align: left;">
+                    Поддерживаются, начиная с OS X 10.11.4<br><br>
+                    Список фреймов ig-platform-id:<br>
+                    0x191E0000 (mobile, 3 connectors, 56 MB)<br>
+                    0x19160000 (mobile, 3 connectors, 56 MB)<br>
+                    0x19260000 (mobile, 3 connectors, 56 MB)<br>
+                    0x19270000 (mobile, 3 connectors, 56 MB)<br>
+                    0x191B0000 (mobile, 3 connectors, 56 MB)<br>
+                    0x193B0000 (mobile, 3 connectors, 56 MB)<br>
+                    0x19120000 (mobile, 3 connectors, 56 MB)<br>
+                    0x19020001 (desktop, 0 connectors, no fbmem, 1 MB)<br>
+                    0x19170001 (desktop, 0 connectors, no fbmem, 1 MB)<br>
+                    0x19120001 (desktop, 0 connectors, no fbmem, 1 MB)<br>
+                    0x19320001 (desktop, 0 connectors, no fbmem, 1 MB)<br>
+                    0x19160002 (mobile, 3 connectors, no fbmem, 58 MB)<br>
+                    0x19260002 (mobile, 3 connectors, no fbmem, 58 MB)<br>
+                    0x191E0003 (mobile, 3 connectors, no fbmem, 41 MB)<br>
+                    0x19260004 (mobile, 3 connectors, no fbmem, 35 MB)<br>
+                    0x19270004 (mobile, 3 connectors, no fbmem, 58 MB)<br>
+                    0x193B0005 (mobile, 4 connectors, no fbmem, 35 MB)<br>
+                    0x191B0006 (mobile, 1 connectors, no fbmem, 39 MB)<br>
+                    0x19260007 (mobile, 3 connectors, no fbmem, 35 MB)<br><br>
+
+                    AppleIntelSKLGraphicsFramebuffer.kext<br>
+                    <br>
+                    ID: 191E0000, STOLEN: 34 MB, FBMEM: 21 MB, VRAM: 1536 MB, Flags: 0x0000050F<br>
+                    TOTAL STOLEN: 56 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 124 MB, MAX OVERALL: 125 MB (131608576 bytes)<br>
+                    Model name: Intel HD Graphics SKL CRB<br>
+                    Camellia: CamelliaDisabled (0), Freq: 1388 Hz, FreqMax: 1388 Hz<br>
+                    Mobile: 1, PipeCount: 3, PortCount: 3, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000098 - ConnectorLVDS<br>
+                    [1] busId: 0x05, pipe: 9, type: 0x00000400, flags: 0x00000187 - ConnectorDP<br>
+                    [2] busId: 0x04, pipe: 10, type: 0x00000400, flags: 0x00000187 - ConnectorDP<br>
+                    00000800 02000000 98000000<br>
+                    01050900 00040000 87010000<br>
+                    02040A00 00040000 87010000<br>
+                    <br>
+                    ID: 19160000, STOLEN: 34 MB, FBMEM: 21 MB, VRAM: 1536 MB, Flags: 0x0000090F<br>
+                    TOTAL STOLEN: 56 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 124 MB, MAX OVERALL: 125 MB (131608576 bytes)<br>
+                    Model name: Intel HD Graphics SKL CRB<br>
+                    Camellia: CamelliaDisabled (0), Freq: 1388 Hz, FreqMax: 1388 Hz<br>
+                    Mobile: 1, PipeCount: 3, PortCount: 3, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000098 - ConnectorLVDS<br>
+                    [1] busId: 0x05, pipe: 9, type: 0x00000400, flags: 0x00000187 - ConnectorDP<br>
+                    [2] busId: 0x04, pipe: 10, type: 0x00000400, flags: 0x00000187 - ConnectorDP<br>
+                    00000800 02000000 98000000<br>
+                    01050900 00040000 87010000<br>
+                    02040A00 00040000 87010000<br>
+                    <br>
+                    ID: 19260000, STOLEN: 34 MB, FBMEM: 21 MB, VRAM: 1536 MB, Flags: 0x0000090F<br>
+                    TOTAL STOLEN: 56 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 124 MB, MAX OVERALL: 125 MB (131608576 bytes)<br>
+                    Model name: Intel HD Graphics SKL CRB<br>
+                    Camellia: CamelliaDisabled (0), Freq: 1388 Hz, FreqMax: 1388 Hz<br>
+                    Mobile: 1, PipeCount: 3, PortCount: 3, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000098 - ConnectorLVDS<br>
+                    [1] busId: 0x05, pipe: 9, type: 0x00000400, flags: 0x00000187 - ConnectorDP<br>
+                    [2] busId: 0x04, pipe: 10, type: 0x00000400, flags: 0x00000187 - ConnectorDP<br>
+                    00000800 02000000 98000000<br>
+                    01050900 00040000 87010000<br>
+                    02040A00 00040000 87010000<br>
+                    <br>
+                    ID: 19270000, STOLEN: 34 MB, FBMEM: 21 MB, VRAM: 1536 MB, Flags: 0x0000090F<br>
+                    TOTAL STOLEN: 56 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 124 MB, MAX OVERALL: 125 MB (131608576 bytes)<br>
+                    Model name: Intel HD Graphics SKL CRB<br>
+                    Camellia: CamelliaDisabled (0), Freq: 1388 Hz, FreqMax: 1388 Hz<br>
+                    Mobile: 1, PipeCount: 3, PortCount: 3, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000098 - ConnectorLVDS<br>
+                    [1] busId: 0x05, pipe: 9, type: 0x00000400, flags: 0x00000187 - ConnectorDP<br>
+                    [2] busId: 0x04, pipe: 10, type: 0x00000400, flags: 0x00000187 - ConnectorDP<br>
+                    00000800 02000000 98000000<br>
+                    01050900 00040000 87010000<br>
+                    02040A00 00040000 87010000<br>
+                    <br>
+                    ID: 191B0000, STOLEN: 34 MB, FBMEM: 21 MB, VRAM: 1536 MB, Flags: 0x0000110F<br>
+                    TOTAL STOLEN: 56 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 124 MB, MAX OVERALL: 125 MB (131608576 bytes)<br>
+                    Model name: Intel HD Graphics SKL CRB<br>
+                    Camellia: CamelliaDisabled (0), Freq: 1388 Hz, FreqMax: 1388 Hz<br>
+                    Mobile: 1, PipeCount: 3, PortCount: 3, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000098 - ConnectorLVDS<br>
+                    [1] busId: 0x05, pipe: 9, type: 0x00000400, flags: 0x00000187 - ConnectorDP<br>
+                    [2] busId: 0x04, pipe: 10, type: 0x00000400, flags: 0x00000187 - ConnectorDP<br>
+                    00000800 02000000 98000000<br>
+                    01050900 00040000 87010000<br>
+                    02040A00 00040000 87010000<br>
+                    <br>
+                    ID: 193B0000, STOLEN: 34 MB, FBMEM: 21 MB, VRAM: 1536 MB, Flags: 0x00001187<br>
+                    TOTAL STOLEN: 56 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 124 MB, MAX OVERALL: 125 MB (131608576 bytes)<br>
+                    Model name: Intel HD Graphics SKL CRB<br>
+                    Camellia: CamelliaDisabled (0), Freq: 1388 Hz, FreqMax: 1388 Hz<br>
+                    Mobile: 1, PipeCount: 3, PortCount: 3, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000098 - ConnectorLVDS<br>
+                    [2] busId: 0x04, pipe: 10, type: 0x00000800, flags: 0x00000187 - ConnectorHDMI<br>
+                    [3] busId: 0x06, pipe: 10, type: 0x00000400, flags: 0x00000187 - ConnectorDP<br>
+                    00000800 02000000 98000000<br>
+                    02040A00 00080000 87010000<br>
+                    03060A00 00040000 87010000<br>
+                    <br>
+                    ID: 19120000, STOLEN: 34 MB, FBMEM: 21 MB, VRAM: 1536 MB, Flags: 0x0000110F<br>
+                    TOTAL STOLEN: 56 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 124 MB, MAX OVERALL: 125 MB (131608576 bytes)<br>
+                    Model name: Intel HD Graphics SKL CRB<br>
+                    Camellia: CamelliaDisabled (0), Freq: 1388 Hz, FreqMax: 1388 Hz<br>
+                    Mobile: 1, PipeCount: 3, PortCount: 3, FBMemoryCount: 3<br>
+                    [255] busId: 0x00, pipe: 0, type: 0x00000001, flags: 0x00000020 - ConnectorDummy<br>
+                    [1] busId: 0x05, pipe: 9, type: 0x00000400, flags: 0x00000187 - ConnectorDP<br>
+                    [2] busId: 0x04, pipe: 10, type: 0x00000400, flags: 0x00000187 - ConnectorDP<br>
+                    FF000000 01000000 20000000<br>
+                    01050900 00040000 87010000<br>
+                    02040A00 00040000 87010000<br>
+                    <br>
+                    ID: 19020001, STOLEN: 0 bytes, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x00040800<br>
+                    TOTAL STOLEN: 1 MB, TOTAL CURSOR: 0 bytes, MAX STOLEN: 1 MB, MAX OVERALL: 1 MB<br>
+                    Model name: Intel HD Graphics SKL<br>
+                    Camellia: CamelliaDisabled (0), Freq: 0 Hz, FreqMax: 0 Hz<br>
+                    Mobile: 0, PipeCount: 0, PortCount: 0, FBMemoryCount: 0<br>
+                    <br>
+                    ID: 19170001, STOLEN: 0 bytes, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x00040800<br>
+                    TOTAL STOLEN: 1 MB, TOTAL CURSOR: 0 bytes, MAX STOLEN: 1 MB, MAX OVERALL: 1 MB<br>
+                    Model name: Intel HD Graphics SKL<br>
+                    Camellia: CamelliaDisabled (0), Freq: 0 Hz, FreqMax: 0 Hz<br>
+                    Mobile: 0, PipeCount: 0, PortCount: 0, FBMemoryCount: 0<br>
+                    <br>
+                    ID: 19120001, STOLEN: 0 bytes, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x00040800<br>
+                    TOTAL STOLEN: 1 MB, TOTAL CURSOR: 0 bytes, MAX STOLEN: 1 MB, MAX OVERALL: 1 MB<br>
+                    Model name: Intel HD Graphics SKL<br>
+                    Camellia: CamelliaDisabled (0), Freq: 0 Hz, FreqMax: 0 Hz<br>
+                    Mobile: 0, PipeCount: 0, PortCount: 0, FBMemoryCount: 0<br>
+                    <br>
+                    ID: 19320001, STOLEN: 0 bytes, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x00040800<br>
+                    TOTAL STOLEN: 1 MB, TOTAL CURSOR: 0 bytes, MAX STOLEN: 1 MB, MAX OVERALL: 1 MB<br>
+                    Model name: Intel HD Graphics SKL<br>
+                    Camellia: CamelliaDisabled (0), Freq: 0 Hz, FreqMax: 0 Hz<br>
+                    Mobile: 0, PipeCount: 0, PortCount: 0, FBMemoryCount: 0<br>
+                    <br>
+                    ID: 19160002, STOLEN: 57 MB, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x00830B02<br>
+                    TOTAL STOLEN: 58 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 172 MB, MAX OVERALL: 173 MB (181940224 bytes)<br>
+                    Model name: Intel Iris Graphics 540<br>
+                    Camellia: CamelliaV3 (3), Freq: 1388 Hz, FreqMax: 1388 Hz<br>
+                    Mobile: 1, PipeCount: 3, PortCount: 3, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000498 - ConnectorLVDS<br>
+                    [1] busId: 0x05, pipe: 9, type: 0x00000400, flags: 0x000003C7 - ConnectorDP<br>
+                    [2] busId: 0x04, pipe: 10, type: 0x00000400, flags: 0x000003C7 - ConnectorDP<br>
+                    00000800 02000000 98040000<br>
+                    01050900 00040000 C7030000<br>
+                    02040A00 00040000 C7030000<br>
+                    <br>
+                    ID: 19260002, STOLEN: 57 MB, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x00E30B0A<br>
+                    TOTAL STOLEN: 58 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 172 MB, MAX OVERALL: 173 MB (181940224 bytes)<br>
+                    Model name: Intel Iris Graphics 540<br>
+                    Camellia: CamelliaV3 (3), Freq: 1388 Hz, FreqMax: 1388 Hz<br>
+                    Mobile: 1, PipeCount: 3, PortCount: 3, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000498 - ConnectorLVDS<br>
+                    [1] busId: 0x05, pipe: 9, type: 0x00000400, flags: 0x000003C7 - ConnectorDP<br>
+                    [2] busId: 0x04, pipe: 10, type: 0x00000400, flags: 0x000003C7 - ConnectorDP<br>
+                    00000800 02000000 98040000<br>
+                    01050900 00040000 C7030000<br>
+                    02040A00 00040000 C7030000<br>
+                    <br>
+                    ID: 191E0003, STOLEN: 40 MB, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x002B0702<br>
+                    TOTAL STOLEN: 41 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 121 MB, MAX OVERALL: 122 MB (128462848 bytes)<br>
+                    Model name: Intel HD Graphics 515<br>
+                    Camellia: CamelliaV2 (2), Freq: 1388 Hz, FreqMax: 1388 Hz<br>
+                    Mobile: 1, PipeCount: 3, PortCount: 3, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000098 - ConnectorLVDS<br>
+                    [1] busId: 0x05, pipe: 9, type: 0x00000400, flags: 0x00000181 - ConnectorDP<br>
+                    [2] busId: 0x04, pipe: 10, type: 0x00000400, flags: 0x00000181 - ConnectorDP<br>
+                    00000800 02000000 98000000<br>
+                    01050900 00040000 81010000<br>
+                    02040A00 00040000 81010000<br>
+                    <br>
+                    ID: 19260004, STOLEN: 34 MB, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x00030B0A<br>
+                    TOTAL STOLEN: 35 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 103 MB, MAX OVERALL: 104 MB (109588480 bytes)<br>
+                    Model name: Intel Iris Graphics 550<br>
+                    Camellia: CamelliaV3 (3), Freq: 1388 Hz, FreqMax: 1388 Hz<br>
+                    Mobile: 1, PipeCount: 3, PortCount: 3, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000498 - ConnectorLVDS<br>
+                    [1] busId: 0x05, pipe: 9, type: 0x00000400, flags: 0x000001C7 - ConnectorDP<br>
+                    [2] busId: 0x04, pipe: 10, type: 0x00000400, flags: 0x000001C7 - ConnectorDP<br>
+                    00000800 02000000 98040000<br>
+                    01050900 00040000 C7010000<br>
+                    02040A00 00040000 C7010000<br>
+                    <br>
+                    ID: 19270004, STOLEN: 57 MB, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x00E30B0A<br>
+                    TOTAL STOLEN: 58 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 172 MB, MAX OVERALL: 173 MB (181940224 bytes)<br>
+                    Model name: Intel Iris Graphics 550<br>
+                    Camellia: CamelliaV3 (3), Freq: 1388 Hz, FreqMax: 1388 Hz<br>
+                    Mobile: 1, PipeCount: 3, PortCount: 3, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000498 - ConnectorLVDS<br>
+                    [1] busId: 0x05, pipe: 9, type: 0x00000400, flags: 0x000003C7 - ConnectorDP<br>
+                    [2] busId: 0x04, pipe: 10, type: 0x00000400, flags: 0x000003C7 - ConnectorDP<br>
+                    00000800 02000000 98040000<br>
+                    01050900 00040000 C7030000<br>
+                    02040A00 00040000 C7030000<br>
+                    <br>
+                    ID: 193B0005, STOLEN: 34 MB, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x0023130A<br>
+                    TOTAL STOLEN: 35 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 137 MB, MAX OVERALL: 138 MB (145244160 bytes)<br>
+                    Model name: Intel Iris Pro Graphics 580<br>
+                    Camellia: CamelliaDisabled (0), Freq: 1388 Hz, FreqMax: 1388 Hz<br>
+                    Mobile: 1, PipeCount: 3, PortCount: 4, FBMemoryCount: 4<br>
+                    [0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000098 - ConnectorLVDS<br>
+                    [1] busId: 0x05, pipe: 9, type: 0x00000400, flags: 0x000001C7 - ConnectorDP<br>
+                    [2] busId: 0x04, pipe: 10, type: 0x00000400, flags: 0x000001C7 - ConnectorDP<br>
+                    [3] busId: 0x06, pipe: 10, type: 0x00000400, flags: 0x000001C7 - ConnectorDP<br>
+                    00000800 02000000 98000000<br>
+                    01050900 00040000 C7010000<br>
+                    02040A00 00040000 C7010000<br>
+                    03060A00 00040000 C7010000<br>
+                    <br>
+                    ID: 191B0006, STOLEN: 38 MB, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x00131302<br>
+                    TOTAL STOLEN: 39 MB, TOTAL CURSOR: 512 KB, MAX STOLEN: 39 MB, MAX OVERALL: 39 MB (41422848 bytes)<br>
+                    Model name: Intel HD Graphics 530<br>
+                    Camellia: CamelliaV3 (3), Freq: 1388 Hz, FreqMax: 1388 Hz<br>
+                    Mobile: 1, PipeCount: 1, PortCount: 1, FBMemoryCount: 1<br>
+                    [0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000498 - ConnectorLVDS<br>
+                    00000800 02000000 98040000<br>
+                    <br>
+                    ID: 19260007, STOLEN: 34 MB, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x00031302<br>
+                    TOTAL STOLEN: 35 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 103 MB, MAX OVERALL: 104 MB (109588480 bytes)<br>
+                    Model name: Intel Iris Pro Graphics 580<br>
+                    Camellia: CamelliaDisabled (0), Freq: 1388 Hz, FreqMax: 1388 Hz<br>
+                    Mobile: 1, PipeCount: 3, PortCount: 3, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000098 - ConnectorLVDS<br>
+                    [1] busId: 0x05, pipe: 9, type: 0x00000400, flags: 0x000001C7 - ConnectorDP<br>
+                    [2] busId: 0x04, pipe: 10, type: 0x00000400, flags: 0x000001C7 - ConnectorDP<br>
+                    00000800 02000000 98000000<br>
+                    01050900 00040000 C7010000<br>
+                    02040A00 00040000 C7010000<br>
+                    <br>
+                    Note, that without AAPL,ig-platform-id the following ID is assumed: 19120000<br><br>
+
+                    Рекомендуемые фреймы: десктоп 0x19120000 (по умолчанию); ноутбук 0x19160000 (по умолчанию).
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingSix">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        Kaby Lake
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                <div class="card-body" style="text-align: left;">
+                    Поддерживаются, начиная с macOS 10.12.6<br><br>
+                    Список фреймов ig-platform-id:<br>
+                    0x591E0000 (mobile, 3 connectors, no fbmem, 35 MB)<br>
+                    0x59160000 (mobile, 3 connectors, no fbmem, 35 MB)<br>
+                    0x59230000 (desktop, 3 connectors, no fbmem, 39 MB)<br>
+                    0x59260000 (desktop, 3 connectors, no fbmem, 39 MB)<br>
+                    0x59270000 (desktop, 3 connectors, no fbmem, 39 MB)<br>
+                    0x59270009 (mobile, 3 connectors, no fbmem, 39 MB)<br>
+                    0x59120000 (desktop, 3 connectors, no fbmem, 39 MB)<br>
+                    0x591B0000 (mobile, 3 connectors, 39 MB)<br>
+                    0x591E0001 (mobile, 3 connectors, no fbmem, 39 MB)<br>
+                    0x59180002 (mobile, 0 connectors, no fbmem, 1 MB)<br>
+                    0x59120003 (mobile, 0 connectors, no fbmem, 1 MB)<br>
+                    0x59260007 (desktop, 3 connectors, 79 MB)<br>
+                    0x59270004 (mobile, 3 connectors, no fbmem, 58 MB)<br>
+                    0x59260002 (mobile, 3 connectors, no fbmem, 58 MB)<br>
+                    0x591B0006 (mobile, 1 connectors, no fbmem, 39 MB)<br><br>
+
+                    AppleIntelKBLGraphicsFramebuffer.kext<br>
+                    <br>
+                    ID: 591E0000, STOLEN: 34 MB, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x0000078B<br>
+                    TOTAL STOLEN: 35 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 103 MB, MAX OVERALL: 104 MB (109588480 bytes)<br>
+                    Model name: Intel HD Graphics KBL CRB<br>
+                    Camellia: CamelliaDisabled (0), Freq: 1388 Hz, FreqMax: 1388 Hz<br>
+                    Mobile: 1, PipeCount: 3, PortCount: 3, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000098 - ConnectorLVDS<br>
+                    [1] busId: 0x05, pipe: 9, type: 0x00000400, flags: 0x00000187 - ConnectorDP<br>
+                    [2] busId: 0x04, pipe: 10, type: 0x00000400, flags: 0x00000187 - ConnectorDP<br>
+                    00000800 02000000 98000000<br>
+                    01050900 00040000 87010000<br>
+                    02040A00 00040000 87010000<br>
+                    <br>
+                    ID: 87C00000, STOLEN: 34 MB, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x0000078B<br>
+                    TOTAL STOLEN: 35 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 103 MB, MAX OVERALL: 104 MB (109588480 bytes)<br>
+                    Model name: Intel HD Graphics KBL CRB<br>
+                    Camellia: CamelliaDisabled (0), Freq: 1388 Hz, FreqMax: 1388 Hz<br>
+                    Mobile: 1, PipeCount: 3, PortCount: 3, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000098 - ConnectorLVDS<br>
+                    [1] busId: 0x05, pipe: 9, type: 0x00000400, flags: 0x00000187 - ConnectorDP<br>
+                    [2] busId: 0x04, pipe: 10, type: 0x00000400, flags: 0x00000187 - ConnectorDP<br>
+                    00000800 02000000 98000000<br>
+                    01050900 00040000 87010000<br>
+                    02040A00 00040000 87010000<br>
+                    <br>
+                    ID: 59160000, STOLEN: 34 MB, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x00000B0B<br>
+                    TOTAL STOLEN: 35 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 103 MB, MAX OVERALL: 104 MB (109588480 bytes)<br>
+                    Model name: Intel HD Graphics KBL CRB<br>
+                    Camellia: CamelliaDisabled (0), Freq: 1388 Hz, FreqMax: 1388 Hz<br>
+                    Mobile: 1, PipeCount: 3, PortCount: 3, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000098 - ConnectorLVDS<br>
+                    [1] busId: 0x05, pipe: 9, type: 0x00000400, flags: 0x00000187 - ConnectorDP<br>
+                    [2] busId: 0x04, pipe: 10, type: 0x00000800, flags: 0x00000187 - ConnectorHDMI<br>
+                    00000800 02000000 98000000<br>
+                    01050900 00040000 87010000<br>
+                    02040A00 00080000 87010000<br>
+                    <br>
+                    ID: 59230000, STOLEN: 38 MB, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x00030B8B<br>
+                    TOTAL STOLEN: 39 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 115 MB, MAX OVERALL: 116 MB (122171392 bytes)<br>
+                    Model name: Intel HD Graphics KBL CRB<br>
+                    Camellia: CamelliaDisabled (0), Freq: 1388 Hz, FreqMax: 1388 Hz<br>
+                    Mobile: 0, PipeCount: 3, PortCount: 3, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000098 - ConnectorLVDS<br>
+                    [1] busId: 0x05, pipe: 9, type: 0x00000400, flags: 0x00000187 - ConnectorDP<br>
+                    [2] busId: 0x04, pipe: 10, type: 0x00000400, flags: 0x00000187 - ConnectorDP<br>
+                    00000800 02000000 98000000<br>
+                    01050900 00040000 87010000<br>
+                    02040A00 00040000 87010000<br>
+                    <br>
+                    ID: 59260000, STOLEN: 38 MB, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x00030B8B<br>
+                    TOTAL STOLEN: 39 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 115 MB, MAX OVERALL: 116 MB (122171392 bytes)<br>
+                    Model name: Intel HD Graphics KBL CRB<br>
+                    Camellia: CamelliaDisabled (0), Freq: 1388 Hz, FreqMax: 1388 Hz<br>
+                    Mobile: 0, PipeCount: 3, PortCount: 3, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000098 - ConnectorLVDS<br>
+                    [1] busId: 0x05, pipe: 9, type: 0x00000400, flags: 0x00000187 - ConnectorDP<br>
+                    [2] busId: 0x04, pipe: 10, type: 0x00000400, flags: 0x00000187 - ConnectorDP<br>
+                    00000800 02000000 98000000<br>
+                    01050900 00040000 87010000<br>
+                    02040A00 00040000 87010000<br>
+                    <br>
+                    ID: 59270000, STOLEN: 38 MB, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x00030B8B<br>
+                    TOTAL STOLEN: 39 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 115 MB, MAX OVERALL: 116 MB (122171392 bytes)<br>
+                    Model name: Intel HD Graphics KBL CRB<br>
+                    Camellia: CamelliaDisabled (0), Freq: 1388 Hz, FreqMax: 1388 Hz<br>
+                    Mobile: 0, PipeCount: 3, PortCount: 3, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000098 - ConnectorLVDS<br>
+                    [1] busId: 0x05, pipe: 9, type: 0x00000400, flags: 0x00000187 - ConnectorDP<br>
+                    [2] busId: 0x04, pipe: 10, type: 0x00000400, flags: 0x00000187 - ConnectorDP<br>
+                    00000800 02000000 98000000<br>
+                    01050900 00040000 87010000<br>
+                    02040A00 00040000 87010000<br>
+                    <br>
+                    ID: 59270009, STOLEN: 38 MB, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x00830B0A<br>
+                    TOTAL STOLEN: 39 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 115 MB, MAX OVERALL: 116 MB (122171392 bytes)<br>
+                    Model name: Intel HD Graphics KBL CRB<br>
+                    Camellia: CamelliaV3 (3), Freq: 1388 Hz, FreqMax: 1388 Hz<br>
+                    Mobile: 1, PipeCount: 3, PortCount: 3, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000098 - ConnectorLVDS<br>
+                    [1] busId: 0x05, pipe: 9, type: 0x00000400, flags: 0x000001C7 - ConnectorDP<br>
+                    [2] busId: 0x04, pipe: 10, type: 0x00000400, flags: 0x000001C7 - ConnectorDP<br>
+                    00000800 02000000 98000000<br>
+                    01050900 00040000 C7010000<br>
+                    02040A00 00040000 C7010000<br>
+                    <br>
+                    ID: 59160009, STOLEN: 38 MB, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x00830B0A<br>
+                    TOTAL STOLEN: 39 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 115 MB, MAX OVERALL: 116 MB (122171392 bytes)<br>
+                    Model name: Intel HD Graphics KBL CRB<br>
+                    Camellia: CamelliaV3 (3), Freq: 1388 Hz, FreqMax: 1388 Hz<br>
+                    Mobile: 1, PipeCount: 3, PortCount: 3, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000098 - ConnectorLVDS<br>
+                    [1] busId: 0x05, pipe: 9, type: 0x00000400, flags: 0x000001C7 - ConnectorDP<br>
+                    [2] busId: 0x04, pipe: 10, type: 0x00000400, flags: 0x000001C7 - ConnectorDP<br>
+                    00000800 02000000 98000000<br>
+                    01050900 00040000 C7010000<br>
+                    02040A00 00040000 C7010000<br>
+                    <br>
+                    ID: 59120000, STOLEN: 38 MB, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x0000110B<br>
+                    TOTAL STOLEN: 39 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 115 MB, MAX OVERALL: 116 MB (122171392 bytes)<br>
+                    Model name: Intel HD Graphics KBL CRB<br>
+                    Camellia: CamelliaDisabled (0), Freq: 1388 Hz, FreqMax: 1388 Hz<br>
+                    Mobile: 0, PipeCount: 3, PortCount: 3, FBMemoryCount: 3<br>
+                    [1] busId: 0x05, pipe: 9, type: 0x00000400, flags: 0x00000187 - ConnectorDP<br>
+                    [2] busId: 0x04, pipe: 10, type: 0x00000400, flags: 0x00000187 - ConnectorDP<br>
+                    [3] busId: 0x06, pipe: 10, type: 0x00000400, flags: 0x00000187 - ConnectorDP<br>
+                    01050900 00040000 87010000<br>
+                    02040A00 00040000 87010000<br>
+                    03060A00 00040000 87010000<br>
+                    <br>
+                    ID: 591B0000, STOLEN: 38 MB, FBMEM: 21 MB, VRAM: 1536 MB, Flags: 0x0000130B<br>
+                    TOTAL STOLEN: 39 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 136 MB, MAX OVERALL: 137 MB (144191488 bytes)<br>
+                    Model name: Intel HD Graphics KBL CRB<br>
+                    Camellia: CamelliaDisabled (0), Freq: 1388 Hz, FreqMax: 1388 Hz<br>
+                    Mobile: 1, PipeCount: 3, PortCount: 3, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000098 - ConnectorLVDS<br>
+                    [2] busId: 0x04, pipe: 10, type: 0x00000800, flags: 0x00000187 - ConnectorHDMI<br>
+                    [3] busId: 0x06, pipe: 10, type: 0x00000400, flags: 0x00000187 - ConnectorDP<br>
+                    00000800 02000000 98000000<br>
+                    02040A00 00080000 87010000<br>
+                    03060A00 00040000 87010000<br>
+                    <br>
+                    ID: 591E0001, STOLEN: 38 MB, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x002B0702<br>
+                    TOTAL STOLEN: 39 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 115 MB, MAX OVERALL: 116 MB (122171392 bytes)<br>
+                    Model name: Intel HD Graphics 615<br>
+                    Camellia: CamelliaV2 (2), Freq: 1388 Hz, FreqMax: 1388 Hz<br>
+                    Mobile: 1, PipeCount: 3, PortCount: 3, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000098 - ConnectorLVDS<br>
+                    [1] busId: 0x05, pipe: 9, type: 0x00000400, flags: 0x00000181 - ConnectorDP<br>
+                    [2] busId: 0x04, pipe: 10, type: 0x00000400, flags: 0x00000181 - ConnectorDP<br>
+                    00000800 02000000 98000000<br>
+                    01050900 00040000 81010000<br>
+                    02040A00 00040000 81010000<br>
+                    <br>
+                    ID: 59180002, STOLEN: 0 bytes, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x00001000<br>
+                    TOTAL STOLEN: 1 MB, TOTAL CURSOR: 0 bytes, MAX STOLEN: 1 MB, MAX OVERALL: 1 MB<br>
+                    Model name: Intel HD Graphics KBL<br>
+                    Camellia: CamelliaDisabled (0), Freq: 1388 Hz, FreqMax: 1388 Hz<br>
+                    Mobile: 1, PipeCount: 0, PortCount: 0, FBMemoryCount: 0<br>
+                    <br>
+                    ID: 59120003, STOLEN: 0 bytes, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x00001000<br>
+                    TOTAL STOLEN: 1 MB, TOTAL CURSOR: 0 bytes, MAX STOLEN: 1 MB, MAX OVERALL: 1 MB<br>
+                    Model name: Intel HD Graphics KBL<br>
+                    Camellia: CamelliaDisabled (0), Freq: 1388 Hz, FreqMax: 1388 Hz<br>
+                    Mobile: 1, PipeCount: 0, PortCount: 0, FBMemoryCount: 0<br>
+                    <br>
+                    ID: 59260007, STOLEN: 57 MB, FBMEM: 21 MB, VRAM: 1536 MB, Flags: 0x00830B0E<br>
+                    TOTAL STOLEN: 79 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 193 MB, MAX OVERALL: 194 MB (203960320 bytes)<br>
+                    Model name: Intel Iris Plus Graphics 640<br>
+                    Camellia: CamelliaDisabled (0), Freq: 1388 Hz, FreqMax: 1388 Hz<br>
+                    Mobile: 0, PipeCount: 3, PortCount: 3, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000098 - ConnectorLVDS<br>
+                    [1] busId: 0x05, pipe: 9, type: 0x00000400, flags: 0x000003C7 - ConnectorDP<br>
+                    [2] busId: 0x04, pipe: 10, type: 0x00000400, flags: 0x000003C7 - ConnectorDP<br>
+                    00000800 02000000 98000000<br>
+                    01050900 00040000 C7030000<br>
+                    02040A00 00040000 C7030000<br>
+                    <br>
+                    ID: 59270004, STOLEN: 57 MB, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x00E30B0A<br>
+                    TOTAL STOLEN: 58 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 172 MB, MAX OVERALL: 173 MB (181940224 bytes)<br>
+                    Model name: Intel Iris Plus Graphics 650<br>
+                    Camellia: CamelliaV3 (3), Freq: 1388 Hz, FreqMax: 1388 Hz<br>
+                    Mobile: 1, PipeCount: 3, PortCount: 3, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000498 - ConnectorLVDS<br>
+                    [1] busId: 0x05, pipe: 9, type: 0x00000400, flags: 0x000003C7 - ConnectorDP<br>
+                    [2] busId: 0x04, pipe: 10, type: 0x00000400, flags: 0x000003C7 - ConnectorDP<br>
+                    00000800 02000000 98040000<br>
+                    01050900 00040000 C7030000<br>
+                    02040A00 00040000 C7030000<br>
+                    <br>
+                    ID: 59260002, STOLEN: 57 MB, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x00E30B0A<br>
+                    TOTAL STOLEN: 58 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 172 MB, MAX OVERALL: 173 MB (181940224 bytes)<br>
+                    Model name: Intel Iris Plus Graphics 640<br>
+                    Camellia: CamelliaV3 (3), Freq: 1388 Hz, FreqMax: 1388 Hz<br>
+                    Mobile: 1, PipeCount: 3, PortCount: 3, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000498 - ConnectorLVDS<br>
+                    [1] busId: 0x05, pipe: 9, type: 0x00000400, flags: 0x000003C7 - ConnectorDP<br>
+                    [2] busId: 0x04, pipe: 10, type: 0x00000400, flags: 0x000003C7 - ConnectorDP<br>
+                    00000800 02000000 98040000<br>
+                    01050900 00040000 C7030000<br>
+                    02040A00 00040000 C7030000<br>
+                    <br>
+                    ID: 87C00005, STOLEN: 57 MB, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x00A30702<br>
+                    TOTAL STOLEN: 58 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 172 MB, MAX OVERALL: 173 MB (181940224 bytes)<br>
+                    Model name: Intel UHD Graphics 617<br>
+                    Camellia: CamelliaV3 (3), Freq: 1388 Hz, FreqMax: 1388 Hz<br>
+                    Mobile: 1, PipeCount: 3, PortCount: 3, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000098 - ConnectorLVDS<br>
+                    [1] busId: 0x05, pipe: 9, type: 0x00000400, flags: 0x000003C7 - ConnectorDP<br>
+                    [2] busId: 0x04, pipe: 10, type: 0x00000400, flags: 0x000003C7 - ConnectorDP<br>
+                    00000800 02000000 98000000<br>
+                    01050900 00040000 C7030000<br>
+                    02040A00 00040000 C7030000<br>
+                    <br>
+                    ID: 591C0005, STOLEN: 57 MB, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x00A30702<br>
+                    TOTAL STOLEN: 58 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 172 MB, MAX OVERALL: 173 MB (181940224 bytes)<br>
+                    Model name: Intel UHD Graphics 617<br>
+                    Camellia: CamelliaV3 (3), Freq: 1388 Hz, FreqMax: 1388 Hz<br>
+                    Mobile: 1, PipeCount: 3, PortCount: 3, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000098 - ConnectorLVDS<br>
+                    [1] busId: 0x05, pipe: 9, type: 0x00000400, flags: 0x000003C7 - ConnectorDP<br>
+                    [2] busId: 0x04, pipe: 10, type: 0x00000400, flags: 0x000003C7 - ConnectorDP<br>
+                    00000800 02000000 98000000<br>
+                    01050900 00040000 C7030000<br>
+                    02040A00 00040000 C7030000<br>
+                    <br>
+                    ID: 591B0006, STOLEN: 38 MB, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x00031302<br>
+                    TOTAL STOLEN: 39 MB, TOTAL CURSOR: 512 KB, MAX STOLEN: 39 MB, MAX OVERALL: 39 MB (41422848 bytes)<br>
+                    Model name: Intel HD Graphics 630<br>
+                    Camellia: CamelliaV3 (3), Freq: 1388 Hz, FreqMax: 1388 Hz<br>
+                    Mobile: 1, PipeCount: 1, PortCount: 1, FBMemoryCount: 1<br>
+                    [0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000498 - ConnectorLVDS<br>
+                    00000800 02000000 98040000<br>
+                    <br>
+                    Note, that without AAPL,ig-platform-id the following ID is assumed: 59160000<br><br>
+
+                    Рекомендуемые фреймы: десктоп 0x59160000 (по умолчанию), 0x59120000 (рекомендуется); ноутбук 0x591B0000 (по умолчанию).
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingSeven">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                        Coffee Lake, Comet Lake
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
+                <div class="card-body" style="text-align: left;">
+                    Поддерживаются, начиная с macOS 10.14<br><br>
+                    Список фреймов ig-platform-id:<br>
+                    0x3EA50009 (mobile, 3 connectors, no fbmem, 58 MB)<br>
+                    0x3E920009 (mobile, 3 connectors, no fbmem, 58 MB)<br>
+                    0x3E9B0009 (mobile, 3 connectors, no fbmem, 58 MB)<br>
+                    0x3EA50000 (mobile, 3 connectors, no fbmem, 58 MB)<br>
+                    0x3E920000 (mobile, 3 connectors, no fbmem, 58 MB)<br>
+                    0x3E000000 (mobile, 3 connectors, no fbmem, 58 MB)<br>
+                    0x3E9B0000 (mobile, 3 connectors, no fbmem, 58 MB)<br>
+                    0x3EA50004 (mobile, 3 connectors, no fbmem, 58 MB)<br>
+                    0x3EA50005 (mobile, 3 connectors, no fbmem, 58 MB)<br>
+                    0x3EA60005 (mobile, 3 connectors, no fbmem, 58 MB)<br>
+                    0x3E9B0006 (mobile, 1 connectors, no fbmem, 39 MB)<br>
+                    0x3E9B0008 (mobile, 1 connectors, no fbmem, 58 MB)<br>
+                    0x3E9B0007 (desktop, 3 connectors, no fbmem, 58 MB)<br>
+                    0x3E920003 (desktop, 0 connectors, no fbmem, 1 MB)<br>
+                    0x3E910003 (desktop, 0 connectors, no fbmem, 1 MB)<br>
+                    0x3E980003 (desktop, 0 connectors, no fbmem, 1 MB)<br><br>
+
+                    AppleIntelCFLGraphicsFramebuffer.kext<br>
+                    <br>
+                    ID: 3EA50009, STOLEN: 57 MB, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x00830B0A<br>
+                    TOTAL STOLEN: 58 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 172 MB, MAX OVERALL: 173 MB (181940224 bytes)<br>
+                    Model name: Intel HD Graphics CFL CRB<br>
+                    Camellia: CamelliaV3 (3), Freq: 0 Hz, FreqMax: 0 Hz<br>
+                    Mobile: 1, PipeCount: 3, PortCount: 3, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000098 - ConnectorLVDS<br>
+                    [1] busId: 0x05, pipe: 9, type: 0x00000400, flags: 0x000001C7 - ConnectorDP<br>
+                    [2] busId: 0x04, pipe: 10, type: 0x00000400, flags: 0x000001C7 - ConnectorDP<br>
+                    00000800 02000000 98000000<br>
+                    01050900 00040000 C7010000<br>
+                    02040A00 00040000 C7010000<br>
+                    <br>
+                    ID: 3E920009, STOLEN: 57 MB, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x0083130A<br>
+                    TOTAL STOLEN: 58 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 172 MB, MAX OVERALL: 173 MB (181940224 bytes)<br>
+                    Model name: Intel HD Graphics CFL CRB<br>
+                    Camellia: CamelliaV3 (3), Freq: 0 Hz, FreqMax: 0 Hz<br>
+                    Mobile: 1, PipeCount: 3, PortCount: 3, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000098 - ConnectorLVDS<br>
+                    [255] busId: 0x00, pipe: 0, type: 0x00000001, flags: 0x00000020 - ConnectorDummy<br>
+                    [255] busId: 0x00, pipe: 0, type: 0x00000001, flags: 0x00000020 - ConnectorDummy<br>
+                    00000800 02000000 98000000<br>
+                    FF000000 01000000 20000000<br>
+                    FF000000 01000000 20000000<br>
+                    <br>
+                    ID: 3E9B0009, STOLEN: 57 MB, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x0083130A<br>
+                    TOTAL STOLEN: 58 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 172 MB, MAX OVERALL: 173 MB (181940224 bytes)<br>
+                    Model name: Intel HD Graphics CFL CRB<br>
+                    Camellia: CamelliaV3 (3), Freq: 0 Hz, FreqMax: 0 Hz<br>
+                    Mobile: 1, PipeCount: 3, PortCount: 3, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000098 - ConnectorLVDS<br>
+                    [1] busId: 0x05, pipe: 9, type: 0x00000400, flags: 0x00000187 - ConnectorDP<br>
+                    [2] busId: 0x04, pipe: 10, type: 0x00000400, flags: 0x00000187 - ConnectorDP<br>
+                    00000800 02000000 98000000<br>
+                    01050900 00040000 87010000<br>
+                    02040A00 00040000 87010000<br>
+                    <br>
+                    ID: 3EA50000, STOLEN: 57 MB, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x00030B0B<br>
+                    TOTAL STOLEN: 58 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 172 MB, MAX OVERALL: 173 MB (181940224 bytes)<br>
+                    Model name: Intel HD Graphics CFL CRB<br>
+                    Camellia: CamelliaDisabled (0), Freq: 0 Hz, FreqMax: 0 Hz<br>
+                    Mobile: 1, PipeCount: 3, PortCount: 3, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000098 - ConnectorLVDS<br>
+                    [1] busId: 0x05, pipe: 9, type: 0x00000400, flags: 0x00000187 - ConnectorDP<br>
+                    [2] busId: 0x04, pipe: 10, type: 0x00000400, flags: 0x00000187 - ConnectorDP<br>
+                    00000800 02000000 98000000<br>
+                    01050900 00040000 87010000<br>
+                    02040A00 00040000 87010000<br>
+                    <br>
+                    ID: 3E920000, STOLEN: 57 MB, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x0000130B<br>
+                    TOTAL STOLEN: 58 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 172 MB, MAX OVERALL: 173 MB (181940224 bytes)<br>
+                    Model name: Intel HD Graphics CFL CRB<br>
+                    Camellia: CamelliaDisabled (0), Freq: 0 Hz, FreqMax: 0 Hz<br>
+                    Mobile: 1, PipeCount: 3, PortCount: 3, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000098 - ConnectorLVDS<br>
+                    [1] busId: 0x05, pipe: 9, type: 0x00000400, flags: 0x00000187 - ConnectorDP<br>
+                    [2] busId: 0x04, pipe: 10, type: 0x00000400, flags: 0x00000187 - ConnectorDP<br>
+                    00000800 02000000 98000000<br>
+                    01050900 00040000 87010000<br>
+                    02040A00 00040000 87010000<br>
+                    <br>
+                    ID: 3E000000, STOLEN: 57 MB, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x0000130B<br>
+                    TOTAL STOLEN: 58 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 172 MB, MAX OVERALL: 173 MB (181940224 bytes)<br>
+                    Model name: Intel HD Graphics CFL CRB<br>
+                    Camellia: CamelliaDisabled (0), Freq: 0 Hz, FreqMax: 0 Hz<br>
+                    Mobile: 1, PipeCount: 3, PortCount: 3, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000098 - ConnectorLVDS<br>
+                    [1] busId: 0x05, pipe: 9, type: 0x00000400, flags: 0x00000187 - ConnectorDP<br>
+                    [2] busId: 0x04, pipe: 10, type: 0x00000400, flags: 0x00000187 - ConnectorDP<br>
+                    00000800 02000000 98000000<br>
+                    01050900 00040000 87010000<br>
+                    02040A00 00040000 87010000<br>
+                    <br>
+                    ID: 3E9B0000, STOLEN: 57 MB, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x0000130B<br>
+                    TOTAL STOLEN: 58 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 172 MB, MAX OVERALL: 173 MB (181940224 bytes)<br>
+                    Model name: Intel HD Graphics CFL CRB<br>
+                    Camellia: CamelliaDisabled (0), Freq: 0 Hz, FreqMax: 0 Hz<br>
+                    Mobile: 1, PipeCount: 3, PortCount: 3, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000098 - ConnectorLVDS<br>
+                    [1] busId: 0x05, pipe: 9, type: 0x00000400, flags: 0x00000187 - ConnectorDP<br>
+                    [2] busId: 0x04, pipe: 10, type: 0x00000400, flags: 0x00000187 - ConnectorDP<br>
+                    00000800 02000000 98000000<br>
+                    01050900 00040000 87010000<br>
+                    02040A00 00040000 87010000<br>
+                    <br>
+                    ID: 3EA50004, STOLEN: 57 MB, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x00E30B0A<br>
+                    TOTAL STOLEN: 58 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 172 MB, MAX OVERALL: 173 MB (181940224 bytes)<br>
+                    Model name: Intel Iris Plus Graphics 655<br>
+                    Camellia: CamelliaV3 (3), Freq: 0 Hz, FreqMax: 0 Hz<br>
+                    Mobile: 1, PipeCount: 3, PortCount: 3, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000498 - ConnectorLVDS<br>
+                    [1] busId: 0x05, pipe: 9, type: 0x00000400, flags: 0x000003C7 - ConnectorDP<br>
+                    [2] busId: 0x04, pipe: 10, type: 0x00000400, flags: 0x000003C7 - ConnectorDP<br>
+                    00000800 02000000 98040000<br>
+                    01050900 00040000 C7030000<br>
+                    02040A00 00040000 C7030000<br>
+                    <br>
+                    ID: 3EA50005, STOLEN: 57 MB, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x00E30B0A<br>
+                    TOTAL STOLEN: 58 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 172 MB, MAX OVERALL: 173 MB (181940224 bytes)<br>
+                    Model name: Intel Iris Plus Graphics 655<br>
+                    Camellia: CamelliaV3 (3), Freq: 0 Hz, FreqMax: 0 Hz<br>
+                    Mobile: 1, PipeCount: 3, PortCount: 3, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000498 - ConnectorLVDS<br>
+                    [1] busId: 0x05, pipe: 9, type: 0x00000400, flags: 0x000003C7 - ConnectorDP<br>
+                    [2] busId: 0x04, pipe: 10, type: 0x00000400, flags: 0x000003C7 - ConnectorDP<br>
+                    00000800 02000000 98040000<br>
+                    01050900 00040000 C7030000<br>
+                    02040A00 00040000 C7030000<br>
+                    <br>
+                    ID: 3EA60005, STOLEN: 57 MB, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x00E30B0A<br>
+                    TOTAL STOLEN: 58 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 172 MB, MAX OVERALL: 173 MB (181940224 bytes)<br>
+                    Model name: Intel Iris Plus Graphics 645<br>
+                    Camellia: CamelliaV3 (3), Freq: 0 Hz, FreqMax: 0 Hz<br>
+                    Mobile: 1, PipeCount: 3, PortCount: 3, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000498 - ConnectorLVDS<br>
+                    [1] busId: 0x05, pipe: 9, type: 0x00000400, flags: 0x000003C7 - ConnectorDP<br>
+                    [2] busId: 0x04, pipe: 10, type: 0x00000400, flags: 0x000003C7 - ConnectorDP<br>
+                    00000800 02000000 98040000<br>
+                    01050900 00040000 C7030000<br>
+                    02040A00 00040000 C7030000<br>
+                    <br>
+                    ID: 3E9B0006, STOLEN: 38 MB, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x00131302<br>
+                    TOTAL STOLEN: 39 MB, TOTAL CURSOR: 512 KB, MAX STOLEN: 39 MB, MAX OVERALL: 39 MB (41422848 bytes)<br>
+                    Model name: Intel UHD Graphics 630<br>
+                    Camellia: CamelliaV3 (3), Freq: 0 Hz, FreqMax: 0 Hz<br>
+                    Mobile: 1, PipeCount: 1, PortCount: 1, FBMemoryCount: 1<br>
+                    [0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000498 - ConnectorLVDS<br>
+                    00000800 02000000 98040000<br>
+                    <br>
+                    ID: 3E9B0008, STOLEN: 57 MB, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x00031302<br>
+                    TOTAL STOLEN: 58 MB, TOTAL CURSOR: 512 KB, MAX STOLEN: 58 MB, MAX OVERALL: 58 MB (61345792 bytes)<br>
+                    Model name: Intel UHD Graphics 630<br>
+                    Camellia: CamelliaV3 (3), Freq: 0 Hz, FreqMax: 0 Hz<br>
+                    Mobile: 1, PipeCount: 1, PortCount: 1, FBMemoryCount: 1<br>
+                    [0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000098 - ConnectorLVDS<br>
+                    00000800 02000000 98000000<br>
+                    <br>
+                    ID: 3E9B0007, STOLEN: 57 MB, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x00801302<br>
+                    TOTAL STOLEN: 58 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 172 MB, MAX OVERALL: 173 MB (181940224 bytes)<br>
+                    Model name: Intel UHD Graphics 630<br>
+                    Camellia: CamelliaDisabled (0), Freq: 0 Hz, FreqMax: 0 Hz<br>
+                    Mobile: 0, PipeCount: 3, PortCount: 3, FBMemoryCount: 3<br>
+                    [1] busId: 0x05, pipe: 9, type: 0x00000400, flags: 0x000003C7 - ConnectorDP<br>
+                    [2] busId: 0x04, pipe: 10, type: 0x00000400, flags: 0x000003C7 - ConnectorDP<br>
+                    [3] busId: 0x06, pipe: 8, type: 0x00000400, flags: 0x000003C7 - ConnectorDP<br>
+                    01050900 00040000 C7030000<br>
+                    02040A00 00040000 C7030000<br>
+                    03060800 00040000 C7030000<br>
+                    <br>
+                    ID: 3E920003, STOLEN: 0 bytes, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x00001000<br>
+                    TOTAL STOLEN: 1 MB, TOTAL CURSOR: 0 bytes, MAX STOLEN: 1 MB, MAX OVERALL: 1 MB<br>
+                    Model name: Intel HD Graphics CFL<br>
+                    Camellia: CamelliaDisabled (0), Freq: 0 Hz, FreqMax: 0 Hz<br>
+                    Mobile: 0, PipeCount: 0, PortCount: 0, FBMemoryCount: 0<br>
+                    <br>
+                    ID: 3E910003, STOLEN: 0 bytes, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x00001000<br>
+                    TOTAL STOLEN: 1 MB, TOTAL CURSOR: 0 bytes, MAX STOLEN: 1 MB, MAX OVERALL: 1 MB<br>
+                    Model name: Intel HD Graphics CFL<br>
+                    Camellia: CamelliaDisabled (0), Freq: 0 Hz, FreqMax: 0 Hz<br>
+                    Mobile: 0, PipeCount: 0, PortCount: 0, FBMemoryCount: 0<br>
+                    <br>
+                    ID: 3E980003, STOLEN: 0 bytes, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x00001000<br>
+                    TOTAL STOLEN: 1 MB, TOTAL CURSOR: 0 bytes, MAX STOLEN: 1 MB, MAX OVERALL: 1 MB<br>
+                    Model name: Intel HD Graphics CFL<br>
+                    Camellia: CamelliaDisabled (0), Freq: 0 Hz, FreqMax: 0 Hz<br>
+                    Mobile: 0, PipeCount: 0, PortCount: 0, FBMemoryCount: 0<br>
+                    <br>
+                    ID: 9BC80003, STOLEN: 0 bytes, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x00001000<br>
+                    TOTAL STOLEN: 1 MB, TOTAL CURSOR: 0 bytes, MAX STOLEN: 1 MB, MAX OVERALL: 1 MB<br>
+                    Model name: Intel HD Graphics CFL<br>
+                    Camellia: CamelliaDisabled (0), Freq: 0 Hz, FreqMax: 0 Hz<br>
+                    Mobile: 0, PipeCount: 0, PortCount: 0, FBMemoryCount: 0<br>
+                    <br>
+                    ID: 9BC50003, STOLEN: 0 bytes, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x00001000<br>
+                    TOTAL STOLEN: 1 MB, TOTAL CURSOR: 0 bytes, MAX STOLEN: 1 MB, MAX OVERALL: 1 MB<br>
+                    Model name: Intel HD Graphics CFL<br>
+                    Camellia: CamelliaDisabled (0), Freq: 0 Hz, FreqMax: 0 Hz<br>
+                    Mobile: 0, PipeCount: 0, PortCount: 0, FBMemoryCount: 0<br>
+                    <br>
+                    ID: 9BC40003, STOLEN: 0 bytes, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x00001000<br>
+                    TOTAL STOLEN: 1 MB, TOTAL CURSOR: 0 bytes, MAX STOLEN: 1 MB, MAX OVERALL: 1 MB<br>
+                    Model name: Intel HD Graphics CFL<br>
+                    Camellia: CamelliaDisabled (0), Freq: 0 Hz, FreqMax: 0 Hz<br>
+                    Mobile: 0, PipeCount: 0, PortCount: 0, FBMemoryCount: 0<br>
+                    <br>
+                    Note, that without AAPL,ig-platform-id the following ID is assumed: 3EA50000<br><br>
+
+                    Рекомендуемые фреймы: десктоп 0x3EA50000 (по умолчанию), 0x3E9B0007 (рекомендуется) ; ноутбук 0x3EA50009 (по умолчанию).<br>
+                    Если используется процессор 9-го поколения Coffee Lake Refresh, то необходима подмена device-id 923E0000 для IGPU. Начиная с 10.14.4 - эта подмена не требуется!<br>
+
+                    Для UHD620 (Whiskey Lake) сделайте подмену device-id A53E0000 для IGPU.
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingEight">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                        Intel Iris Plus (Ice Lake)
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordion">
+                <div class="card-body" style="text-align: left;">
+                    Поддерживаются, начиная с macOS 10.15.4<br><br>
+                    Список фреймов ig-platform-id:<br>
+                    0xFF050000 (mobile, 3 connectors, no fbmem, 193 MB)<br>
+                    0x8A710000 (mobile, 6 connectors, no fbmem, 193 MB)<br>
+                    0x8A700000 (mobile, 6 connectors, no fbmem, 193 MB)<br>
+                    0x8A510000 (mobile, 6 connectors, no fbmem, 193 MB)<br>
+                    0x8A5C0000 (mobile, 6 connectors, no fbmem, 193 MB)<br>
+                    0x8A5D0000 (mobile, 6 connectors, no fbmem, 193 MB)<br>
+                    0x8A520000 (mobile, 6 connectors, no fbmem, 193 MB)<br>
+                    0x8A530000 (mobile, 6 connectors, no fbmem, 193 MB)<br>
+                    0x8A5A0000 (mobile, 6 connectors, no fbmem, 193 MB)<br>
+                    0x8A5B0000 (mobile, 6 connectors, no fbmem, 193 MB)<br>
+                    0x8A710001 (mobile, 5 connectors, no fbmem, 193 MB)<br>
+                    0x8A700001 (mobile, 5 connectors, no fbmem, 193 MB)<br>
+                    0x8A510001 (mobile, 3 connectors, no fbmem, 193 MB)<br>
+                    0x8A5C0001 (mobile, 3 connectors, no fbmem, 193 MB)<br>
+                    0x8A5D0001 (mobile, 3 connectors, no fbmem, 193 MB)<br>
+                    0x8A520001 (mobile, 5 connectors, no fbmem, 193 MB)<br>
+                    0x8A530001 (mobile, 5 connectors, no fbmem, 193 MB)<br>
+                    0x8A5A0001 (mobile, 5 connectors, no fbmem, 193 MB)<br>
+                    0x8A5B0001 (mobile, 5 connectors, no fbmem, 193 MB)<br>
+                    0x8A510002 (mobile, 3 connectors, no fbmem, 193 MB)<br>
+                    0x8A5C0002 (mobile, 3 connectors, no fbmem, 193 MB)<br>
+                    0x8A520002 (mobile, 5 connectors, no fbmem, 193 MB)<br>
+                    0x8A530002 (mobile, 5 connectors, no fbmem, 193 MB)<br><br>
+
+                    AppleIntelICLLPGraphicsFramebuffer.kext<br>
+                    <br>
+                    ID: FF050000, STOLEN: 64 MB, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x00000300<br>
+                    TOTAL STOLEN: 193 MB?, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 193 MB, MAX OVERALL: 194 MB (203960320 bytes)<br>
+                    Model name: Intel HD Graphics ICL SIM<br>
+                    Camellia: CamelliaDisabled (0), Freq: 0 Hz, FreqMax: 0 Hz<br>
+                    Mobile: 1, PipeCount: 3, PortCount: 3, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 0, type: 0x00000002, flags: 0x00000018 - ConnectorLVDS<br>
+                    [1] busId: 0x02, pipe: 1, type: 0x00000400, flags: 0x00000201 - ConnectorDP<br>
+                    [2] busId: 0x09, pipe: 1, type: 0x00000400, flags: 0x00000201 - ConnectorDP<br>
+                    00000000 00000000 00000000 00000000 02000000 18000000<br>
+                    01000000 02000000 01000000 00000000 00040000 01020000<br>
+                    02000000 09000000 01000000 01000000 00040000 01020000<br>
+                    <br>
+                    ID: 8A710000, STOLEN: 64 MB, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x00008301<br>
+                    TOTAL STOLEN: 193 MB?, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 193 MB, MAX OVERALL: 194 MB (203972608 bytes)<br>
+                    Model name: Intel HD Graphics ICL RVP<br>
+                    Camellia: CamelliaDisabled (0), Freq: 0 Hz, FreqMax: 0 Hz<br>
+                    Mobile: 1, PipeCount: 3, PortCount: 6, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 0, type: 0x00000002, flags: 0x00000018 - ConnectorLVDS<br>
+                    [1] busId: 0x02, pipe: 1, type: 0x00000400, flags: 0x00000281 - ConnectorDP<br>
+                    [2] busId: 0x09, pipe: 1, type: 0x00000400, flags: 0x00000281 - ConnectorDP<br>
+                    [3] busId: 0x0A, pipe: 1, type: 0x00000400, flags: 0x00000281 - ConnectorDP<br>
+                    [4] busId: 0x0B, pipe: 1, type: 0x00000400, flags: 0x00000281 - ConnectorDP<br>
+                    [5] busId: 0x0C, pipe: 1, type: 0x00000400, flags: 0x00000281 - ConnectorDP<br>
+                    00000000 00000000 00000000 00000000 02000000 18000000<br>
+                    01000000 02000000 01000000 00000000 00040000 81020000<br>
+                    02000000 09000000 01000000 01000000 00040000 81020000<br>
+                    03000000 0A000000 01000000 01000000 00040000 81020000<br>
+                    04000000 0B000000 01000000 01000000 00040000 81020000<br>
+                    05000000 0C000000 01000000 01000000 00040000 81020000<br>
+                    <br>
+                    ID: 8A700000, STOLEN: 64 MB, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x00018301<br>
+                    TOTAL STOLEN: 193 MB?, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 193 MB, MAX OVERALL: 194 MB (203972608 bytes)<br>
+                    Model name: Intel HD Graphics ICL RVP<br>
+                    Camellia: CamelliaDisabled (0), Freq: 0 Hz, FreqMax: 0 Hz<br>
+                    Mobile: 1, PipeCount: 3, PortCount: 6, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 0, type: 0x00000002, flags: 0x00000018 - ConnectorLVDS<br>
+                    [1] busId: 0x02, pipe: 1, type: 0x00000400, flags: 0x00000281 - ConnectorDP<br>
+                    [2] busId: 0x09, pipe: 1, type: 0x00000400, flags: 0x00000281 - ConnectorDP<br>
+                    [3] busId: 0x0A, pipe: 1, type: 0x00000400, flags: 0x00000281 - ConnectorDP<br>
+                    [4] busId: 0x0B, pipe: 1, type: 0x00000400, flags: 0x00000281 - ConnectorDP<br>
+                    [5] busId: 0x0C, pipe: 1, type: 0x00000400, flags: 0x00000281 - ConnectorDP<br>
+                    00000000 00000000 00000000 00000000 02000000 18000000<br>
+                    01000000 02000000 01000000 00000000 00040000 81020000<br>
+                    02000000 09000000 01000000 01000000 00040000 81020000<br>
+                    03000000 0A000000 01000000 01000000 00040000 81020000<br>
+                    04000000 0B000000 01000000 01000000 00040000 81020000<br>
+                    05000000 0C000000 01000000 01000000 00040000 81020000<br>
+                    <br>
+                    ID: 8A510000, STOLEN: 64 MB, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x00008305<br>
+                    TOTAL STOLEN: 193 MB?, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 193 MB, MAX OVERALL: 194 MB (203972608 bytes)<br>
+                    Model name: Intel HD Graphics ICL RVP<br>
+                    Camellia: CamelliaDisabled (0), Freq: 0 Hz, FreqMax: 0 Hz<br>
+                    Mobile: 1, PipeCount: 3, PortCount: 6, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 0, type: 0x00000002, flags: 0x00000018 - ConnectorLVDS<br>
+                    [1] busId: 0x02, pipe: 1, type: 0x00000400, flags: 0x00000281 - ConnectorDP<br>
+                    [2] busId: 0x09, pipe: 1, type: 0x00000400, flags: 0x00000281 - ConnectorDP<br>
+                    [3] busId: 0x0A, pipe: 1, type: 0x00000400, flags: 0x00000281 - ConnectorDP<br>
+                    [4] busId: 0x0B, pipe: 1, type: 0x00000400, flags: 0x00000281 - ConnectorDP<br>
+                    [5] busId: 0x0C, pipe: 1, type: 0x00000400, flags: 0x00000281 - ConnectorDP<br>
+                    00000000 00000000 00000000 00000000 02000000 18000000<br>
+                    01000000 02000000 01000000 00000000 00040000 81020000<br>
+                    02000000 09000000 01000000 01000000 00040000 81020000<br>
+                    03000000 0A000000 01000000 01000000 00040000 81020000<br>
+                    04000000 0B000000 01000000 01000000 00040000 81020000<br>
+                    05000000 0C000000 01000000 01000000 00040000 81020000<br>
+                    <br>
+                    ID: 8A5C0000, STOLEN: 64 MB, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x00008305<br>
+                    TOTAL STOLEN: 193 MB?, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 193 MB, MAX OVERALL: 194 MB (203972608 bytes)<br>
+                    Model name: Intel HD Graphics ICL RVP<br>
+                    Camellia: CamelliaDisabled (0), Freq: 0 Hz, FreqMax: 0 Hz<br>
+                    Mobile: 1, PipeCount: 3, PortCount: 6, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 0, type: 0x00000002, flags: 0x00000018 - ConnectorLVDS<br>
+                    [1] busId: 0x02, pipe: 1, type: 0x00000400, flags: 0x00000281 - ConnectorDP<br>
+                    [2] busId: 0x09, pipe: 1, type: 0x00000400, flags: 0x00000281 - ConnectorDP<br>
+                    [3] busId: 0x0A, pipe: 1, type: 0x00000400, flags: 0x00000281 - ConnectorDP<br>
+                    [4] busId: 0x0B, pipe: 1, type: 0x00000400, flags: 0x00000281 - ConnectorDP<br>
+                    [5] busId: 0x0C, pipe: 1, type: 0x00000400, flags: 0x00000281 - ConnectorDP<br>
+                    00000000 00000000 00000000 00000000 02000000 18000000<br>
+                    01000000 02000000 01000000 00000000 00040000 81020000<br>
+                    02000000 09000000 01000000 01000000 00040000 81020000<br>
+                    03000000 0A000000 01000000 01000000 00040000 81020000<br>
+                    04000000 0B000000 01000000 01000000 00040000 81020000<br>
+                    05000000 0C000000 01000000 01000000 00040000 81020000<br>
+                    <br>
+                    ID: 8A5D0000, STOLEN: 64 MB, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x00008301<br>
+                    TOTAL STOLEN: 193 MB?, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 193 MB, MAX OVERALL: 194 MB (203972608 bytes)<br>
+                    Model name: Intel HD Graphics ICL RVP<br>
+                    Camellia: CamelliaDisabled (0), Freq: 0 Hz, FreqMax: 0 Hz<br>
+                    Mobile: 1, PipeCount: 3, PortCount: 6, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 0, type: 0x00000002, flags: 0x00000018 - ConnectorLVDS<br>
+                    [1] busId: 0x02, pipe: 1, type: 0x00000400, flags: 0x00000281 - ConnectorDP<br>
+                    [2] busId: 0x09, pipe: 1, type: 0x00000400, flags: 0x00000281 - ConnectorDP<br>
+                    [3] busId: 0x0A, pipe: 1, type: 0x00000400, flags: 0x00000281 - ConnectorDP<br>
+                    [4] busId: 0x0B, pipe: 1, type: 0x00000400, flags: 0x00000281 - ConnectorDP<br>
+                    [5] busId: 0x0C, pipe: 1, type: 0x00000400, flags: 0x00000281 - ConnectorDP<br>
+                    00000000 00000000 00000000 00000000 02000000 18000000<br>
+                    01000000 02000000 01000000 00000000 00040000 81020000<br>
+                    02000000 09000000 01000000 01000000 00040000 81020000<br>
+                    03000000 0A000000 01000000 01000000 00040000 81020000<br>
+                    04000000 0B000000 01000000 01000000 00040000 81020000<br>
+                    05000000 0C000000 01000000 01000000 00040000 81020000<br>
+                    <br>
+                    ID: 8A520000, STOLEN: 64 MB, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x00008305<br>
+                    TOTAL STOLEN: 193 MB?, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 193 MB, MAX OVERALL: 194 MB (203972608 bytes)<br>
+                    Model name: Intel HD Graphics ICL RVP<br>
+                    Camellia: CamelliaDisabled (0), Freq: 0 Hz, FreqMax: 0 Hz<br>
+                    Mobile: 1, PipeCount: 3, PortCount: 6, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 0, type: 0x00000002, flags: 0x00000018 - ConnectorLVDS<br>
+                    [1] busId: 0x02, pipe: 1, type: 0x00000400, flags: 0x00000281 - ConnectorDP<br>
+                    [2] busId: 0x09, pipe: 1, type: 0x00000400, flags: 0x00000281 - ConnectorDP<br>
+                    [3] busId: 0x0A, pipe: 1, type: 0x00000400, flags: 0x00000281 - ConnectorDP<br>
+                    [4] busId: 0x0B, pipe: 1, type: 0x00000400, flags: 0x00000281 - ConnectorDP<br>
+                    [5] busId: 0x0C, pipe: 1, type: 0x00000400, flags: 0x00000281 - ConnectorDP<br>
+                    00000000 00000000 00000000 00000000 02000000 18000000<br>
+                    01000000 02000000 01000000 00000000 00040000 81020000<br>
+                    02000000 09000000 01000000 01000000 00040000 81020000<br>
+                    03000000 0A000000 01000000 01000000 00040000 81020000<br>
+                    04000000 0B000000 01000000 01000000 00040000 81020000<br>
+                    05000000 0C000000 01000000 01000000 00040000 81020000<br>
+                    <br>
+                    ID: 8A530000, STOLEN: 64 MB, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x00008305<br>
+                    TOTAL STOLEN: 193 MB?, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 193 MB, MAX OVERALL: 194 MB (203972608 bytes)<br>
+                    Model name: Intel HD Graphics ICL RVP<br>
+                    Camellia: CamelliaDisabled (0), Freq: 0 Hz, FreqMax: 0 Hz<br>
+                    Mobile: 1, PipeCount: 3, PortCount: 6, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 0, type: 0x00000002, flags: 0x00000018 - ConnectorLVDS<br>
+                    [1] busId: 0x02, pipe: 1, type: 0x00000400, flags: 0x00000281 - ConnectorDP<br>
+                    [2] busId: 0x09, pipe: 1, type: 0x00000400, flags: 0x00000281 - ConnectorDP<br>
+                    [3] busId: 0x0A, pipe: 1, type: 0x00000400, flags: 0x00000281 - ConnectorDP<br>
+                    [4] busId: 0x0B, pipe: 1, type: 0x00000400, flags: 0x00000281 - ConnectorDP<br>
+                    [5] busId: 0x0C, pipe: 1, type: 0x00000400, flags: 0x00000281 - ConnectorDP<br>
+                    00000000 00000000 00000000 00000000 02000000 18000000<br>
+                    01000000 02000000 01000000 00000000 00040000 81020000<br>
+                    02000000 09000000 01000000 01000000 00040000 81020000<br>
+                    03000000 0A000000 01000000 01000000 00040000 81020000<br>
+                    04000000 0B000000 01000000 01000000 00040000 81020000<br>
+                    05000000 0C000000 01000000 01000000 00040000 81020000<br>
+                    <br>
+                    ID: 8A5A0000, STOLEN: 64 MB, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x00008305<br>
+                    TOTAL STOLEN: 193 MB?, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 193 MB, MAX OVERALL: 194 MB (203972608 bytes)<br>
+                    Model name: Intel HD Graphics ICL RVP<br>
+                    Camellia: CamelliaDisabled (0), Freq: 0 Hz, FreqMax: 0 Hz<br>
+                    Mobile: 1, PipeCount: 3, PortCount: 6, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 0, type: 0x00000002, flags: 0x00000018 - ConnectorLVDS<br>
+                    [1] busId: 0x02, pipe: 1, type: 0x00000400, flags: 0x00000281 - ConnectorDP<br>
+                    [2] busId: 0x09, pipe: 1, type: 0x00000400, flags: 0x00000281 - ConnectorDP<br>
+                    [3] busId: 0x0A, pipe: 1, type: 0x00000400, flags: 0x00000281 - ConnectorDP<br>
+                    [4] busId: 0x0B, pipe: 1, type: 0x00000400, flags: 0x00000281 - ConnectorDP<br>
+                    [5] busId: 0x0C, pipe: 1, type: 0x00000400, flags: 0x00000281 - ConnectorDP<br>
+                    00000000 00000000 00000000 00000000 02000000 18000000<br>
+                    01000000 02000000 01000000 00000000 00040000 81020000<br>
+                    02000000 09000000 01000000 01000000 00040000 81020000<br>
+                    03000000 0A000000 01000000 01000000 00040000 81020000<br>
+                    04000000 0B000000 01000000 01000000 00040000 81020000<br>
+                    05000000 0C000000 01000000 01000000 00040000 81020000<br>
+                    <br>
+                    ID: 8A5B0000, STOLEN: 64 MB, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x00008301<br>
+                    TOTAL STOLEN: 193 MB?, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 193 MB, MAX OVERALL: 194 MB (203972608 bytes)<br>
+                    Model name: Intel HD Graphics ICL RVP<br>
+                    Camellia: CamelliaDisabled (0), Freq: 0 Hz, FreqMax: 0 Hz<br>
+                    Mobile: 1, PipeCount: 3, PortCount: 6, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 0, type: 0x00000002, flags: 0x00000018 - ConnectorLVDS<br>
+                    [1] busId: 0x02, pipe: 1, type: 0x00000400, flags: 0x00000281 - ConnectorDP<br>
+                    [2] busId: 0x09, pipe: 1, type: 0x00000400, flags: 0x00000281 - ConnectorDP<br>
+                    [3] busId: 0x0A, pipe: 1, type: 0x00000400, flags: 0x00000281 - ConnectorDP<br>
+                    [4] busId: 0x0B, pipe: 1, type: 0x00000400, flags: 0x00000281 - ConnectorDP<br>
+                    [5] busId: 0x0C, pipe: 1, type: 0x00000400, flags: 0x00000281 - ConnectorDP<br>
+                    00000000 00000000 00000000 00000000 02000000 18000000<br>
+                    01000000 02000000 01000000 00000000 00040000 81020000<br>
+                    02000000 09000000 01000000 01000000 00040000 81020000<br>
+                    03000000 0A000000 01000000 01000000 00040000 81020000<br>
+                    04000000 0B000000 01000000 01000000 00040000 81020000<br>
+                    05000000 0C000000 01000000 01000000 00040000 81020000<br>
+                    <br>
+                    ID: 8A710001, STOLEN: 64 MB, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x0000A300<br>
+                    TOTAL STOLEN: 193 MB?, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 193 MB, MAX OVERALL: 194 MB (203968512 bytes)<br>
+                    Model name: Intel HD Graphics ICL RVP BigSur<br>
+                    Camellia: CamelliaV3 (3), Freq: 0 Hz, FreqMax: 0 Hz<br>
+                    Mobile: 1, PipeCount: 3, PortCount: 5, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 0, type: 0x00000002, flags: 0x00000018 - ConnectorLVDS<br>
+                    [2] busId: 0x09, pipe: 1, type: 0x00000400, flags: 0x000002C1 - ConnectorDP<br>
+                    [3] busId: 0x0A, pipe: 1, type: 0x00000400, flags: 0x000002C1 - ConnectorDP<br>
+                    [4] busId: 0x0B, pipe: 1, type: 0x00000400, flags: 0x000002C1 - ConnectorDP<br>
+                    [5] busId: 0x0C, pipe: 1, type: 0x00000400, flags: 0x000002C1 - ConnectorDP<br>
+                    00000000 00000000 00000000 00000000 02000000 18000000<br>
+                    02000000 09000000 01000000 01000000 00040000 C1020000<br>
+                    03000000 0A000000 01000000 01000000 00040000 C1020000<br>
+                    04000000 0B000000 01000000 01000000 00040000 C1020000<br>
+                    05000000 0C000000 01000000 01000000 00040000 C1020000<br>
+                    <br>
+                    ID: 8A700001, STOLEN: 64 MB, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x0001A304<br>
+                    TOTAL STOLEN: 193 MB?, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 193 MB, MAX OVERALL: 194 MB (203968512 bytes)<br>
+                    Model name: Intel HD Graphics ICL RVP BigSur<br>
+                    Camellia: CamelliaV3 (3), Freq: 0 Hz, FreqMax: 0 Hz<br>
+                    Mobile: 1, PipeCount: 3, PortCount: 5, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 0, type: 0x00000002, flags: 0x00000018 - ConnectorLVDS<br>
+                    [2] busId: 0x09, pipe: 1, type: 0x00000400, flags: 0x000002C1 - ConnectorDP<br>
+                    [3] busId: 0x0A, pipe: 1, type: 0x00000400, flags: 0x000002C1 - ConnectorDP<br>
+                    [4] busId: 0x0B, pipe: 1, type: 0x00000400, flags: 0x000002C1 - ConnectorDP<br>
+                    [5] busId: 0x0C, pipe: 1, type: 0x00000400, flags: 0x000002C1 - ConnectorDP<br>
+                    00000000 00000000 00000000 00000000 02000000 18000000<br>
+                    02000000 09000000 01000000 01000000 00040000 C1020000<br>
+                    03000000 0A000000 01000000 01000000 00040000 C1020000<br>
+                    04000000 0B000000 01000000 01000000 00040000 C1020000<br>
+                    05000000 0C000000 01000000 01000000 00040000 C1020000<br>
+                    <br>
+                    ID: 8A510001, STOLEN: 64 MB, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x0000E304<br>
+                    TOTAL STOLEN: 193 MB?, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 193 MB, MAX OVERALL: 194 MB (203960320 bytes)<br>
+                    Model name: Intel HD Graphics ICL RVP BigSur<br>
+                    Camellia: CamelliaV3 (3), Freq: 0 Hz, FreqMax: 0 Hz<br>
+                    Mobile: 1, PipeCount: 3, PortCount: 3, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 0, type: 0x00000002, flags: 0x00000018 - ConnectorLVDS<br>
+                    [2] busId: 0x09, pipe: 1, type: 0x00000400, flags: 0x000002C1 - ConnectorDP<br>
+                    [3] busId: 0x0A, pipe: 1, type: 0x00000400, flags: 0x000002C1 - ConnectorDP<br>
+                    00000000 00000000 00000000 00000000 02000000 18000000<br>
+                    02000000 09000000 01000000 01000000 00040000 C1020000<br>
+                    03000000 0A000000 01000000 01000000 00040000 C1020000<br>
+                    <br>
+                    ID: 8A5C0001, STOLEN: 64 MB, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x0000A304<br>
+                    TOTAL STOLEN: 193 MB?, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 193 MB, MAX OVERALL: 194 MB (203960320 bytes)<br>
+                    Model name: Intel HD Graphics ICL RVP BigSur<br>
+                    Camellia: CamelliaV3 (3), Freq: 0 Hz, FreqMax: 0 Hz<br>
+                    Mobile: 1, PipeCount: 3, PortCount: 3, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 0, type: 0x00000002, flags: 0x00000018 - ConnectorLVDS<br>
+                    [2] busId: 0x09, pipe: 1, type: 0x00000400, flags: 0x000002C1 - ConnectorDP<br>
+                    [3] busId: 0x0A, pipe: 1, type: 0x00000400, flags: 0x000002C1 - ConnectorDP<br>
+                    00000000 00000000 00000000 00000000 02000000 18000000<br>
+                    02000000 09000000 01000000 01000000 00040000 C1020000<br>
+                    03000000 0A000000 01000000 01000000 00040000 C1020000<br>
+                    <br>
+                    ID: 8A5D0001, STOLEN: 64 MB, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x0000A300<br>
+                    TOTAL STOLEN: 193 MB?, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 193 MB, MAX OVERALL: 194 MB (203960320 bytes)<br>
+                    Model name: Intel HD Graphics ICL RVP BigSur<br>
+                    Camellia: CamelliaV3 (3), Freq: 0 Hz, FreqMax: 0 Hz<br>
+                    Mobile: 1, PipeCount: 3, PortCount: 3, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 0, type: 0x00000002, flags: 0x00000018 - ConnectorLVDS<br>
+                    [2] busId: 0x09, pipe: 1, type: 0x00000400, flags: 0x000002C1 - ConnectorDP<br>
+                    [3] busId: 0x0A, pipe: 1, type: 0x00000400, flags: 0x000002C1 - ConnectorDP<br>
+                    00000000 00000000 00000000 00000000 02000000 18000000<br>
+                    02000000 09000000 01000000 01000000 00040000 C1020000<br>
+                    03000000 0A000000 01000000 01000000 00040000 C1020000<br>
+                    <br>
+                    ID: 8A520001, STOLEN: 64 MB, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x0000E304<br>
+                    TOTAL STOLEN: 193 MB?, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 193 MB, MAX OVERALL: 194 MB (203968512 bytes)<br>
+                    Model name: Intel HD Graphics ICL RVP BigSur<br>
+                    Camellia: CamelliaV3 (3), Freq: 0 Hz, FreqMax: 0 Hz<br>
+                    Mobile: 1, PipeCount: 3, PortCount: 5, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 0, type: 0x00000002, flags: 0x00000118 - ConnectorLVDS<br>
+                    [2] busId: 0x09, pipe: 1, type: 0x00000400, flags: 0x000002C1 - ConnectorDP<br>
+                    [3] busId: 0x0A, pipe: 1, type: 0x00000400, flags: 0x000002C1 - ConnectorDP<br>
+                    [4] busId: 0x0B, pipe: 1, type: 0x00000400, flags: 0x000002C1 - ConnectorDP<br>
+                    [5] busId: 0x0C, pipe: 1, type: 0x00000400, flags: 0x000002C1 - ConnectorDP<br>
+                    00000000 00000000 00000000 00000000 02000000 18010000<br>
+                    02000000 09000000 01000000 01000000 00040000 C1020000<br>
+                    03000000 0A000000 01000000 01000000 00040000 C1020000<br>
+                    04000000 0B000000 01000000 01000000 00040000 C1020000<br>
+                    05000000 0C000000 01000000 01000000 00040000 C1020000<br>
+                    <br>
+                    ID: 8A530001, STOLEN: 64 MB, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x0000E304<br>
+                    TOTAL STOLEN: 193 MB?, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 193 MB, MAX OVERALL: 194 MB (203968512 bytes)<br>
+                    Model name: Intel HD Graphics ICL RVP BigSur<br>
+                    Camellia: CamelliaV3 (3), Freq: 0 Hz, FreqMax: 0 Hz<br>
+                    Mobile: 1, PipeCount: 3, PortCount: 5, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 0, type: 0x00000002, flags: 0x00000118 - ConnectorLVDS<br>
+                    [2] busId: 0x09, pipe: 1, type: 0x00000400, flags: 0x000002C1 - ConnectorDP<br>
+                    [3] busId: 0x0A, pipe: 1, type: 0x00000400, flags: 0x000002C1 - ConnectorDP<br>
+                    [4] busId: 0x0B, pipe: 1, type: 0x00000400, flags: 0x000002C1 - ConnectorDP<br>
+                    [5] busId: 0x0C, pipe: 1, type: 0x00000400, flags: 0x000002C1 - ConnectorDP<br>
+                    00000000 00000000 00000000 00000000 02000000 18010000<br>
+                    02000000 09000000 01000000 01000000 00040000 C1020000<br>
+                    03000000 0A000000 01000000 01000000 00040000 C1020000<br>
+                    04000000 0B000000 01000000 01000000 00040000 C1020000<br>
+                    05000000 0C000000 01000000 01000000 00040000 C1020000<br>
+                    <br>
+                    ID: 8A5A0001, STOLEN: 64 MB, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x0000A304<br>
+                    TOTAL STOLEN: 193 MB?, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 193 MB, MAX OVERALL: 194 MB (203968512 bytes)<br>
+                    Model name: Intel HD Graphics ICL RVP BigSur<br>
+                    Camellia: CamelliaV3 (3), Freq: 0 Hz, FreqMax: 0 Hz<br>
+                    Mobile: 1, PipeCount: 3, PortCount: 5, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 0, type: 0x00000002, flags: 0x00000118 - ConnectorLVDS<br>
+                    [2] busId: 0x09, pipe: 1, type: 0x00000400, flags: 0x000002C1 - ConnectorDP<br>
+                    [3] busId: 0x0A, pipe: 1, type: 0x00000400, flags: 0x000002C1 - ConnectorDP<br>
+                    [4] busId: 0x0B, pipe: 1, type: 0x00000400, flags: 0x000002C1 - ConnectorDP<br>
+                    [5] busId: 0x0C, pipe: 1, type: 0x00000400, flags: 0x000002C1 - ConnectorDP<br>
+                    00000000 00000000 00000000 00000000 02000000 18010000<br>
+                    02000000 09000000 01000000 01000000 00040000 C1020000<br>
+                    03000000 0A000000 01000000 01000000 00040000 C1020000<br>
+                    04000000 0B000000 01000000 01000000 00040000 C1020000<br>
+                    05000000 0C000000 01000000 01000000 00040000 C1020000<br>
+                    <br>
+                    ID: 8A5B0001, STOLEN: 64 MB, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x0000A300<br>
+                    TOTAL STOLEN: 193 MB?, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 193 MB, MAX OVERALL: 194 MB (203968512 bytes)<br>
+                    Model name: Intel HD Graphics ICL RVP BigSur<br>
+                    Camellia: CamelliaV3 (3), Freq: 0 Hz, FreqMax: 0 Hz<br>
+                    Mobile: 1, PipeCount: 3, PortCount: 5, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 0, type: 0x00000002, flags: 0x00000118 - ConnectorLVDS<br>
+                    [2] busId: 0x09, pipe: 1, type: 0x00000400, flags: 0x000002C1 - ConnectorDP<br>
+                    [3] busId: 0x0A, pipe: 1, type: 0x00000400, flags: 0x000002C1 - ConnectorDP<br>
+                    [4] busId: 0x0B, pipe: 1, type: 0x00000400, flags: 0x000002C1 - ConnectorDP<br>
+                    [5] busId: 0x0C, pipe: 1, type: 0x00000400, flags: 0x000002C1 - ConnectorDP<br>
+                    00000000 00000000 00000000 00000000 02000000 18010000<br>
+                    02000000 09000000 01000000 01000000 00040000 C1020000<br>
+                    03000000 0A000000 01000000 01000000 00040000 C1020000<br>
+                    04000000 0B000000 01000000 01000000 00040000 C1020000<br>
+                    05000000 0C000000 01000000 01000000 00040000 C1020000<br>
+                    <br>
+                    ID: 8A510002, STOLEN: 64 MB, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x0000E304<br>
+                    TOTAL STOLEN: 193 MB?, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 193 MB, MAX OVERALL: 194 MB (203960320 bytes)<br>
+                    Model name: Intel Iris Plus Graphics<br>
+                    Camellia: CamelliaV3 (3), Freq: 0 Hz, FreqMax: 0 Hz<br>
+                    Mobile: 1, PipeCount: 3, PortCount: 3, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 0, type: 0x00000002, flags: 0x00000018 - ConnectorLVDS<br>
+                    [2] busId: 0x09, pipe: 1, type: 0x00000400, flags: 0x000002C1 - ConnectorDP<br>
+                    [3] busId: 0x0A, pipe: 1, type: 0x00000400, flags: 0x000002C1 - ConnectorDP<br>
+                    00000000 00000000 00000000 00000000 02000000 18000000<br>
+                    02000000 09000000 01000000 01000000 00040000 C1020000<br>
+                    03000000 0A000000 01000000 01000000 00040000 C1020000<br>
+                    <br>
+                    ID: 8A5C0002, STOLEN: 64 MB, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x0000E304<br>
+                    TOTAL STOLEN: 193 MB?, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 193 MB, MAX OVERALL: 194 MB (203960320 bytes)<br>
+                    Model name: Intel Iris Plus Graphics<br>
+                    Camellia: CamelliaV3 (3), Freq: 0 Hz, FreqMax: 0 Hz<br>
+                    Mobile: 1, PipeCount: 3, PortCount: 3, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 0, type: 0x00000002, flags: 0x00000018 - ConnectorLVDS<br>
+                    [2] busId: 0x09, pipe: 1, type: 0x00000400, flags: 0x000002C1 - ConnectorDP<br>
+                    [3] busId: 0x0A, pipe: 1, type: 0x00000400, flags: 0x000002C1 - ConnectorDP<br>
+                    00000000 00000000 00000000 00000000 02000000 18000000<br>
+                    02000000 09000000 01000000 01000000 00040000 C1020000<br>
+                    03000000 0A000000 01000000 01000000 00040000 C1020000<br>
+                    <br>
+                    ID: 8A520002, STOLEN: 64 MB, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x0000E304<br>
+                    TOTAL STOLEN: 193 MB?, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 193 MB, MAX OVERALL: 194 MB (203968512 bytes)<br>
+                    Model name: Intel Iris Plus Graphics<br>
+                    Camellia: CamelliaV3 (3), Freq: 0 Hz, FreqMax: 0 Hz<br>
+                    Mobile: 1, PipeCount: 3, PortCount: 5, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 0, type: 0x00000002, flags: 0x00000118 - ConnectorLVDS<br>
+                    [2] busId: 0x09, pipe: 1, type: 0x00000400, flags: 0x000002C1 - ConnectorDP<br>
+                    [3] busId: 0x0A, pipe: 1, type: 0x00000400, flags: 0x000002C1 - ConnectorDP<br>
+                    [4] busId: 0x0B, pipe: 1, type: 0x00000400, flags: 0x000002C1 - ConnectorDP<br>
+                    [5] busId: 0x0C, pipe: 1, type: 0x00000400, flags: 0x000002C1 - ConnectorDP<br>
+                    00000000 00000000 00000000 00000000 02000000 18010000<br>
+                    02000000 09000000 01000000 01000000 00040000 C1020000<br>
+                    03000000 0A000000 01000000 01000000 00040000 C1020000<br>
+                    04000000 0B000000 01000000 01000000 00040000 C1020000<br>
+                    05000000 0C000000 01000000 01000000 00040000 C1020000<br>
+                    <br>
+                    ID: 8A530002, STOLEN: 64 MB, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x0000E304<br>
+                    TOTAL STOLEN: 193 MB?, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 193 MB, MAX OVERALL: 194 MB (203968512 bytes)<br>
+                    Model name: Intel Iris Plus Graphics<br>
+                    Camellia: CamelliaV3 (3), Freq: 0 Hz, FreqMax: 0 Hz<br>
+                    Mobile: 1, PipeCount: 3, PortCount: 5, FBMemoryCount: 3<br>
+                    [0] busId: 0x00, pipe: 0, type: 0x00000002, flags: 0x00000118 - ConnectorLVDS<br>
+                    [2] busId: 0x09, pipe: 1, type: 0x00000400, flags: 0x000002C1 - ConnectorDP<br>
+                    [3] busId: 0x0A, pipe: 1, type: 0x00000400, flags: 0x000002C1 - ConnectorDP<br>
+                    [4] busId: 0x0B, pipe: 1, type: 0x00000400, flags: 0x000002C1 - ConnectorDP<br>
+                    [5] busId: 0x0C, pipe: 1, type: 0x00000400, flags: 0x000002C1 - ConnectorDP<br>
+                    00000000 00000000 00000000 00000000 02000000 18010000<br>
+                    02000000 09000000 01000000 01000000 00040000 C1020000<br>
+                    03000000 0A000000 01000000 01000000 00040000 C1020000<br>
+                    04000000 0B000000 01000000 01000000 00040000 C1020000<br>
+                    05000000 0C000000 01000000 01000000 00040000 C1020000<br>
+                    <br>
+                    Note, that without AAPL,ig-platform-id the following REAL ID is assumed: 8A520000<br>
+                    Note, that without AAPL,ig-platform-id the following SIMULATOR ID is assumed: FF050000<b></b>
+
+                    Рекомендуемые фреймы: ноутбук 0x8A520000 (по умолчанию).<br>
+                </div>
+            </div>
+        </div>
+    </div><br><br>
+    <div style="text-align: left;">
+        Все возможные патчи WhateverGreen.<br>
+        Семантические:<br>
+        framebuffer-patch-enable (общие включение семантических патчей)<br>
+        framebuffer-framebufferid (фрейм который патчим, по умолчанию текущий)<br><br>
+
+        framebuffer-mobile<br>
+        framebuffer-pipecount<br>
+        framebuffer-portcount<br>
+        framebuffer-memorycount<br>
+        framebuffer-stolenmem<br>
+        framebuffer-fbmem<br>
+        framebuffer-unifiedmem (VRAM, не рекомендуется использовать этот патч)<br>
+        framebuffer-cursormem (это поле специфичено только для Haswell)<br>
+        framebuffer-flags<br>
+        framebuffer-camellia (управление встроенным контроллером дисплея, это поле актуально только на настоящиках)<br><br>
+
+        framebuffer-conX-enable (включение патчей для коннектора Х)<br>
+        framebuffer-conX-index<br>
+        framebuffer-conX-busid<br>
+        framebuffer-conX-pipe<br>
+        framebuffer-conX-type<br>
+        framebuffer-conX-flags<br>
+        framebuffer-conX-alldata (полностью заменить коннектор)<br>
+        framebuffer-conX-YYYYYYYY-alldata (полность заменить коннектор, если текущий фрейм совпадает с YYYYYYYY)<br>
+        Где Х - index коннектора.<br>
+        Патчами alldata можно пропатчить сразу несколько коннекторов идущих вподрял, записав их в одну строку и указав индекс коннектора с которого начать патч. Длина строки должна быть кратна 12 байтам (длине одного коннектора).<br><br>
+
+        Бинарные:<br>
+        framebuffer-patchN-enable (включение патча номер N)<br>
+        framebuffer-patchN-framebufferid (фрейм который патчим, по умолчанию текущий)<br>
+        framebuffer-patchN-find<br>
+        framebuffer-patchN-replace<br>
+        framebuffer-patchN-count (число повторений паттерна в поиске, по умолчанию 1)<br>
+        Где N - порядковый номер патча: 0, 1, 2, ...9<br>
+    </div>
+    <div class="links" style="padding-bottom: 250px;"></div>
+    <!--    <img class="img-fluid" src="" width="500"-->
+    <!--         style="padding-bottom: 50px;" alt="install macOS">-->
+</section>
+
+<footer>
+    <div class="row">
+        <div class="col-sm-6 col-md-4 footer-navigation">
+            <h3><a href="#">my mac<span>OS </span></a></h3>
+            <p class="links">
+                <a href="/">Главная</a><strong> · </strong>
+                <a href="/#uslugi">Услуги</a><strong> · </strong>
+                <a href="/#files">Файлы</a><strong> · </strong>
+                <a class="modal-lg" data-toggle="modal" data-target="#myModal" href="">Контакты</a><strong> · </strong>
+                <a href="../pages/faq.html">Faq</a>
+            </p>
+            <p class="company-name">my macOS © 2022 </p>
+        </div>
+        <!--        <div class="col-sm-6 col-md-4 footer-contacts" style="display: none;">-->
+        <!--            <div><span class="fa fa-map-marker footer-contacts-icon"> </span>-->
+        <!--                <p><span class="new-line-span">21 Revolution Street</span> Paris, France</p>-->
+        <!--            </div>-->
+        <!--            <div><i class="fa fa-phone footer-contacts-icon"></i>-->
+        <!--                <p class="footer-center-info email text-left"> +1 555 123456</p>-->
+        <!--            </div>-->
+        <!--            <div><i class="fa fa-envelope footer-contacts-icon"></i>-->
+        <!--                <p> <a href="#" target="_blank">hackintoshosx@icloud.com</a></p>-->
+        <!--            </div>-->
+        <!--        </div>-->
+        <div class="clearfix"></div>
+
+    </div>
+</footer>
+
+<!-- End: Corporate Footer Clean -->
+<script src="../assets/js/jquery.min.js"></script>
+<script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="/assets/js/script.min.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/owl.carousel.min.js'></script>
+<script src="../js/testimonials.js"></script>
+<!--<script src="../../assets/slider/js/main.js"></script>-->
+<!--<script src="../../assets/slider/js/jquery.fractionslider.js"></script>-->
+<!--<script src="../../assets/js/main.js"></script>-->
+<!--<script src="../../assets/js/404.js"></script>-->
+<!--<script src="../assets/js/index.js"></script>-->
+<!--<script src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>-->
+<!--<script src="https://yastatic.net/share2/share.js"></script>-->
+<!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>-->
+<script>
+    window.replainSettings = { id: 'a6bd9478-c5dd-4203-a55d-494cc851f723' };
+    (function(u){var s=document.createElement('script');s.async=true;s.src=u;
+        var x=document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);
+    })('https://widget.replain.cc/dist/client.js');
+</script>
+<!--<script>-->
+<!--    $(function() {-->
+<!--        // при нажатии на кнопку scrollup-->
+<!--        $('.scrollup').click(function() {-->
+<!--            // переместиться в верхнюю часть страницы-->
+<!--            $("html, body").animate({-->
+<!--                scrollTop:0-->
+<!--            },1000);-->
+<!--        })-->
+<!--    })-->
+<!--    // при прокрутке окна (window)-->
+<!--    $(window).scroll(function() {-->
+<!--        // если пользователь прокрутил страницу более чем на 200px-->
+<!--        if ($(this).scrollTop()>200) {-->
+<!--            // то сделать кнопку scrollup видимой-->
+<!--            $('.scrollup').fadeIn();-->
+<!--        }-->
+<!--        // иначе скрыть кнопку scrollup-->
+<!--        else {-->
+<!--            $('.scrollup').fadeOut();-->
+<!--        }-->
+<!--    });-->
+<!--</script>-->
+
+<script>
+    const navLinks = document.querySelector(".nav-links");
+    const navIcon = document.querySelector(".nav-icon");
+    const nav = document.querySelector("nav");
+
+    navIcon.onclick = function () {
+        nav.classList.toggle('show');
+    }
+    navLinks.onclick = function () {
+        nav.classList.remove('show');
+    }
+</script>
+<script language="JavaScript" type="text/javascript">
+    var go_down = jQuery('body');
+    jQuery(function() {
+        $("#Go_Top").hide().removeAttr("href");
+        if ($(window).scrollTop() >= "250") $("#Go_Top").fadeIn("slow")
+        var scrollDiv = $("#Go_Top");
+        $(window).scroll(function() {
+            if ($(window).scrollTop() <= "250") $(scrollDiv).fadeOut("slow")
+            else $(scrollDiv).fadeIn("slow")
+        });
+        $("#Go_Bottom").hide().removeAttr("href");
+        if ($(window).scrollTop() <= go_down.height()-"999") $("#Go_Bottom").fadeIn("slow")
+        var scrollDiv_2 = $("#Go_Bottom");
+        $(window).scroll(function() {
+            if ($(window).scrollTop() >= go_down.height()-"999") $(scrollDiv_2).fadeOut("slow")
+            else $(scrollDiv_2).fadeIn("slow")
+        });
+        $("#Go_Top").click(function() {
+            $("html, body").animate({scrollTop: 0}, "slow")
+        })
+        $("#Go_Bottom").click(function() {
+            $("html, body").animate({scrollTop: go_down.height()}, "slow")
+        })
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,383 @@
+ /*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+
+}
+
+ /*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {  }
+
+ /*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {  }
+
+ /*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {  }
+
+ @media (max-width: 575.98px) {
+     .circles {
+         height: 460px;
+         width: 460px;
+         background: url("/assets/img/gear-big.svg");
+         background-size: cover;
+         position: absolute;
+         left: 45px;
+         top: -35px;
+         /*color: black;*/
+         overflow: hidden;
+         z-index: 10;
+     }
+
+     .circles2 {
+         height: 410px;
+         width: 410px;
+         background: url("/assets/img/gear-small.svg");
+         background-size: cover;
+         position: absolute;
+         left: 270px;
+         top: -10px;
+         /*color: black;*/
+         overflow: hidden;
+         z-index: 8;
+     }
+
+     .circles3 {
+         height: 350px;
+         width: 350px;
+         background: url("/assets/img/bg.svg");
+         background-size: cover;
+         position: absolute;
+         left: 80px;
+         /*top: 270px;*/
+         /*color: black;*/
+         overflow: hidden;
+         z-index: 2;
+     }
+
+     #no1{
+         left: -5%;
+         height: 340px;
+         width: 340px;
+         /*top:250px;*/
+         animation-name: crcA1;
+         animation-duration: 12s;
+         animation-iteration-count: infinite;
+         animation-timing-function: linear;
+
+     }
+
+     #no2{
+         left: -3%;
+         height: 410px;
+         width: 410px;
+         /*top:285px;*/
+         animation-name: crcA2;
+         animation-duration: 15s;
+         animation-iteration-count: infinite;
+         animation-timing-function: linear;
+
+     }
+
+     #no3{
+         left: -1%;
+         height: 350px;
+         width: 350px;
+         /*top:250px;*/
+         animation-name: crcA1;
+         animation-duration: 0s;
+         /*animation-iteration-count: infinite;*/
+         /*animation-timing-function: linear;*/
+     }
+
+
+     @keyframes crcA1 {
+         0% {transform:rotate(0deg);}
+         100% {transform:rotate(360deg);}
+     }
+
+     @keyframes crcA2 {
+         0% {transform:rotate(0deg);}
+         100% {transform:rotate(-360deg);}
+     }
+ }
+
+  /*Small devices (landscape phones, less than 768px)*/
+ @media (max-width: 767.98px) {
+     .circles {
+         height: 340px;
+         width: 340px;
+         background: url("/assets/img/gear-big.svg");
+         background-size: cover;
+         position: absolute;
+         left: 45px;
+         top: -35px;
+         /*color: black;*/
+         overflow: hidden;
+         z-index: 10;
+     }
+
+     .circles2 {
+         height: 410px;
+         width: 410px;
+         background: url("/assets/img/gear-small.svg");
+         background-size: cover;
+         position: absolute;
+         left: 270px;
+         top: -10px;
+         /*color: black;*/
+         overflow: hidden;
+         z-index: 8;
+     }
+
+     .circles3 {
+         height: 350px;
+         width: 350px;
+         background: url("/assets/img/bg.svg");
+         background-size: cover;
+         position: absolute;
+         left: 80px;
+         /*top: 270px;*/
+         /*color: black;*/
+         overflow: hidden;
+         z-index: 2;
+     }
+
+     #no1{
+         left: -5.5%;
+         height: 400px;
+         width: 400px;
+         top:-45%;
+         animation-name: crcA1;
+         animation-duration: 12s;
+         animation-iteration-count: infinite;
+         animation-timing-function: linear;
+
+     }
+
+     #no2{
+         left: 8%;
+         top: -13%;
+         height: 300px;
+         width: 300px;
+         animation-name: crcA2;
+         animation-duration: 15s;
+         animation-iteration-count: infinite;
+         animation-timing-function: linear;
+
+     }
+
+     #no3{
+         left: 13%;
+         height: 260px;
+         width: 260px;
+         /*top:250px;*/
+         animation-name: crcA1;
+         animation-duration: 0s;
+         /*animation-iteration-count: infinite;*/
+         /*animation-timing-function: linear;*/
+     }
+
+
+     @keyframes crcA1 {
+         0% {transform:rotate(0deg);}
+         100% {transform:rotate(360deg);}
+     }
+
+     @keyframes crcA2 {
+         0% {transform:rotate(0deg);}
+         100% {transform:rotate(-360deg);}
+     }
+ }
+
+ /*// Medium devices (tablets, less than 992px)*/
+ @media (max-width: 991.98px) {  }
+
+ /*// Large devices (desktops, less than 1200px)*/
+ @media (max-width: 1199.98px) {
+     /*.circles {*/
+     /*    height: 340px;*/
+     /*    width: 340px;*/
+     /*    background: url("/assets/img/gear-big.svg");*/
+     /*    background-size: cover;*/
+     /*    position: absolute;*/
+     /*    left: 45px;*/
+     /*    top: -35px;*/
+     /*    !*color: black;*!*/
+     /*    overflow: hidden;*/
+     /*    z-index: 10;*/
+     /*}*/
+
+     /*.circles2 {*/
+     /*    height: 410px;*/
+     /*    width: 410px;*/
+     /*    background: url("/assets/img/gear-small.svg");*/
+     /*    background-size: cover;*/
+     /*    position: absolute;*/
+     /*    left: 270px;*/
+     /*    top: -10px;*/
+     /*    !*color: black;*!*/
+     /*    overflow: hidden;*/
+     /*    z-index: 8;*/
+     /*}*/
+
+     /*.circles3 {*/
+     /*    height: 350px;*/
+     /*    width: 350px;*/
+     /*    background: url("/assets/img/bg.svg");*/
+     /*    background-size: cover;*/
+     /*    position: absolute;*/
+     /*    left: 80px;*/
+     /*    !*top: 270px;*!*/
+     /*    !*color: black;*!*/
+     /*    overflow: hidden;*/
+     /*    z-index: 2;*/
+     /*}*/
+
+     /*#no1{*/
+     /*    left: 28%;*/
+     /*    height: 320px;*/
+     /*    width: 320px;*/
+     /*    top:-10%;*/
+     /*    animation-name: crcA1;*/
+     /*    animation-duration: 12s;*/
+     /*    animation-iteration-count: infinite;*/
+     /*    animation-timing-function: linear;*/
+
+     /*}*/
+
+     /*#no2{*/
+     /*    left: 29%;*/
+     /*    top: -6%;*/
+     /*    height: 300px;*/
+     /*    width: 300px;*/
+     /*    animation-name: crcA2;*/
+     /*    animation-duration: 15s;*/
+     /*    animation-iteration-count: infinite;*/
+     /*    animation-timing-function: linear;*/
+
+     /*}*/
+
+     /*#no3{*/
+     /*    left: 31%;*/
+     /*    height: 270px;*/
+     /*    width: 270px;*/
+     /*    !*top:250px;*!*/
+     /*    animation-name: crcA1;*/
+     /*    animation-duration: 0s;*/
+     /*    !*animation-iteration-count: infinite;*!*/
+     /*    !*animation-timing-function: linear;*!*/
+     /*}*/
+
+
+     /*@keyframes crcA1 {*/
+     /*    0% {transform:rotate(0deg);}*/
+     /*    100% {transform:rotate(360deg);}*/
+     /*}*/
+
+     /*@keyframes crcA2 {*/
+     /*    0% {transform:rotate(0deg);}*/
+     /*    100% {transform:rotate(-360deg);}*/
+     /*}*/
+ }
+
+.circles{
+    height: 600px;
+    width: 600px;
+    background: url("/assets/img/gear-big.svg");
+    background-size: cover;
+    position: absolute;
+    left: 175px;
+    top: -105px;
+    /*color: black;*/
+    overflow:hidden;
+    z-index: 10;
+}
+
+.circles2{
+    height: 410px;
+    width: 410px;
+    background: url("/assets/img/gear-small.svg");
+    background-size: cover;
+    position: absolute;
+    left: 270px;
+    top: -10px;
+    /*color: black;*/
+    overflow:hidden;
+    z-index: 8;
+}
+
+.circles3{
+    height: 390px;
+    width: 390px;
+    background: url("/assets/img/bg.svg");
+    background-size: cover;
+    position: absolute;
+    left: 280px;
+    /*top: 270px;*/
+    /*color: black;*/
+    overflow:hidden;
+    z-index: 2;
+}
+/*.circles4{
+height: 360px;
+width: 360px;
+background: url("shadow-big.svg");
+background-size: cover;
+position: absolute;
+left: 25px;
+top: 285px;
+/*color: black;*/
+/*overflow:hidden;
+z-index: 9;
+}*/
+
+/*.circles5{
+height: 370px;
+width: 370px;
+background: url("small-shadow.svg");
+background-size: cover;
+position: absolute;
+left: 20px;
+top: 280px;*/
+/*color: black;*/
+/*overflow:hidden;
+z-index: 7;
+}*/
+
+#no1{
+    /*left: 36%;*/
+    /*top:250px;*/
+    animation-name: crcA1;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+#no2{
+    /*left:45px;*/
+    /*top:285px;*/
+    animation-name: crcA2;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+#no3{
+    /*left:55px;*/
+    /*top:250px;*/
+    animation-name: crcA1;
+    animation-duration: 0s;
+    /*animation-iteration-count: infinite;*/
+    /*animation-timing-function: linear;*/
+}
+
+
+@keyframes crcA1 {
+    0% {transform:rotate(0deg);}
+    100% {transform:rotate(360deg);}
+}
+
+@keyframes crcA2 {
+    0% {transform:rotate(0deg);}
+    100% {transform:rotate(-360deg);}
+}

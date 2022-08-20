@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>macOS Wi-Fi Hackintosh Modules</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="keywords" content="Установка macOS на ПК">
+    <meta name="keywords" content="macOS Установка macOS, Hackintosh, Open Core, помощь в установке macOS (Mac OS X) на РС!, Хакинтош (или OSx86), самая простая установка macOS, Asus, Gigabyte, MSI, i3, i5, i7, applelife, mymacos.site, Clover, kexts, virtualsmc, applealc, lilu, IntelHD, AMD, UHD, Retina, iMac, MacPro, macmini, MakBook, купить хакинтош">
+    <meta name="description" content="Установка Mac OS на PC или ноутбук. Установка Mac OS на ноутбук. Установка хакинтош">
+    <link rel="canonical" href="https://mymacos.site" />
+    <link rel="publisher" href="https://www.google.com/mymacos"/>
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Установка macOS на ПК, Hackintosh, установка macOS на ноутбук" />
+    <meta property="og:description" content="На нашем сайте Вы найдете все нужное для хакинтош и macOS" />
+    <meta property="og:url" content="http://mymacos.site" />
+    <meta property="og:site_name" content="mymacos" />
+    <meta property="og:image" content="assets/img/display_small.jpg" />
+    <!--    <link rel="apple-touch-icon" sizes="144x144" href="/144.png" />-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/180.png" />
+    <link rel="icon" type="image/png" href="/192.png" sizes="192x192"/>
+    <link rel="stylesheet" href="../css/style.css">
+    <!--    <link rel="stylesheet" href="../../assets/slider/css/slider.css">-->
+    <!--    <link rel="stylesheet" href="../../assets/slider/css/fractionslider.css">-->
+    <link rel="stylesheet" href="../css/testimonials.css">
+    <link rel="stylesheet" href="../assets/css/landing.css">
+    <link rel="stylesheet" href="../assets/css/stars.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/assets/owl.carousel.min.css'>
+    <link rel='stylesheet' href='https://themes.audemedia.com/html/goodgrowth/css/owl.theme.default.min.css'>
+    <!--    <link rel="stylesheet" href="/css/mediaelementplayer.min.css">-->
+    <!--    <link rel="stylesheet" href="/css/bootstrap.min.css">-->
+    <!--    <link rel="stylesheet" href="/css/magnific-popup.css">  Resource style -->
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/fonts/font-awesome.min.css">
+    <!--    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">-->
+    <!--    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet">-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <!--    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700,500' rel='stylesheet' type='text/css'>-->
+    <!--    <link rel="stylesheet" href="../assets/css/reset.css">-->
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/main.built.css">
+    <link rel="stylesheet" href="../assets/css/Pretty-Footer.css">
+    <link rel="stylesheet" href="../css/main-b.css">
+    <!--    <link rel="stylesheet" href="../../assets/css/bug-sur.css">-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
+    <!--    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+    <!--    <link href="assets/fonts/fontawesome/css/all.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="../assets/css/styles.min.css">
+    <link rel="shortcut icon" type="image/png" href="favicon.ico">
+    <meta name="yandex-verification" content="500cc68f3331411d" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <!-- Google Analytics -->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-XXXXX-Y', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <!-- End Google Analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148111752-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-148111752-1');
+    </script>
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(55354972, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true,
+            trackHash:true,
+            ecommerce:"dataLayer"
+        });
+    </script>
+    <noscript>
+        <div>
+            <img src="https://mc.yandex.ru/watch/55354972" style="position:absolute; left:-9999px;" alt="" />
+        </div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#menu").on("click","a", function (event) {
+                event.preventDefault();
+                var id  = $(this).attr('href'),
+                    top = $(id).offset().top;
+                $('body,html').animate({scrollTop: top}, 1500);
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#search').click(function(){
+                $('.menu-item').addClass('hide-item')
+                $('.search-form').addClass('active')
+                $('.close').addClass('active')
+                $('#search').hide()
+            })
+            $('.close').click(function(){
+                $('.menu-item').removeClass('hide-item')
+                $('.search-form').removeClass('active')
+                $('.close').removeClass('active')
+                $('#search').show()
+            })
+
+        })
+
+    </script>
+</head>
+
+<body>
+
+<nav class="fixed-top apple-nav" style="border-bottom: 1px solid rgba(250, 250, 250, 0.9);box-shadow: 0 0 15px rgba(66,66,66,0.1);">
+    <div class="nav-content">
+        <a href="/" class="logo">
+            <img src="../assets/img/logo.svg" width="23px" height="44" display="block" alt="my-macos-logo" style="opacity: 0.8; color: #ffffff">
+            <!--            <svg width="18" height="44" display="block">-->
+            <!--                <circle cx="9" cy="22" r="8" stroke="white" stroke-width="1.5" fill="white" />-->
+            <!--            </svg>-->
+        </a>
+        <!--        <a href="javascript:void(0)" class="icon">-->
+        <div class="nav-icon">
+            <div class="bar one"></div>
+            <div class="bar two"></div>
+        </div>
+        <!--        </a>-->
+
+        <div class="nav-links">
+
+            <a class="ac-gn-item-menu" href="#hackintosh" data-analytics-title="Хакинтош" style="text-decoration: none;font-size: 1em;">Хакинтош</a>
+
+
+
+            <a class="ac-gn-item-menu" href="#uslugi" data-analytics-title="Услуги" style="text-decoration: none;font-size: 1em;">Услуги</a>
+
+            <a class="ac-gn-item-menu" href="#files" data-analytics-title="Файлы" style="text-decoration: none;font-size: 1em;">Файлы</a>
+
+            <!--            <a class="ac-gn-item-menu" class="modal-lg" data-toggle="modal" data-target="#myModal" href="" data-analytics-title="Контакты" style="text-decoration: none;font-size: 1em;">Контакты</a>-->
+
+            <a class="ac-gn-item-menu" href="../pages/faq.html" onclick="location.reload()" data-analytics-title="FAQ" style="text-decoration: none;font-size: 1em;">FAQ</a>
+            <a class="ac-gn-item-menu" href="#customers" data-analytics-title="Отзывы" style="text-decoration: none;font-size: 1em;">Отзывы</a>
+            <a class="ac-gn-item-menu" class="modal-lg" data-toggle="modal" data-target="#myModal" href="" data-analytics-title="Контакты" style="text-decoration: none;font-size: 1em;">Контакты</a>
+
+        </div>
+
+        <a class="search-icon" href="../pages/order.html" data-analytics-title="Заказать">
+            <img src="../assets/img/image_small-bag.svg" height="48" width="17" alt="bag">
+            <!--        <svg viewBox="0 0 3.7041668 11.641667" height="44" width="14">-->
+            <!--            <g transform="matrix(0.97865947,0,0,0.97865947,-18.209185,-74.390797)">-->
+            <!--                <path d="m 19.070369,80.532362 c -0.618144,0.618143 -0.619255,1.62581 -7.32e-4,2.244333 0.570867,0.570865 1.473777,0.613735 2.095614,0.131181 l 0.945308,0.945309 0.280633,-0.280633 -0.945308,-0.945309 c 0.482552,-0.621838 0.439684,-1.524746 -0.131182,-2.095613 -0.618523,-0.618523 -1.62619,-0.617413 -2.244333,7.32e-4 z m 0.280632,0.280632 c 0.466517,-0.466515 1.216631,-0.467898 1.683433,-0.0011 0.466802,0.466801 0.466882,1.218378 3.64e-4,1.684894 -0.466512,0.466513 -1.21809,0.466436 -1.684892,-3.67e-4 -0.466803,-0.466801 -0.465418,-1.216918 0.0011,-1.683432 z" fill="white" />-->
+            <!--            </g>-->
+            <!--        </svg>-->
+        </a>
+    </div>
+</nav>
+
+<a style='position: fixed; bottom: 60px; left: 10px; cursor:pointer; display:none; z-index: 88;'
+   href='#' id='Go_Top'>
+    <img src="../assets/img/up.png" alt="Up" title="Up">
+</a>
+<a style='position: fixed; bottom: 20px; left: 10px; cursor:pointer; display:none; z-index: 88;'
+   href='#' id='Go_Bottom'>
+    <img src="../assets/img/bottom.png" alt="Down" title="Down">
+</a>
+
+<div id="myModal" class="modal fade" role="dialog" style="-webkit-backdrop-filter: saturate(180%) blur(40px);
+    backdrop-filter: saturate(180%) blur(40px); background: rgba(0, 0, 0, 0.1);background-size: cover;width: 100%;padding-right: 0">
+
+    <div class="modal-dialog" style="z-index: 999;margin-top: 100px;">
+
+        <!-- Modal content-->
+        <div class="modal-content" style="z-index: 999;background: rgba(255, 255, 255, 0.7);background-size: cover;width: 100%;border-radius: 40px">
+
+            <div class="modal-body" style="text-align: center;margin-top: 4rem;margin-bottom: 4rem">
+
+                <div class="btn-group" style="margin-top: 1rem;margin-bottom: 1rem">
+                    <a href="https://t.me/Hackintosh_RU" style="text-shadow: 0 0 0 white, 0 0 1em white;text-decoration: none;font-size: 50px;color: #21a2e2;margin-right: 15px;margin-left: 15px;">
+                        <img src="../../assets/img/telegram.svg" style="width: 65px;background-color: dodgerblue" alt="https://t.me/Hackintosh_RU">
+                        <p style="text-align: center;color: #333333;font-weight: bold;font-size: small">Telegram</p>
+                    </a>
+                    <a href="https://vk.com/hackintosh_osx" style="text-shadow: 0 0 0 white, 0 0 1em white;text-decoration: blink;font-size: 50px;color: #309cf0;margin-right: 15px;margin-left: 15px;">
+                        <img src="../../assets/img/vk.svg" style="width: 65px;background-color: #005cbf" alt="https://vk.com/hackintosh_osx">
+                        <p style="text-align: center;color: #333333;font-weight: bold;font-size: small">VK</p>
+                    </a>
+                </div>
+                <div class="btn-group" style="margin-top: 1rem;margin-bottom: 1rem">
+                    <a href="skype:alexandr.r5" style="text-shadow: 0 0 0 white, 0 0 1em white;text-decoration: blink;font-size: 50px;color: #01aceb;margin-right: 15px;margin-left: 15px;">
+                        <img src="../../assets/img/skype.svg" style="width: 65px;background-color: #21a2e2" alt="skype hackintosh_osx">
+                        <p style="text-align: center;color: #333333;font-weight: bold;font-size: small">Skype</p>
+                    </a>
+                    <a href="mailto:my.macos.vk@gmail.com" style="text-shadow: 0 0 0 white, 0 0 1em white;text-decoration: blink;font-size: 50px;color: #2881e5;margin-right: 15px;margin-left: 15px;">
+                        <img src="../../assets/img/mail.svg" style="width: 65px;background-color: #333333" alt="email hackintosh">
+                        <p style="text-align: center;color: #333333;font-weight: bold;font-size: small">E-mail</p>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<section id="wifi_mod" class="product help" style="max-width: 80%;margin-left: 10%;">
+    <h1 style="padding-top: 50px;">Модули Wi-Fi</h1>
+    <h2 style="font-size: 23px;margin-bottom: 20px;">Какие модули поддерживаются</h2>
+    <small class="form-text text-center text-muted" style="margin-bottom: 10px;font-size: 16px;">
+
+        Таблицы совестимости.<br><br>
+        <a style="text-decoration: none;" href="../../downloads/Wi-Fi-Pci-ExpressMiniPci-ExpressM.2NGFFMac-OS-X-Hackintosh.pdf">Таблица совместимости (PDF)</a><br><br>
+        <a style="text-decoration: none;" href="../../downloads/Wi-Fi-Pci-ExpressMiniPci-ExpressM.2NGFFMac-OS-X-Hackintosh.xlsx">Таблица совместимости (Excel)</a><br><br>
+
+    </small>
+    <h3>Модули wi-fi от Intel</h3>
+    <p>Список модулей с возможностью завода</p>
+    <h2 id="gen-1">
+        <a href="#gen-1" class="header-anchor">#</a> Первое поколение
+    </h2>
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">PCI ID</th>
+            <th scope="col">Модель</th>
+            <th scope="col">Поддержка</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td><code>0x08b1</code></td>
+            <td>AC 7260</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td><code>0x08b2</code></td>
+            <td>AC 7260</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td><code>0x08b3</code></td>
+            <td>AC 3160</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <th scope="row">4</th>
+            <td><code>0x08b4</code></td>
+            <td>AC 3160</td>
+            <td>Yes</td>
+        </tr>
+
+        <tr>
+            <th scope="row">5</th>
+            <td><code>0x095a</code></td>
+            <td>AC 7265</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <th scope="row">6</th>
+            <td><code>0x095b</code></td>
+            <td>AC 7265</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <th scope="row">7</th>
+            <td><code>0x3165</code></td>
+            <td>AC 3165</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <th scope="row">8</th>
+            <td><code>0x3166</code></td>
+            <td>AC 3165</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <th scope="row">9</th>
+            <td><code>0x24f3</code></td>
+            <td>AC 8260</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <th scope="row">10</th>
+            <td><code>0x24f4</code></td>
+            <td>AC 8260</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <th scope="row">11</th>
+            <td><code>0x24f5</code></td>
+            <td>AC 4165</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <th scope="row">12</th>
+            <td><code>0x24f6</code></td>
+            <td>AC 4165</td>
+            <td>Yes</td>
+        </tr>
+
+        <tr>
+            <th scope="row">13</th>
+            <td><code>0x24fb</code></td>
+            <td>AC 3168</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <th scope="row">14</th>
+            <td><code>0x24fd</code></td>
+            <td>AC 8265</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <th scope="row">15</th>
+            <td><code>0x2526</code></td>
+            <td>AC 9260</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <th scope="row">16</th>
+            <td><code>0x9df0</code></td>
+            <td>AC 9560</td>
+            <td>Yes</td>
+        </tr>
+
+        <tr>
+            <th scope="row">17</th>
+            <td><code>0xa370</code></td>
+            <td>AC 9560</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <th scope="row">18</th>
+            <td><code>0x31dc</code></td>
+            <td>AC 9560</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <th scope="row">19</th>
+            <td><code>0x30dc</code></td>
+            <td>AC 9560</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <th scope="row">20</th>
+            <td><code>0x271c</code></td>
+            <td>AC 9560</td>
+            <td>Yes</td>
+        </tr>
+
+        <tr>
+            <th scope="row">21</th>
+            <td><code>0x271b</code></td>
+            <td>AC 9560</td>
+            <td>Yes</td>
+        </tr>
+
+        <tr>
+            <th scope="row">22</th>
+            <td><code>0x42a4</code></td>
+            <td>AC 9462</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <th scope="row">23</th>
+            <td><code>0x00a0</code></td>
+            <td>AC 9462</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <th scope="row">24</th>
+            <td><code>0x00a4</code></td>
+            <td>AC 9462</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <th scope="row">25</th>
+            <td><code>0x02a0</code></td>
+            <td>AC 9462</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <th scope="row">26</th>
+            <td><code>0x02a4</code></td>
+            <td>AC 9462</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <th scope="row">27</th>
+            <td><code>0x40a4</code></td>
+            <td>AC 9462</td>
+            <td>Yes</td>
+        </tr>
+
+        <tr>
+            <th scope="row">28</th>
+            <td><code>0x0060</code></td>
+            <td>AC 9461</td>
+            <td>Yes</td>
+        </tr>
+
+        <tr>
+            <th scope="row">29</th>
+            <td><code>0x0064</code></td>
+            <td>AC 9461</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <th scope="row">30</th>
+            <td><code>0x0260</code></td>
+            <td>AC 9461</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <th scope="row">31</th>
+            <td><code>0x0264</code></td>
+            <td>AC 9461</td>
+            <td>Yes</td>
+        </tr>
+
+        </tbody>
+    </table>
+    <h2 id="gen-2">
+        <a href="#gen-2" class="header-anchor">#</a> Второе поколение
+    </h2>
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">PCI ID</th>
+            <th scope="col">Модель</th>
+            <th scope="col">Поддержка</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td><code>0x2723</code></td>
+            <td>AX 200</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td><code>0x2720</code></td>
+            <td>AX 201</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td><code>0x43f0</code></td>
+            <td>AX 201</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <th scope="row">4</th>
+            <td><code>0xA0f0</code></td>
+            <td>AX 201</td>
+            <td>Yes</td>
+        </tr>
+
+        <tr>
+            <th scope="row">5</th>
+            <td><code>0x34f0</code></td>
+            <td>AX 201</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <th scope="row">6</th>
+            <td><code>0x06f0</code></td>
+            <td>AX 201</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <th scope="row">7</th>
+            <td><code>0x02f0</code></td>
+            <td>AC 9462</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <th scope="row">8</th>
+            <td><code>0x3df0</code></td>
+            <td>AC 9462</td>
+            <td>Yes</td>
+        </tr>
+
+        </tbody>
+    </table>
+    <br><br>
+    <small class="form-text text-center text-muted" style="margin-bottom: 10px;font-size: 16px;">
+
+        Список USB Wi-Fi адаптеров.<br><br>
+        <a style="text-decoration: none;" href="../../downloads/USB WI-FI.pdf">USB WI-FI (PDF)</a><br>
+
+    </small>
+
+    <div class="links" style="padding-bottom: 250px;"></div>
+
+</section>
+
+<footer>
+    <div class="row">
+        <div class="col-sm-6 col-md-4 footer-navigation">
+            <h3><a href="#">my mac<span>OS </span></a></h3>
+            <p class="links">
+                <a href="/">Главная</a><strong> · </strong>
+                <a href="../#uslugi">Услуги</a><strong> · </strong>
+                <a href="../#files">Файлы</a><strong> · </strong>
+                <a class="modal-lg" data-toggle="modal" data-target="#myModal" href="">Контакты</a><strong> · </strong>
+                <a href="../pages/faq.html">Faq</a>
+            </p>
+            <p class="company-name">my macOS © 2022 </p>
+        </div>
+        <!--        <div class="col-sm-6 col-md-4 footer-contacts" style="display: none;">-->
+        <!--            <div><span class="fa fa-map-marker footer-contacts-icon"> </span>-->
+        <!--                <p><span class="new-line-span">21 Revolution Street</span> Paris, France</p>-->
+        <!--            </div>-->
+        <!--            <div><i class="fa fa-phone footer-contacts-icon"></i>-->
+        <!--                <p class="footer-center-info email text-left"> +1 555 123456</p>-->
+        <!--            </div>-->
+        <!--            <div><i class="fa fa-envelope footer-contacts-icon"></i>-->
+        <!--                <p> <a href="#" target="_blank">hackintoshosx@icloud.com</a></p>-->
+        <!--            </div>-->
+        <!--        </div>-->
+        <div class="clearfix"></div>
+
+    </div>
+</footer>
+
+<!-- End: Corporate Footer Clean -->
+<script src="../assets/js/jquery.min.js"></script>
+<script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="../assets/js/script.min.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/owl.carousel.min.js'></script>
+<script src="../js/testimonials.js"></script>
+<!--<script src="../../assets/slider/js/main.js"></script>-->
+<!--<script src="../../assets/slider/js/jquery.fractionslider.js"></script>-->
+<!--<script src="../../assets/js/main.js"></script>-->
+<!--<script src="../../assets/js/404.js"></script>-->
+<!--<script src="../assets/js/index.js"></script>-->
+<!--<script src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>-->
+<!--<script src="https://yastatic.net/share2/share.js"></script>-->
+<!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>-->
+<script>
+    window.replainSettings = { id: 'a6bd9478-c5dd-4203-a55d-494cc851f723' };
+    (function(u){var s=document.createElement('script');s.async=true;s.src=u;
+        var x=document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);
+    })('https://widget.replain.cc/dist/client.js');
+</script>
+<!--<script>-->
+<!--    $(function() {-->
+<!--        // при нажатии на кнопку scrollup-->
+<!--        $('.scrollup').click(function() {-->
+<!--            // переместиться в верхнюю часть страницы-->
+<!--            $("html, body").animate({-->
+<!--                scrollTop:0-->
+<!--            },1000);-->
+<!--        })-->
+<!--    })-->
+<!--    // при прокрутке окна (window)-->
+<!--    $(window).scroll(function() {-->
+<!--        // если пользователь прокрутил страницу более чем на 200px-->
+<!--        if ($(this).scrollTop()>200) {-->
+<!--            // то сделать кнопку scrollup видимой-->
+<!--            $('.scrollup').fadeIn();-->
+<!--        }-->
+<!--        // иначе скрыть кнопку scrollup-->
+<!--        else {-->
+<!--            $('.scrollup').fadeOut();-->
+<!--        }-->
+<!--    });-->
+<!--</script>-->
+
+<script>
+    const navLinks = document.querySelector(".nav-links");
+    const navIcon = document.querySelector(".nav-icon");
+    const nav = document.querySelector("nav");
+
+    navIcon.onclick = function () {
+        nav.classList.toggle('show');
+    }
+    navLinks.onclick = function () {
+        nav.classList.remove('show');
+    }
+</script>
+<script language="JavaScript" type="text/javascript">
+    var go_down = jQuery('body');
+    jQuery(function() {
+        $("#Go_Top").hide().removeAttr("href");
+        if ($(window).scrollTop() >= "250") $("#Go_Top").fadeIn("slow")
+        var scrollDiv = $("#Go_Top");
+        $(window).scroll(function() {
+            if ($(window).scrollTop() <= "250") $(scrollDiv).fadeOut("slow")
+            else $(scrollDiv).fadeIn("slow")
+        });
+        $("#Go_Bottom").hide().removeAttr("href");
+        if ($(window).scrollTop() <= go_down.height()-"999") $("#Go_Bottom").fadeIn("slow")
+        var scrollDiv_2 = $("#Go_Bottom");
+        $(window).scroll(function() {
+            if ($(window).scrollTop() >= go_down.height()-"999") $(scrollDiv_2).fadeOut("slow")
+            else $(scrollDiv_2).fadeIn("slow")
+        });
+        $("#Go_Top").click(function() {
+            $("html, body").animate({scrollTop: 0}, "slow")
+        })
+        $("#Go_Bottom").click(function() {
+            $("html, body").animate({scrollTop: go_down.height()}, "slow")
+        })
+    });
+</script>
+</body>
+</html>
