@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Install macOS Hackintosh</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="keywords" content="Установка macOS на ПК">
+    <meta name="keywords" content="macOS Установка macOS, Hackintosh, Open Core, помощь в установке macOS (Mac OS X) на РС!, Хакинтош (или OSx86), самая простая установка macOS, Asus, Gigabyte, MSI, i3, i5, i7, applelife, mymacos.site, Clover, kexts, virtualsmc, applealc, lilu, IntelHD, AMD, UHD, Retina, iMac, MacPro, macmini, MakBook, купить хакинтош">
+    <meta name="description" content="Установка Mac OS на PC или ноутбук. Установка Mac OS на ноутбук. Установка хакинтош">
+    <link rel="canonical" href="https://mymacos.site" />
+    <link rel="publisher" href="https://www.google.com/mymacos"/>
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Установка macOS на ПК, Hackintosh, установка macOS на ноутбук" />
+    <meta property="og:description" content="На нашем сайте Вы найдете все нужное для хакинтош и macOS" />
+    <meta property="og:url" content="http://mymacos.site" />
+    <meta property="og:site_name" content="mymacos" />
+    <meta property="og:image" content="assets/img/display_small.jpg" />
+    <!--    <link rel="apple-touch-icon" sizes="144x144" href="/144.png" />-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/180.png" />
+    <link rel="icon" type="image/png" href="/192.png" sizes="192x192"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <!--    <link rel="stylesheet" href="../../assets/slider/css/slider.css">-->
+    <!--    <link rel="stylesheet" href="../../assets/slider/css/fractionslider.css">-->
+    <link rel="stylesheet" href="css/testimonials.css">
+    <link rel="stylesheet" href="assets/css/landing.css">
+    <link rel="stylesheet" href="assets/css/stars.css">
+    <link rel="stylesheet" href="assets/css/anim-cog.css">
+    <!--<link rel="stylesheet" href="css/article-dark-mode-v3.css">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/assets/owl.carousel.min.css'>
+    <link rel='stylesheet' href='https://themes.audemedia.com/html/goodgrowth/css/owl.theme.default.min.css'>
+    <!--    <link rel="stylesheet" href="/css/mediaelementplayer.min.css">-->
+    <!--    <link rel="stylesheet" href="/css/bootstrap.min.css">-->
+    <!--    <link rel="stylesheet" href="/css/magnific-popup.css">  Resource style -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <!--    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">-->
+    <!--    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet">-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <!--    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700,500' rel='stylesheet' type='text/css'>-->
+    <!--    <link rel="stylesheet" href="../assets/css/reset.css">-->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/main.built.css">
+    <link rel="stylesheet" href="assets/css/Pretty-Footer.css">
+    <link rel="stylesheet" href="css/main-b.css">
+    <!--    <link rel="stylesheet" href="../../assets/css/bug-sur.css">-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
+    <!--    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+    <!--    <link href="assets/fonts/fontawesome/css/all.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+    <link rel="shortcut icon" type="image/png" href="favicon.ico">
+    <meta name="yandex-verification" content="500cc68f3331411d" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <!-- Google Analytics -->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-XXXXX-Y', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <!-- End Google Analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148111752-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-148111752-1');
+    </script>
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(55354972, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true,
+            trackHash:true,
+            ecommerce:"dataLayer"
+        });
+    </script>
+    <noscript>
+        <div>
+            <img src="https://mc.yandex.ru/watch/55354972" style="position:absolute; left:-9999px;" alt="" />
+        </div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#menu").on("click","a", function (event) {
+                event.preventDefault();
+                var id  = $(this).attr('href'),
+                    top = $(id).offset().top;
+                $('body,html').animate({scrollTop: top}, 1500);
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#search').click(function(){
+                $('.menu-item').addClass('hide-item')
+                $('.search-form').addClass('active')
+                $('.close').addClass('active')
+                $('#search').hide()
+            })
+            $('.close').click(function(){
+                $('.menu-item').removeClass('hide-item')
+                $('.search-form').removeClass('active')
+                $('.close').removeClass('active')
+                $('#search').show()
+            })
+
+        })
+
+    </script>
+
+</head>
+<body>
+<nav class="fixed-top apple-nav" style="border-bottom: 1px solid rgba(60, 62, 101, 0.9);box-shadow: 0 0 15px rgba(66,66,66,0.1);">
+    <div class="nav-content">
+        <a href="/" class="logo">
+            <img src="assets/img/logo.svg" width="23px" height="44" display="block" alt="my-macos-logo" style="opacity: 0.8; color: #ffffff">
+            <!--            <svg width="18" height="44" display="block">-->
+            <!--                <circle cx="9" cy="22" r="8" stroke="white" stroke-width="1.5" fill="white" />-->
+            <!--            </svg>-->
+        </a>
+        <!--        <a href="javascript:void(0)" class="icon">-->
+        <div class="nav-icon">
+            <div class="bar one"></div>
+            <div class="bar two"></div>
+        </div>
+        <!--        </a>-->
+
+        <div class="nav-links">
+
+            <a class="ac-gn-item-menu" href="#hackintosh" data-analytics-title="Хакинтош" style="text-decoration: none;font-size: 1em;">Хакинтош</a>
+
+
+
+            <a class="ac-gn-item-menu" href="#uslugi" data-analytics-title="Услуги" style="text-decoration: none;font-size: 1em;">Услуги</a>
+
+            <a class="ac-gn-item-menu" href="#files" data-analytics-title="Файлы" style="text-decoration: none;font-size: 1em;">Файлы</a>
+
+            <!--            <a class="ac-gn-item-menu" class="modal-lg" data-toggle="modal" data-target="#myModal" href="" data-analytics-title="Контакты" style="text-decoration: none;font-size: 1em;">Контакты</a>-->
+
+            <a class="ac-gn-item-menu" href="pages/faq.html" onclick="location.reload()" data-analytics-title="FAQ" style="text-decoration: none;font-size: 1em;">FAQ</a>
+            <a class="ac-gn-item-menu" href="#customers" data-analytics-title="Отзывы" style="text-decoration: none;font-size: 1em;">Отзывы</a>
+            <a class="ac-gn-item-menu" class="modal-lg" data-toggle="modal" data-target="#myModal" href="" data-analytics-title="Контакты" style="text-decoration: none;font-size: 1em;">Контакты</a>
+
+        </div>
+
+        <a class="search-icon" href="pages/order.html" data-analytics-title="Заказать">
+            <img src="assets/img/image_small-bag.svg" height="48" width="17" alt="bag">
+            <!--        <svg viewBox="0 0 3.7041668 11.641667" height="44" width="14">-->
+            <!--            <g transform="matrix(0.97865947,0,0,0.97865947,-18.209185,-74.390797)">-->
+            <!--                <path d="m 19.070369,80.532362 c -0.618144,0.618143 -0.619255,1.62581 -7.32e-4,2.244333 0.570867,0.570865 1.473777,0.613735 2.095614,0.131181 l 0.945308,0.945309 0.280633,-0.280633 -0.945308,-0.945309 c 0.482552,-0.621838 0.439684,-1.524746 -0.131182,-2.095613 -0.618523,-0.618523 -1.62619,-0.617413 -2.244333,7.32e-4 z m 0.280632,0.280632 c 0.466517,-0.466515 1.216631,-0.467898 1.683433,-0.0011 0.466802,0.466801 0.466882,1.218378 3.64e-4,1.684894 -0.466512,0.466513 -1.21809,0.466436 -1.684892,-3.67e-4 -0.466803,-0.466801 -0.465418,-1.216918 0.0011,-1.683432 z" fill="white" />-->
+            <!--            </g>-->
+            <!--        </svg>-->
+        </a>
+    </div>
+</nav>
+
+<a style='position: fixed; bottom: 60px; left: 10px; cursor:pointer; display:none; z-index: 88;'
+   href='#' id='Go_Top'>
+    <img src="assets/img/up.png" alt="Up" title="Up">
+</a>
+<a style='position: fixed; bottom: 20px; left: 10px; cursor:pointer; display:none; z-index: 88;'
+   href='#' id='Go_Bottom'>
+    <img src="assets/img/bottom.png" alt="Down" title="Down">
+</a>
+
+<div id="myModal" class="modal fade" role="dialog" style="-webkit-backdrop-filter: saturate(180%) blur(40px);
+    backdrop-filter: saturate(180%) blur(40px); background: rgba(0, 0, 0, 0.1);background-size: cover;width: 100%;padding-right: 0">
+
+    <div class="modal-dialog" style="z-index: 999;margin-top: 100px;">
+
+        <!-- Modal content-->
+        <div class="modal-content" style="z-index: 999;background: rgba(255, 255, 255, 0.7);background-size: cover;width: 100%;border-radius: 40px">
+
+            <div class="modal-body" style="text-align: center;margin-top: 4rem;margin-bottom: 4rem">
+
+                <div class="btn-group" style="margin-top: 1rem;margin-bottom: 1rem">
+                    <a href="https://t.me/Hackintosh_RU" style="text-shadow: 0 0 0 white, 0 0 1em white;text-decoration: none;font-size: 50px;color: #21a2e2;margin-right: 15px;margin-left: 15px;">
+                        <img src="assets/img/telegram.svg" style="width: 65px;background-color: dodgerblue" alt="https://t.me/Hackintosh_RU">
+                        <p style="text-align: center;color: #333333;font-weight: bold;font-size: small">Telegram</p>
+                    </a>
+                    <a href="https://vk.com/hackintosh_osx" style="text-shadow: 0 0 0 white, 0 0 1em white;text-decoration: blink;font-size: 50px;color: #309cf0;margin-right: 15px;margin-left: 15px;">
+                        <img src="assets/img/vk.svg" style="width: 65px;background-color: #005cbf" alt="https://vk.com/hackintosh_osx">
+                        <p style="text-align: center;color: #333333;font-weight: bold;font-size: small">VK</p>
+                    </a>
+                </div>
+                <div class="btn-group" style="margin-top: 1rem;margin-bottom: 1rem">
+                    <a href="skype:alexandr.r5" style="text-shadow: 0 0 0 white, 0 0 1em white;text-decoration: blink;font-size: 50px;color: #01aceb;margin-right: 15px;margin-left: 15px;">
+                        <img src="assets/img/skype.svg" style="width: 65px;background-color: #21a2e2" alt="skype hackintosh_osx">
+                        <p style="text-align: center;color: #333333;font-weight: bold;font-size: small">Skype</p>
+                    </a>
+                    <a href="mailto:my.macos.vk@gmail.com" style="text-shadow: 0 0 0 white, 0 0 1em white;text-decoration: blink;font-size: 50px;color: #2881e5;margin-right: 15px;margin-left: 15px;">
+                        <img src="assets/img/mail.svg" style="width: 65px;background-color: #333333" alt="email hackintosh">
+                        <p style="text-align: center;color: #333333;font-weight: bold;font-size: small">E-mail</p>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<!-- <nav class="fixed-top">
+    <div class="nav-content">
+        <a href="" class="logo">
+            <svg width="18" height="44" display="block">
+                <circle cx="9" cy="22" r="8" stroke="white" stroke-width="1.5" fill="white" />
+            </svg>
+        </a>
+
+        <div class="nav-icon">
+            <div class="bar one"></div>
+            <div class="bar two"></div>
+        </div>
+
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#product">Products</a>
+            <a href="#faq" class="nav-anchor">FAQ</a>
+            <a href="#about">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Login</a>
+        </div>
+
+        <svg class="search-icon" viewBox="0 0 3.7041668 11.641667" height="44" width="14">
+            <g transform="matrix(0.97865947,0,0,0.97865947,-18.209185,-74.390797)">
+                <path d="m 19.070369,80.532362 c -0.618144,0.618143 -0.619255,1.62581 -7.32e-4,2.244333 0.570867,0.570865 1.473777,0.613735 2.095614,0.131181 l 0.945308,0.945309 0.280633,-0.280633 -0.945308,-0.945309 c 0.482552,-0.621838 0.439684,-1.524746 -0.131182,-2.095613 -0.618523,-0.618523 -1.62619,-0.617413 -2.244333,7.32e-4 z m 0.280632,0.280632 c 0.466517,-0.466515 1.216631,-0.467898 1.683433,-0.0011 0.466802,0.466801 0.466882,1.218378 3.64e-4,1.684894 -0.466512,0.466513 -1.21809,0.466436 -1.684892,-3.67e-4 -0.466803,-0.466801 -0.465418,-1.216918 0.0011,-1.683432 z" fill="white" />
+            </g>
+        </svg>
+    </div>
+</nav> -->
+
+<section class="product iphone-x"> <!--style="background-image: url('../../assets/img/sp-3.jpg');background-repeat: no-repeat;background-size: cover;">-->
+    <!--    <div id='stars'></div>-->
+    <!--    <div id='stars2'></div>-->
+    <!--    <div id='stars3'></div>-->
+    <div>
+        <h1 data-analytics-title="Установка macOS на PC" style="color: #2A2F3A; font-family: 'Balsamiq Sans', cursive;">Установка macOS</h1>
+        <h2 data-analytics-title="Установка macOS на ПК" style="color: #2A2F3A;"><strong>Install macOS on a PC, Hackintosh</strong>!</h2>
+    </div>
+    <div class="links">
+        <a href="#hardware" class="learn-more" style="color: #0070c9;font-size: 18px">Комплектующие <img src="assets/img/arrow-forward.svg" style="width: 8px" alt="купить хакинтош"></a>
+        <a href="pages/order.html" style="color: #0070c9;font-size: 18px">Заказать&nbsp;<img src="assets/img/arrow-forward.svg" style="width: 8px" alt="заказать хакинтош"></a>
+    </div>
+    <div id="macbook-head">
+        <figure class="macbook-pic">
+            <img class="img-fluid" src="assets/img/macos_ventura.png" style="padding-bottom: 30px;" alt="MacBook hackintosh">
+        </figure>
+
+        <!--        <img class="img-fluid" src="assets/img/macbook_air__cdtxobde737m_large.jpg" style="padding-bottom: 30px;" alt="">-->
+    </div>
+</section>
+
+<section id="hackintosh" class="product ipad">
+    <h1 data-analytics-title="macOS Москва" style="padding-top: 50px;"><strong>Хакинтош</strong>!</h1>
+    <h2 data-analytics-title="Выбор комплектующих для Hackintosh" style="font-weight: normal;font-size: 23px;">“Надежность и стабильность работы, это не пустые слова, macOS действительно стабильнее Windows. macOS широко используются при производстве медиа-контента, а также на Mac практически нет вирусов.&nbsp;Хакинтош — идеальный вариант, если Bы хотите
+        попробовать macOS перед покупкой Mac или имеете ПК, который требует лучшей ОС.”</h2>
+    <div class="links">
+
+    </div>
+    <img class="img-fluid" src="assets/img/products_large.png" style="padding-bottom: 50px;" data-analytics-title="Всё для Hackintosh!" alt="">
+</section>
+
+<section id="uslugi" class="product macbook-pro dark" style="padding-bottom: 120px;">
+    <h1 data-analytics-title="Установка macOS High Sierra 10.13 на intel PC" style="padding-top: 50px;color: white;"><strong>Как мы работаем</strong>?</h1>
+    <h2 data-analytics-title="Установка macOS Mojave 10.14 на intel PC" style="font-weight: normal;color: white;">Установка происходит удаленно через TeamViewer.</h2>
+    <div class="links small-link-margin" style="background-color: #000000;">
+        <a href="#hardware" class="learn-more" style="color: #fff;font-size: 18px;margin-right:10px;">Комплектующие <img src="assets/img/arrow-forward_wi.svg" style="width: 8px" alt="by a hackintosh">
+        </a>
+        <a href="pages/order.html" style="color: #fff;font-size: 18px">Заказать&nbsp;<img src="assets/img/arrow-forward_wi.svg" style="width: 8px" alt="install mac os">
+        </a>
+    </div>
+    <div class="container" style="background-color: #000000;margin-top: 50px;">
+        <div class="row" style="background-color: #000000;margin-left: 0;">
+            <div class="col-md-3" style="padding-bottom: 50px;"><img src="assets/img/order.svg" style="padding-bottom: 20px;width: 4.5em;opacity: .7;" data-analytics-title="настройка OpenCore" alt="">
+                <h1 class="text-center" style="font-size: 16px;font-weight: normal;color: white;" >Получение&nbsp;Вашей заявки.</h1>
+            </div>
+            <div class="col-md-3" style="padding-bottom: 50px;"><img src="assets/img/bootloader.svg" style="padding-bottom: 20px;width: 6em;opacity: .7;" data-analytics-title="установка хакинтош mojave" alt="">
+                <h1 class="text-center" style="font-size: 16px;font-weight: normal;color: white;" >Подготовка загрузчика.</h1>
+            </div>
+            <div class="col-md-3" style="padding-bottom: 50px;"><img src="assets/img/flashdrive.svg" style="padding-bottom: 20px; width: 4.6em;opacity: .7;" data-analytics-title="hackintosh установка" alt="">
+                <h1 class="text-center" style="font-size: 16px;font-weight: normal;color: white;">Запись загрузочной флешки.</h1>
+            </div>
+            <div class="col" style="padding-bottom: 50px;"><img src="assets/img/install.svg" style="padding-bottom: 20px; width: 5em;opacity: .7;" data-analytics-title="mymacos.site" alt="">
+                <h1 class="text-center" style="font-size: 16px;font-weight: normal;color: white;">Установка macOS на Ваш ПК.</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="background-color: #000000;padding-bottom: 50px;">
+        <div class="row" style="background-color: #000000;margin-left: 0;">
+            <div class="col-md-3" style="padding-bottom: 50px;"><img src="assets/img/setup.svg" style="padding-bottom: 20px; width: 6.3em;opacity: .7;" data-analytics-title="хакинтош mymacos.site" alt="">
+                <h1 class="text-center" style="font-size: 16px;font-weight: normal;color: white;">Настройка&nbsp;системы.</h1>
+            </div>
+            <div class="col-md-3" style="padding-bottom: 50px;"><img src="assets/img/install-app.svg" style="padding-bottom: 20px; width: 5.1em;opacity: .7;" data-analytics-title="кексты" alt="">
+                <h1 class="text-center" style="font-size: 16px;font-weight: normal;color: white;">Установка программ по желанию клиента.</h1>
+            </div>
+            <div class="col-md-3" style="padding-bottom: 50px;"><img src="assets/img/pay.svg" style="padding-bottom: 20px; width: 6.2em;opacity: .7;" data-analytics-title="macos monterey mymacos.site" alt="">
+                <h1 class="text-center" style="font-size: 16px;font-weight: normal;color: white;">Оплата услуги.</h1>
+            </div>
+            <div class="col" style="padding-bottom: 50px;"><img src="assets/img/support.svg" style="padding-bottom: 20px; width: 7.6em;opacity: .7;" data-analytics-title="Hackintosh mymacos.site" alt="">
+                <h1 class="text-center" style="font-size: 16px;font-weight: normal;color: white;">Техническая поддержка.</h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Start: Testimonials -->
+<div id="" class="testimonials-clean" style="padding: 120px 0;padding-bottom: 150px;display: none;">
+    <div class="container">
+        <!-- Start: Intro -->
+        <div class="intro">
+            <h2 class="text-center" style="font-size: 56px;">Отзывы</h2>
+        </div>
+        <!-- End: Intro -->
+        <div class="row people">
+            <div class="col-md-6 col-lg-4 item">
+                <div class="box">
+                    <p class="description">Профессионал своего дела, очень рекомендую Александра по настройке Хака, все идеально...</p>
+                </div>
+                <div class="author"><img class="rounded-circle" src="assets/img/eO3M3lwY0Qw.jpg" data-analytics-title="Установка хакинтош Москва" alt="">
+                    <h5 class="name">Максим Соколов</h5>
+                </div>
+                <a style="text-decoration: none;font-size: x-large;margin-top: 20px;" href="https://vk.com/hackintosh_osx"><img src="assets/img/vk.svg" style="width: 65px;background-color: #005cbf;margin-top: 20px;" alt=""></a>
+            </div>
+            <div class="col-md-6 col-lg-4 item">
+                <div class="box">
+                    <p class="description">Александр, спасибо за настройку и отладку Хака. Всё чётко, как часы!...</p>
+                </div>
+                <div class="author"><img class="rounded-circle" src="assets/img/FfKUYMrpIt0.jpg" data-analytics-title="Видеокарты хакинтош" alt="">
+                    <h5 class="name">Vyacheslav Zlatopolskiy</h5>
+                </div>
+                <a style="text-decoration: none;font-size: x-large;margin-top: 20px;" href="https://vk.com/hackintosh_osx"><img src="assets/img/vk.svg" style="width: 65px;background-color: #005cbf;margin-top: 20px;" alt=""></a>
+            </div>
+            <div class="col-md-6 col-lg-4 item">
+                <div class="box">
+                    <p class="description">Все шустро и быстро. Начинал с кловера)))) а теперь уже на OpenCore сижу...</p>
+                </div>
+                <div class="author"><img class="rounded-circle" src="assets/img/3.jpg" data-analytics-title="Хакинтош на АМД" alt="">
+                    <h5 class="name">Андрей Коваленченко</h5>
+                </div>
+                <a style="text-decoration: none" href="https://vk.com/hackintosh_osx"><img src="assets/img/vk.svg" style="width: 65px;background-color: #005cbf;margin-top: 20px;" alt=""></a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End: Testimonials -->
+
+<section class="testimonials" id="customers">
+    <h1 style="text-align: center;">Отзывы</h1>
+    <div class="wrapper">
+
+        <div class="row">
+            <div class="col-sm-12">
+                <div id="testimonials-list" class="owl-carousel">
+
+                    <div class="item">
+                        <div class="shadow-effect">
+                            <img class="imgPlaceholder" src="assets/img/1.jpg" alt="">
+                            <p>Профессионал своего дела, очень рекомендую, все идеально...</p>
+                            <a style="text-decoration: none;font-size: x-large;margin-top: 20px;" href="https://vk.com/hackintosh_osx"><i class="fa fa-vk" aria-hidden="true" style="font-size: 2em;color: #1D88EA;"></i></a>
+                        </div>
+                        <div class="testimonial-name"><a href="https://vk.com/hackintosh_osx" style="text-decoration: none;color: white;">Максим Соколов</a></div>
+                    </div>
+
+                    <div class="item">
+                        <div class="shadow-effect">
+                            <img class="imgPlaceholder" src="assets/img/2.jpg" alt="">
+                            <p>Cпасибо за настройку и отладку Хака. Всё чётко, как часы!...</p>
+                            <a style="text-decoration: none;font-size: x-large;margin-top: 20px;" href="https://vk.com/hackintosh_osx"><i class="fa fa-vk" aria-hidden="true" style="font-size: 2em;color: #1D88EA;"></i></a>
+                        </div>
+                        <div class="testimonial-name"><a href="https://vk.com/hackintosh_osx" style="text-decoration: none;color: white;">Vyacheslav Zlatopolskiy</a></div>
+                    </div>
+
+
+                    <div class="item">
+                        <div class="shadow-effect">
+                            <img class="imgPlaceholder" src="assets/img/3.jpg" alt="">
+                            <p>Все шустро и быстро. Начинал с кловера)))) а теперь уже на OpenCore сижу...</p>
+                            <a style="text-decoration: none;font-size: x-large;margin-top: 20px;" href="https://vk.com/hackintosh_osx"><i class="fa fa-vk" aria-hidden="true" style="font-size: 2em;color: #1D88EA;"></i></a>
+                        </div>
+                        <div class="testimonial-name"><a href="https://vk.com/hackintosh_osx" style="text-decoration: none;color: white;">Андрей Коваленченко</a></div>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="hardware" class="product hack">
+    <h1 class="head_first" style="font-size: 50px;padding-top: 30px;">Какой компьютер подходит для macOS?</h1>
+    <h2 style="font-weight: normal;font-size: 23px;">Для установки macOS подойдут десктопы и ноутбуки на платформе Intel,<br> а так же десктопы на платформе AMD (FX, Ryzen).</h2>
+    <!--    <form action="core/tpl/proc.php" method='post'>-->
+    <!--        <p><input type="text" name="fild" id='pff' placeholder="CPU"/></p>-->
+    <!--        <p><input type="text" name="fild" id='pff' placeholder="GPU"/></p>-->
+    <!--        <p><input type="text" name="fild" id='pff' placeholder="Motherboard"/></p>-->
+    <!--        <p><input type="submit" name="button" value="Send" /></p>-->
+    <!--    </form>
+
+        <form class="form-block" style="max-width: 50%;margin-left: 25%">
+            <select class="custom-select" style="margin-bottom: 20px;text-align: center">
+                <option selected> <placeholder>CPU...</placeholder></option>
+                <option value="1">Core2Duo</option>
+                <option value="2">Core2Quad</option>
+                <option value="3">i3</option>
+                <option value="4">i5</option>
+                <option value="5">i7</option>
+                <option value="6">i9</option>
+                <option value="7">Xeon</option>
+                <option value="8">Ryzen</option>
+                <option value="9">Другой</option>
+            </select>
+            <select class="custom-select" style="margin-bottom: 20px">
+                <option selected><placeholder>Motherboard...</placeholder> </option>
+                <option value="1">Asus</option>
+                <option value="2">Gigabyte</option>
+                <option value="3">MSI</option>
+                <option value="4">ASRock</option>
+                <option value="5">Acer</option>
+                <option value="6">Sony</option>
+                <option value="7">DELL</option>
+                <option value="8">HP</option>
+                <option value="9">Huanan</option>
+                <option value="10">Другая</option>
+            </select>
+            <select class="custom-select" style="margin-bottom: 20px">
+                <option selected><placeholder>GPU...</placeholder></option>
+                <option value="1">Intel</option>
+                <option value="2">AMD</option>
+                <option value="3">NVIDIA</option>
+                <option value="4">Другая</option>
+            </select>
+
+            <button type="submit" class="btn btn-primary my-1">Проверить</button>
+        </form>
+        <form>
+            <label for="exampleFormControlFile1">Так же можно загрузить аппаратный отчет <a href="http://download.aida64.com/aida64engineer610.exe">aida64</a>,<br> перед отправкой запакуйте его в zip, rar, 7-zip</label>
+            <div class="form-group" style="max-width: 15em;margin: 0;padding: 0;position: relative;margin-left: 40%">
+                <input type="file" class="form-control-file btn btn-primary" id="exampleFormControlFile1">
+            </div>
+        </form>-->
+
+    <p class="hardware" style="max-width: 80%;margin-left: 10%;text-align: justify;display: none;"><br><br>На совместимости ноутбуков остановимся более детально:<br><br>Главным вопросом выступает работоспособность видеокарты. <br>Все современные ноутбуки с дискреной графикой
+        работают на технологии Optimus для Nvidia и Switchable Graphics для Radeon.<br> Эти технологии в macOS не работают! Поэтому работать может только видео встроенное в процессор. Следовательно для установки подходят ноутбуки на процессорах со
+        встроенным видео: Intel® HD Graphics 3000, 4000, 4400, 4600, 5000, 5500, 5600, 520, 530, 630. Так же встречаются ноутбуки в которых можно запустить дискретную графику - это редкость но такие ноутбуки существуют. В таких компьютерах заблокированная
+        графика от интел либо ее вовсе нет в процессоре.<br><br>Краткий список процессоров на которых будет работать macOS:<br><br>поколение Core 2 Duo (запускаем дискретную графику);<br>первое поколение
+        Core i3, i5, i7, при условии, что процессорное видео заблокировано (запускаем дискретную графику);<br><br>Core i3, i5, i7 Sandy Bridge<br>Core i3, i5, i7 Ivy Bribge<br>Core i3, i5, i7 Haswell<br>Core i3, i5, i7 Broadwell&nbsp;<br>Core
+        i3, i5, i7 Sky Lake&nbsp;<br>Core i3, i5, i7 Kaby Lake&nbsp;<br>Core i3, i5, i7, i9 Coffee Lake<br>Core i3, i5, i7, i9 Comet Lake<br>Core i3, i5, i7, i9 Ice Lake<br>Intel Xeon<br>AMD FX<br>AMD Ryzen<br><br>Важным вопросом касающимся ноутбуков является работоспособность wifi модуля.<br><br>К сожалению на всех новых ноутбуках стоят модули которые
+        в 99% не могут работать в операционной системе от Apple.<br><br>Выходов из ситуации два:<br><br>замена штатного wifi модуля на совместимый с macOS,<br>использование USB WIFI.<br>Более подробные выводы по каждому конкретному компьютеру
+        мы можем дать Вам после изучения отчета аппаратных средств из программы AIDA 64.
+    </p>
+    <!--    <p>-->
+    <!--        Более подробно о поддержке железа, можно почитать в <a href="/core/pages/faq.php">FAQ</a>-->
+    <!--    </p>-->
+    <div class="links"></div>
+    <img class="img-fluid" src="assets/img/imac-3.png" style="padding-bottom: 50px;display: none;" data-analytics-title="установка osx Москва" alt="">
+</section>
+
+
+<div class="clearfix" style="padding-bottom: 120px;max-width: 80%;margin-left: 10%;">
+    <img src="assets/img/imac-catalina.png" class="col-md-6 float-md-right mb-3 ml-md-3 img-fluid" alt="...">
+
+    <p class="hardware" style="max-width: 80%;margin-left: 10%;text-align: justify;"><br><br>На совместимости ноутбуков остановимся более детально:<br>Главным вопросом выступает работоспособность видеокарты. <br>Все современные ноутбуки с дискреной графикой
+        работают на технологии Optimus для Nvidia и Switchable Graphics для Radeon.<br> Эти технологии в macOS не работают! Поэтому работать может только видео встроенное в процессор. Следовательно для установки подходят ноутбуки на процессорах со
+        встроенным видео: Intel® HD Graphics 3000, 4000, 4400, 4600, 5000, 5500, 5600, 520, 530, 630. Так же встречаются ноутбуки в которых можно запустить дискретную графику - это редкость но такие ноутбуки существуют. В таких компьютерах заблокированная
+        графика от интел либо ее вовсе нет в процессоре.<br><br>Краткий список процессоров на которых будет работать macOS:<br><br>поколение Core 2 Duo (запускаем дискретную графику);<br>первое поколение
+        Core i3, i5, i7, при условии, что процессорное видео заблокировано (запускаем дискретную графику);<br><br>Core i3, i5, i7 Sandy Bridge<br>Core i3, i5, i7 Ivy Bribge<br>Core i3, i5, i7 Haswell<br>Core i3, i5, i7 Broadwell&nbsp;<br>Core
+        i3, i5, i7 Sky Lake&nbsp;<br>Core i3, i5, i7 Kaby Lake&nbsp;<br>Core i3, i5, i7, i9 Coffee Lake<br>Core i3, i5, i7, i9 Comet Lake<br>Core i3, i5, i7, i9 Ice Lake<br>Intel Xeon<br>AMD FX<br>AMD Ryzen<br>
+        Более подробные выводы по каждому конкретному компьютеру
+        мы можем дать Вам после изучения отчета аппаратных средств из программы AIDA 64.<br>
+
+        Подробнее о поддержке железа, можно почитать в <a href="pages/faq.html">FAQ</a>
+    </p>
+</div>
+
+<div class="abc" style="margin-bottom: 20px;" id="files">
+
+</div>
+<div class="abc" style="margin-bottom: 20px;" id="files">
+
+</div>
+
+<main class="main" role="main">
+
+
+    <section class="homepage-section collection-module" data-module-template="mac-takeover" data-analytics-activitymap-region-id="mac-takeover" data-analytics-region="mac-takeover">
+
+
+        <div data-unit-id="features" data-analytics-section-engagement="name:mac-takeover-features">
+            <div class="module-content">
+                <div class="features-grid">
+
+
+                    <div class="tile tile-display" role="img" tabindex="-1" aria-labelledby="tile-display-label">
+
+                        <figure class="tile-image" style="background: url(assets/img/clover-4.png) 50% 50% no-repeat;">
+
+                        </figure>
+
+                        <span class="tile-label tile-label-display" id="tile-display-label">
+                            <a href="downloads/Clover-5149-X64.iso.7z" style="text-shadow: 0 0 0 white, 0 0 0.1em darkgray;color: #f3f3f2;text-decoration: none;">Clover<br></a>
+                        </span>
+                    </div>
+
+                    <div class="tile tile-processor" role="img" tabindex="-1" aria-labelledby="tile-processor-label" style="background: url(assets/img/Apple-Windows-10.jpg) 50% 100% no-repeat;background-size: cover;">
+                        <figure class="tile-image"></figure>
+                        <span class="tile-label " id="tile-processor-label"><a href="downloads/BDU_v2.1.2020.028b.zip" style="text-shadow: 0 0 0 white, 0 0 0.1em grey;color: #ffffff;text-decoration: none;"><p style="text-shadow: 0 0 0 black, 0 0 0.1em grey;color: #000000;text-decoration: none;">...</p> BDU</a></span>
+                    </div>
+
+                    <div class="tile tile-touchid" role="img" tabindex="-1" aria-labelledby="tile-touchid-label">
+                        <figure class="tile-image" style="background: url(assets/img/LogoOpenCore.svg) 100% 100% no-repeat;">
+
+                        </figure>
+                        <span class="tile-label tile-label-bottom" id="tile-touchid-label">
+                            <a href="downloads/OpenCore-0.8.4-RELEASE.zip" style="color: white;text-decoration: none;">OpenCore</a>
+                            </span>
+                    </div>
+
+                    <div class="tile tile-graphics" role="img" tabindex="-1" aria-labelledby="tile-graphics-label">
+                        <figure class="tile-image" style="background: url(assets/img/kexts.png) 20% 70% no-repeat;"></figure>
+                        <div class="tile-label-block" id="tile-graphics-label">
+                            <div class="tile-label tile-label-before"><a href="downloads/Kexts.zip" style="text-shadow: 0 0 0 white, 0 0 0.1em grey;color: #ffffff;text-decoration: none;">Kexts<br></a></div>
+                            <div class="tile-label tile-label-graphics"> <br>  </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="tile tile-keyboard" role="img" tabindex="-1" aria-labelledby="tile-keyboard-label">
+                        <figure class="tile-image" style="background: url() 50% 60% no-repeat;">
+                            <!--<div class="circles" id="no1"> </div>-->
+                            <!--<div class="circles2" id="no2"> </div>-->
+                            <!--<div class="circles3" id="no3"> </div>-->
+                            <img src="assets/img/gear-big.png" class="rotate-right center-right"/>
+                            <img src="assets/img/shadow.png" class="shadow-big-right shadow-right"/>
+
+                            <img src="assets/img/gear-small.png" class="rotate-left center-left"/>
+
+                            <img src="assets/img/bg.svg" class="rotate-stop center-stop"/>
+                        </figure>
+                        <span class="tile-label tile-label-elevated tile-label-bottom" id="tile-keyboard-label"><a
+                                href="downloads/Utilities.zip" style="text-shadow: 0 0 15px black, 0 0 0.1em grey;color: #ffffff;text-decoration: none;">Utilities</a></span>
+                    </div>
+
+                    <div class="tile tile-storage" role="img" tabindex="-1" aria-labelledby="tile-storage-label" style="background: url(assets/img/amd-ryzen.jpg) 50% 100% no-repeat;background-size: cover;">
+                        <figure class="tile-image"></figure>
+                        <span class="tile-label" id="tile-storage-label">
+                            <a href="pages/amd-ryzen.html" style="text-shadow: 0 0 0 white, 0 0 0.1em black;color: #ffffff;text-decoration: none;">AMD Ryzen</a>
+                        </span>
+                    </div>
+
+                    <div class="tile tile-battery" role="img" tabindex="-1" aria-labelledby="tile-battery-label" style="background: url(assets/img/b-sur.jpg) 50% 50% no-repeat;background-size: cover;">
+                        <figure class="tile-image"></figure>
+                        <span class="tile-label" id="tile-battery-label">
+                            <a href="pages/big-sur.html" style="text-shadow: 0 0 0 white, 0 0 0.1em grey;color: #fff;text-decoration: none;"><p style="text-shadow: 0 0 0 white, 0 0 0.1em grey;color: #fff;text-decoration: none;font-weight: lighter;">macOS</p> Big Sur</a>
+                        </span>
+                    </div>
+
+                    <div class="tile tile-macos" role="img" tabindex="-1" aria-labelledby="tile-macos-label" style="background: url(assets/img/macos_catalina.jpg) 50% 50% no-repeat;background-size: cover;">
+                        <figure class="tile-image"></figure>
+                        <div class="tile-label-block tile-label-bottom" id="tile-macos-label">
+                            <a href="pages/catalina.html" style="text-decoration: none;">
+                                <div class="tile-label tile-label-elevated tile-label-tz">macOS</div>
+                                <div class="tile-label tile-label-reduced tile-label-tz">Catalina</div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="tile tile-thunderbolt" role="img" tabindex="-1" aria-labelledby="tile-thunderbolt-label" style="background: url(assets/img/apps.png) 50% 50% no-repeat;background-size: cover;padding-bottom: 100px;">
+                        <figure class="tile-image"></figure>
+                        <span class="tile-label" id="tile-thunderbolt-label" style="padding-top:450px;">
+                            <a href="https://macdrop.net" style="text-shadow: 0 0 0 white, 0 0 0.1em grey;color: #000000;text-decoration: none;">Apps</a>
+                        </span>
+                    </div>
+                    <div class="tile tile-monterey" role="img" tabindex="-1" aria-labelledby="tile-monterey-label" style="background: url(assets/img/monterey.svg) 50% 50% no-repeat;background-size: cover;">
+                        <figure class="tile-image"></figure>
+                        <span class="tile-label" id="tile-monterey-label">
+                            <a href="pages/monterey.html" style="text-shadow: 0 0 0 white, 0 0 0.1em grey;color: #fff;text-decoration: none;font-size: 5rem;"><p style="text-shadow: 0 0 0 white, 0 0 0.1em grey;color: #fff;text-decoration: none;font-weight: lighter;font-size: 2rem;">macOS</p> Monterey</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</main>
+
+<!--<div class="space">
+    <section>
+
+    </section>
+</div> -->
+<footer>
+    <div class="row">
+        <div class="col-sm-6 col-md-4 footer-navigation">
+            <h3><a href="#">my mac<span>OS </span></a></h3>
+            <p class="links">
+                <a href="/">Главная</a><strong> · </strong>
+                <a href="/#uslugi">Услуги</a><strong> · </strong>
+                <a href="/#files">Файлы</a><strong> · </strong>
+                <a class="modal-lg" data-toggle="modal" data-target="#myModal" href="">Контакты</a><strong> · </strong>
+                <a href="pages/faq.html">Faq</a>
+            </p>
+            <p class="company-name">my macOS © 2022 </p>
+        </div>
+        <!--        <div class="col-sm-6 col-md-4 footer-contacts" style="display: none;">-->
+        <!--            <div><span class="fa fa-map-marker footer-contacts-icon"> </span>-->
+        <!--                <p><span class="new-line-span">21 Revolution Street</span> Paris, France</p>-->
+        <!--            </div>-->
+        <!--            <div><i class="fa fa-phone footer-contacts-icon"></i>-->
+        <!--                <p class="footer-center-info email text-left"> +1 555 123456</p>-->
+        <!--            </div>-->
+        <!--            <div><i class="fa fa-envelope footer-contacts-icon"></i>-->
+        <!--                <p> <a href="#" target="_blank">hackintoshosx@icloud.com</a></p>-->
+        <!--            </div>-->
+        <!--        </div>-->
+        <div class="clearfix"></div>
+        <div class="col-md-4 footer-about" style="display: none;">
+            <h4>Установка macOS на ПК</h4>
+            <p> Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet. </p>
+            <div class="social-links social-icons" style="display: none;">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+<footer id="contact" class="page-footer" style="display: none;">
+    <div class="container">
+        <hr>
+        <div class="footer-legal">
+            <div class="d-inline-block copyright">
+                <p class="d-inline-block">Copyright © 2018-2022. my macOS<br></p>
+            </div>
+
+            <div class="d-inline-block legal-links">
+                <div class="d-inline-block item"><a href="https://t.me/Hackintosh_RU" style="text-decoration: none;font-size: 11px;color: #333;">Telegram</a></div>
+                <div class="d-inline-block item"><a href="https://vk.com/hackintosh_osx" style="text-decoration: blink;font-size: 11px;color: #333;">VK</a></div>
+                <div class="d-inline-block item"><a href="skype:alexandr.r5" style="text-decoration: blink;font-size: 11px;color: #333;">Skype</a></div>
+                <div class="d-inline-block item"><a href="mailto:my.macos.vk@gmail.com" style="text-decoration: blink;font-size: 11px;color: #333;">E-mail</a></div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- End: Corporate Footer Clean -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/js/script.min.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/owl.carousel.min.js'></script>
+<script src="js/testimonials.js"></script>
+<!--<script src="../../assets/slider/js/main.js"></script>-->
+<!--<script src="../../assets/slider/js/jquery.fractionslider.js"></script>-->
+<!--<script src="../../assets/js/main.js"></script>-->
+<!--<script src="../../assets/js/404.js"></script>-->
+<!--<script src="../assets/js/index.js"></script>-->
+<!--<script src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>-->
+<!--<script src="https://yastatic.net/share2/share.js"></script>-->
+<!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>-->
+<script>
+    window.replainSettings = { id: 'a6bd9478-c5dd-4203-a55d-494cc851f723' };
+    (function(u){var s=document.createElement('script');s.async=true;s.src=u;
+        var x=document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);
+    })('https://widget.replain.cc/dist/client.js');
+</script>
+<!--<script>-->
+<!--    $(function() {-->
+<!--        // при нажатии на кнопку scrollup-->
+<!--        $('.scrollup').click(function() {-->
+<!--            // переместиться в верхнюю часть страницы-->
+<!--            $("html, body").animate({-->
+<!--                scrollTop:0-->
+<!--            },1000);-->
+<!--        })-->
+<!--    })-->
+<!--    // при прокрутке окна (window)-->
+<!--    $(window).scroll(function() {-->
+<!--        // если пользователь прокрутил страницу более чем на 200px-->
+<!--        if ($(this).scrollTop()>200) {-->
+<!--            // то сделать кнопку scrollup видимой-->
+<!--            $('.scrollup').fadeIn();-->
+<!--        }-->
+<!--        // иначе скрыть кнопку scrollup-->
+<!--        else {-->
+<!--            $('.scrollup').fadeOut();-->
+<!--        }-->
+<!--    });-->
+<!--</script>-->
+
+<script>
+    const navLinks = document.querySelector(".nav-links");
+    const navIcon = document.querySelector(".nav-icon");
+    const nav = document.querySelector("nav");
+
+    navIcon.onclick = function () {
+        nav.classList.toggle('show');
+    }
+    navLinks.onclick = function () {
+        nav.classList.remove('show');
+    }
+</script>
+<script language="JavaScript" type="text/javascript">
+    var go_down = jQuery('body');
+    jQuery(function() {
+        $("#Go_Top").hide().removeAttr("href");
+        if ($(window).scrollTop() >= "250") $("#Go_Top").fadeIn("slow")
+        var scrollDiv = $("#Go_Top");
+        $(window).scroll(function() {
+            if ($(window).scrollTop() <= "250") $(scrollDiv).fadeOut("slow")
+            else $(scrollDiv).fadeIn("slow")
+        });
+        $("#Go_Bottom").hide().removeAttr("href");
+        if ($(window).scrollTop() <= go_down.height()-"999") $("#Go_Bottom").fadeIn("slow")
+        var scrollDiv_2 = $("#Go_Bottom");
+        $(window).scroll(function() {
+            if ($(window).scrollTop() >= go_down.height()-"999") $(scrollDiv_2).fadeOut("slow")
+            else $(scrollDiv_2).fadeIn("slow")
+        });
+        $("#Go_Top").click(function() {
+            $("html, body").animate({scrollTop: 0}, "slow")
+        })
+        $("#Go_Bottom").click(function() {
+            $("html, body").animate({scrollTop: go_down.height()}, "slow")
+        })
+    });
+</script>
+</body>
+</html>
