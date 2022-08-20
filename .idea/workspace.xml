@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="01d9a3f7-266f-4431-a495-ea7000d4b880" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/assets/img/macOS Ventura.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/macOS Ventura@0.5x.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,7 +30,7 @@
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="477">
-              <caret line="270" column="72" selection-start-line="270" selection-start-column="72" selection-end-line="270" selection-end-column="72" />
+              <caret line="270" column="64" selection-start-line="270" selection-start-column="64" selection-end-line="270" selection-end-column="64" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#figure#0;n#div#2;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#figure#0;n#div#4;n#div#0;n#div#0;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -140,12 +142,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1660979175780</updated>
-      <workItem from="1660979177345" duration="3895000" />
+      <workItem from="1660979177345" duration="4083000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3895000" />
+    <option name="totallyTimeSpent" value="4083000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="141" y="31" width="1737" height="954" extended-state="0" />
@@ -203,7 +205,7 @@
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="477">
-          <caret line="270" column="72" selection-start-line="270" selection-start-column="72" selection-end-line="270" selection-end-column="72" />
+          <caret line="270" column="64" selection-start-line="270" selection-start-column="64" selection-end-line="270" selection-end-column="64" />
           <folding>
             <element signature="n#style#0;n#img#0;n#figure#0;n#div#2;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#figure#0;n#div#4;n#div#0;n#div#0;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
