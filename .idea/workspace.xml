@@ -2,13 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="01d9a3f7-266f-4431-a495-ea7000d4b880" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/##bootstrap/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/##bootstrap/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mymac.crt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mymac.key" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/1x1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/amd-ryzen.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/big-sur.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/catalina.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/monterey.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/mymac.github.io.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mymac.github.io.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/bootstrap/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/bootstrap/js/bootstrap.min.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,6 +45,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -60,7 +63,7 @@
       <updated>1660979175780</updated>
       <workItem from="1660979177345" duration="4673000" />
       <workItem from="1661059779899" duration="2330000" />
-      <workItem from="1661075119439" duration="1696000" />
+      <workItem from="1661075119439" duration="4412000" />
     </task>
     <servers />
   </component>

@@ -4,5 +4,12 @@
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="normalize" level="application" />
+    <orderEntry type="library" name="owl.carousel" level="application" />
+    <orderEntry type="library" name="owl.theme.default" level="application" />
+    <orderEntry type="library" name="aos" level="application" />
+    <orderEntry type="library" name="animate" level="application" />
+    <orderEntry type="library" name="jquery.fancybox" level="application" />
+    <orderEntry type="library" name="jquery" level="application" />
   </component>
 </module>
