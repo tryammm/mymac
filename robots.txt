@@ -1,5 +1,6 @@
-User-agent: *
+User-agent: Google
+User-agent: Yandex
 Allow: All
 //Disallow:
 Host: https://mymacos.ml
-Sitemap: https://mymacos.ml/sitemap.xml
+//Sitemap: https://mymacos.ml/sitemap.xml
