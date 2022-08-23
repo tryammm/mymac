@@ -13,5 +13,8 @@
     <orderEntry type="library" name="jquery" level="application" />
     <orderEntry type="library" name="fancybox" level="application" />
     <orderEntry type="library" name="fancybox.umd" level="application" />
+    <orderEntry type="library" name="widget.5461d341" level="application" />
+    <orderEntry type="library" name="lang-en-json.d9856f5c" level="application" />
+    <orderEntry type="library" name="widget.2f0a303b" level="application" />
   </component>
 </module>

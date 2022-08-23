@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="JavaScriptLibraryMappings">
-    <file url="PROJECT" libraries="{animate, aos, fancybox, fancybox.umd, jquery, jquery.fancybox, normalize, owl.carousel, owl.theme.default}" />
+    <file url="PROJECT" libraries="{animate, aos, fancybox, fancybox.umd, jquery, jquery.fancybox, lang-en-json.d9856f5c, normalize, owl.carousel, owl.theme.default, widget.2f0a303b, widget.5461d341}" />
   </component>
 </project>
