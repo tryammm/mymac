@@ -63,6 +63,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
     <!--<script src="js/jquery.fancybox.min.js"></script>-->
 
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-P2MDVR9');</script>
+    <!-- End Google Tag Manager -->
+
     <meta name="google-site-verification" content="vyQxXGJxJiq5xVYfPI5ksuhGas5eSHNXpSfEoXdRXdQ" />
     <!-- Google Analytics -->
     <script>
@@ -84,9 +92,59 @@
 
         gtag('config', 'UA-148111752-1');
     </script>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(55915060, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true,
+            ecommerce:"dataLayer"
+        });
+    </script>
+
+    <noscript><div><img src="https://mc.yandex.ru/watch/55915060" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#menu").on("click","a", function (event) {
+                event.preventDefault();
+                var id  = $(this).attr('href'),
+                    top = $(id).offset().top;
+                $('body,html').animate({scrollTop: top}, 1500);
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#search').click(function(){
+                $('.menu-item').addClass('hide-item')
+                $('.search-form').addClass('active')
+                $('.close').addClass('active')
+                $('#search').hide()
+            })
+            $('.close').click(function(){
+                $('.menu-item').removeClass('hide-item')
+                $('.search-form').removeClass('active')
+                $('.close').removeClass('active')
+                $('#search').show()
+            })
+
+        })
+
+    </script>
 
 </head>
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P2MDVR9"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 <nav class="fixed-top apple-nav" style="border-bottom: 1px solid rgba(60, 62, 101, 0.9);box-shadow: 0 0 15px rgba(66,66,66,0.1);z-index: 999;">
     <div class="nav-content">
         <a href="/" class="logo">
