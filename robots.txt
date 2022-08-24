@@ -2,4 +2,5 @@ User-agent: Google
 User-agent: Yandex
 Disallow:
 Host: https://mymacos.ml
-Sitemap: https://mymac.github.io/sitemap.xml
+Sitemap: https://mymacos.ml/sitemap.xml
+Sitemap: http://www.mymacos.ml/sitemap.xml
