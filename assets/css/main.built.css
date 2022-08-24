@@ -15432,7 +15432,7 @@ only screen and (max-width: 734px) and (min-resolution: 144dpi) {
 }
 
 .main [data-module-template="mac-takeover"] [data-unit-id="features"] .tile-thunderbolt .tile-label {
-    margin-bottom: 112px
+    margin-bottom: 70px
 }
 
 @media only screen and (max-width: 1068px) {
@@ -15454,7 +15454,7 @@ only screen and (max-width: 734px) and (min-resolution: 144dpi) {
         -ms-grid-column: 1;
         -ms-grid-column-span: 2;
         grid-column: 1 / span 2;
-        
+
         /*-ms-grid-row: 8;
         grid-row: 8*/
     }
@@ -15464,7 +15464,7 @@ only screen and (max-width: 734px) and (min-resolution: 144dpi) {
     .main [data-module-template="mac-takeover"] [data-unit-id="features"] .tile-monterey {
         -ms-grid-column: 1;
         -ms-grid-column-span: 2;
-        grid-column: 1 / span 2;
+
         grid-column: 1/4;
         /*-ms-grid-row: 8;
         grid-row: 8*/
@@ -15549,7 +15549,7 @@ only screen and (max-width: 734px) and (min-resolution: 144dpi) {
 
 @media only screen and (max-width: 1068px) {
     .main [data-module-template="mac-takeover"] [data-unit-id="features"] .tile-monterey .tile-label {
-        margin-bottom: 78px
+        margin-bottom: 7px
     }
 }
 
