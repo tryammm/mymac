@@ -15454,8 +15454,20 @@ only screen and (max-width: 734px) and (min-resolution: 144dpi) {
         -ms-grid-column: 1;
         -ms-grid-column-span: 2;
         grid-column: 1 / span 2;
-        -ms-grid-row: 8;
-        grid-row: 8
+        
+        /*-ms-grid-row: 8;
+        grid-row: 8*/
+    }
+}
+
+@media only screen and (min-width: 1068px) {
+    .main [data-module-template="mac-takeover"] [data-unit-id="features"] .tile-monterey {
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 2;
+        grid-column: 1 / span 2;
+        grid-column: 1/4;
+        /*-ms-grid-row: 8;
+        grid-row: 8*/
     }
 }
 
