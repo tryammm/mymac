@@ -4,24 +4,6 @@
     <list default="true" id="01d9a3f7-266f-4431-a495-ea7000d4b880" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/amd-graphics-hackintosh.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/amd-graphics-hackintosh.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/amd-ryzen.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/amd-ryzen.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/apple-alc.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/apple-alc.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/asrock-bios-setup-hackintosh.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/asrock-bios-setup-hackintosh.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/asus-bios-setup-hackintosh.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/asus-bios-setup-hackintosh.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/big-sur.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/big-sur.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/brightness-notebook-hackintosh.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/brightness-notebook-hackintosh.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/catalina.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/catalina.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/faq.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/faq.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/gigabyte-bios-setup-hackintosh.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/gigabyte-bios-setup-hackintosh.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/hackintosh-ethernet.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/hackintosh-ethernet.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/intel-hd-graphics-hackintosh.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/intel-hd-graphics-hackintosh.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/macos-installer.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/macos-installer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/monterey.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/monterey.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/msi-bios-setup-hackintosh.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/msi-bios-setup-hackintosh.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/nvidia-graphics-hackintosh.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/nvidia-graphics-hackintosh.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/open-core.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/open-core.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/usb-ports-hackintosh.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/usb-ports-hackintosh.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/wi-fi-modules-hackintosh.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/wi-fi-modules-hackintosh.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +56,7 @@
       <updated>1660979175780</updated>
       <workItem from="1660979177345" duration="4673000" />
       <workItem from="1661059779899" duration="2330000" />
-      <workItem from="1661075119439" duration="26123000" />
+      <workItem from="1661075119439" duration="26757000" />
     </task>
     <servers />
   </component>
