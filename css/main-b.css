@@ -13,7 +13,7 @@ body{
 nav {
     margin: 0;
     overflow: hidden;
-    background: #2C2E49;
+    background: #242529;
 }
 
 .head {
@@ -97,7 +97,7 @@ nav {
         right: 0;
         height: 0;
         width: 100%;
-        background: #2C2E49;
+        background: #242529;
         flex-direction: column;
         justify-content: flex-start;
         transition: all 2s cubic-bezier(0.19, 1, 0.22, 1);

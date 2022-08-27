@@ -269,13 +269,13 @@ img {
 
 .product .links {
     font-size: 21px;
-    margin-bottom: 50px
+    /*margin-bottom: 50px*/
 }
 
 @media (min-width: 576px) {
     .product .links {
         font-size: 21px;
-        margin-bottom: 80px
+        /*margin-bottom: 80px*/
     }
 }
 
@@ -290,7 +290,7 @@ img {
 
 .product.iphone-x {
     padding-top: 110px;
-    background-color: #fafafa
+    background-color: #242529
 }
 
 .product.ipad {

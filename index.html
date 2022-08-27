@@ -42,8 +42,9 @@
     <!--    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet">-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Open+Sans&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
     <!--    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700,500' rel='stylesheet' type='text/css'>-->
     <!--    <link rel="stylesheet" href="../assets/css/reset.css">-->
     <link rel="stylesheet" href="assets/css/main.css">
@@ -145,7 +146,7 @@
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P2MDVR9"
                   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-<nav class="fixed-top apple-nav" style="border-bottom: 1px solid rgba(60, 62, 101, 0.9);box-shadow: 0 0 15px rgba(66,66,66,0.1);z-index: 999;">
+<nav class="fixed-top apple-nav" style="/*border-bottom: 1px solid rgba(60, 62, 101, 0.9);*/box-shadow: 0 0 15px rgba(36, 37, 41, 0.1);z-index: 999;">
     <div class="nav-content">
         <a href="/" class="logo">
             <img src="assets/img/logo.svg" width="23px" height="44" display="block" alt="my-macos-logo" style="opacity: 0.8; color: #ffffff">
@@ -269,16 +270,19 @@
     <!--    <div id='stars2'></div>-->
     <!--    <div id='stars3'></div>-->
     <div>
-        <h6 data-analytics-title="Установка macOS на PC" style="color: #2A2F3A;font-size: 350%;">Установка macOS</h6>
-        <h2 data-analytics-title="Установка macOS на ПК" style="color: #2A2F3A;"><strong>Install macOS on a PC, Hackintosh</strong>!</h2>
+        <h6 data-analytics-title="Установка macOS на PC" style="font-family: 'Inter', sans-serif;font-weight: 700;color: #fafafa;font-size: 350%;">Install macOS</h6>
+        <h2 data-analytics-title="Установка macOS на ПК" style="color: #fafafa;"><strong>Установка macOS на PC, Hackintosh</strong>!</h2>
     </div>
-    <div class="links">
-        <a href="#hardware" class="learn-more" style="color: #0070c9;font-size: 18px">Комплектующие <img src="assets/img/arrow-forward.svg" style="width: 8px" alt="купить хакинтош"></a>
-        <a href="pages/order.html" style="color: #0070c9;font-size: 18px">Заказать&nbsp;<img src="assets/img/arrow-forward.svg" style="width: 8px" alt="заказать хакинтош"></a>
+    <div class="links" style="padding-top: 1.4em;">
+        <a class="btn btn-primary btn-lg" href="pages/order.html" role="button" style="border-radius: 2rem;font-size: .9rem;">Заказать</a>
+        <a class="btn btn-secondary btn-lg" href="#hardware" role="button" style="border-radius: 2rem;font-size: .9rem;">Комплектующие</a>
+        <!--<a href="pages/order.html" style="color: #0070c9;font-size: 18px">Заказать&nbsp;<img src="assets/img/arrow-forward.svg" style="width: 8px" alt="заказать хакинтош"></a>
+        <a href="#hardware" class="learn-more" style="color: #0070c9;font-size: 18px">Комплектующие <img src="assets/img/arrow-forward.svg" style="width: 8px" alt="купить хакинтош"></a>-->
+
     </div>
     <div id="macbook-head">
         <figure class="macbook-pic">
-            <img class="img-fluid" src="assets/img/macbook.jpg" style="padding-bottom: 30px;" alt="MacBook M1">
+            <img class="img-fluid" src="assets/img/Imac_2.png" style="padding-bottom: 0;" alt="MacBook M1">
         </figure>
 
         <!--        <img class="img-fluid" src="assets/img/macbook_air__cdtxobde737m_large.jpg" style="padding-bottom: 30px;" alt="">-->
@@ -700,15 +704,29 @@
 <!--<script src="https://yastatic.net/share2/share.js"></script>-->
 <!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>-->
 
+<!-- Begin of Chaport Live Chat code -->
+<script type="text/javascript">
+    (function(w,d,v3){
+        w.chaportConfig = {
+            appId : '630a152ea88f58860c636763'
+        };
+
+        if(w.chaport)return;v3=w.chaport={};v3._q=[];v3._l={};v3.q=function(){v3._q.push(arguments)};v3.on=function(e,fn){if(!v3._l[e])v3._l[e]=[];v3._l[e].push(fn)};var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://app.chaport.com/javascripts/insert.js';var ss=d.getElementsByTagName('script')[0];ss.parentNode.insertBefore(s,ss)})(window, document);
+</script>
+<!-- End of Chaport Live Chat code -->
+
 <!-- Jivo -->
 <!--<script src="//code.jivo.ru/widget/2ANnC3X1T2" async></script>-->
 
+<!-- Replain
 <script>
     window.replainSettings = { id: '277286e7-83f2-44b9-9111-23ee4ad899e0' };
     (function(u){var s=document.createElement('script');s.async=true;s.src=u;
         var x=document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);
     })('https://widget.replain.cc/dist/client.js');
 </script>
+-->
+
 <!--<script>-->
 <!--    $(function() {-->
 <!--        // при нажатии на кнопку scrollup-->
