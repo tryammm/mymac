@@ -290,7 +290,8 @@ img {
 
 .product.iphone-x {
     padding-top: 110px;
-    background-color: #222327
+    background-image: linear-gradient(rgba(34,35,39,0), rgba(44,46,50,1))
+    /*background-color: #222327*/
 }
 
 .product.ipad {
