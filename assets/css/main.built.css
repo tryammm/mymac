@@ -207,7 +207,7 @@ body {
     letter-spacing: -.022em;
     font-family: 'Inter', sans-serif;
     -webkit-font-smoothing: antialiased;
-    background-color: #fff;
+    background-color: #2C2E32;
     color: #1d1d1f;
     font-style: normal
 }
@@ -275,7 +275,7 @@ h4,
 h5,
 h6 {
     font-weight: 600;
-    color: #1d1d1f
+    color: #fafafa
 }
 
 h1 img,
