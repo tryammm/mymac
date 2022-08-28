@@ -2839,7 +2839,8 @@ br.small {
     font-weight: 700;
     letter-spacing: .004em;
     font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-    margin-bottom: 24px
+    margin-bottom: 24px;
+    padding-top: 30px;
 }
 
 .section-head:lang(ar) {
@@ -2977,7 +2978,7 @@ br.small {
 }
 
 .tile {
-    background-color: #fff;
+    background-color: #28282C;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3011,7 +3012,7 @@ br.small {
 }
 
 .tile__headline {
-    color: #1d1d1f;
+    color: #fafafa;
     -webkit-line-clamp: 6;
     -webkit-box-orient: vertical;
     display: -webkit-box;
@@ -3269,7 +3270,7 @@ html.js .tile.large-loaded .image {
 
 .everydayfeed {
     overflow: hidden;
-    background-color: #f5f5f7;
+    background-color: #131314;
     margin-top: 0;
     padding-bottom: 44px
 }
