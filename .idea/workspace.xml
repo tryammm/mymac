@@ -3,13 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="01d9a3f7-266f-4431-a495-ea7000d4b880" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/testimonials.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/testimonials.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/#order.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/#order.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/amd-graphics-hackintosh.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/amd-graphics-hackintosh.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/amd-ryzen.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/amd-ryzen.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/apple-alc.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/apple-alc.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/asrock-bios-setup-hackintosh.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/asrock-bios-setup-hackintosh.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/asus-bios-setup-hackintosh.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/asus-bios-setup-hackintosh.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/brightness-notebook-hackintosh.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/brightness-notebook-hackintosh.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/faq.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/faq.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/gigabyte-bios-setup-hackintosh.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/gigabyte-bios-setup-hackintosh.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/hackintosh-ethernet.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/hackintosh-ethernet.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/intel-hd-graphics-hackintosh.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/intel-hd-graphics-hackintosh.html" afterDir="false" />
@@ -73,7 +75,7 @@
       <workItem from="1661075119439" duration="28023000" />
       <workItem from="1661495149655" duration="460000" />
       <workItem from="1661496060276" duration="444000" />
-      <workItem from="1661539340784" duration="21212000" />
+      <workItem from="1661539340784" duration="21933000" />
     </task>
     <servers />
   </component>
@@ -97,12 +99,12 @@
     </state>
     <state x="563" y="150" key="SettingsEditor/0.25.1920.996@0.25.1920.996" timestamp="1661061280971" />
     <state x="721" y="119" key="SettingsEditor/0.25.1920.997@0.25.1920.997" timestamp="1661075939002" />
-    <state x="602" y="80" width="951" height="879" key="find.popup" timestamp="1661676155697">
+    <state x="602" y="80" width="951" height="879" key="find.popup" timestamp="1661678210351">
       <screen x="0" y="25" width="1920" height="999" />
     </state>
     <state x="602" y="80" width="781" height="876" key="find.popup/0.25.1920.996@0.25.1920.996" timestamp="1661069419158" />
     <state x="602" y="80" width="788" height="877" key="find.popup/0.25.1920.997@0.25.1920.997" timestamp="1661076065569" />
     <state x="602" y="80" width="951" height="878" key="find.popup/0.25.1920.998@0.25.1920.998" timestamp="1661629054631" />
-    <state x="602" y="80" width="951" height="879" key="find.popup/0.25.1920.999@0.25.1920.999" timestamp="1661676155697" />
+    <state x="602" y="80" width="951" height="879" key="find.popup/0.25.1920.999@0.25.1920.999" timestamp="1661678210351" />
   </component>
 </project>
