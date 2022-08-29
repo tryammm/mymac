@@ -21,7 +21,7 @@ nav {
     /*-webkit-backdrop-filter: saturate(180%) blur(20px);*/
     /*backdrop-filter: saturate(180%) blur(20px);*/
     /*background: rgba(255,255,255,0.72);*/
-    background: rgba(255,255,255,1);
+    background: rgba(14,14,14,1);
 }
 
 .nav-content {
@@ -38,7 +38,7 @@ nav {
     line-height: 44px;
     text-decoration: none;
     transition: all 0.3s;
-    color: #000000;
+    color: #fafafa;
 }
 
 .nav-content a:hover,
@@ -68,7 +68,7 @@ nav {
 .bar {
     height: 1px;
     width: 18px;
-    background: black;
+    background: white;
     transition: 0.5s;
 }
 
@@ -99,7 +99,7 @@ nav {
         width: 100%;
         /*-webkit-backdrop-filter: saturate(180%) blur(20px);*/
         /*backdrop-filter: saturate(180%) blur(20px);*/
-        background: rgba(255,255,255,1);
+        background: rgba(14,14,14,1);
         flex-direction: column;
         justify-content: flex-start;
         transition: all 2s cubic-bezier(0.19, 1, 0.22, 1);
