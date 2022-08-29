@@ -117,10 +117,11 @@ nav {
         right: 0;
         height: 0;
         width: 100%;
-        background: #242529;
+        background: #141414;
         flex-direction: column;
         justify-content: flex-start;
         transition: all 2s cubic-bezier(0.19, 1, 0.22, 1);
+        z-index: 999;
     }
 
     .show .nav-links {
