@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="01d9a3f7-266f-4431-a495-ea7000d4b880" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/img/macOS Ventura.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/macOSVentura.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/site-logo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/favicon.ico" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/kexts.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/kexts.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,7 +65,8 @@
       <workItem from="1661539340784" duration="24940000" />
       <workItem from="1661704879235" duration="1937000" />
       <workItem from="1661742486000" duration="8999000" />
-      <workItem from="1661777790548" duration="3934000" />
+      <workItem from="1661777790548" duration="4238000" />
+      <workItem from="1662210637434" duration="599000" />
     </task>
     <servers />
   </component>
