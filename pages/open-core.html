@@ -67,7 +67,7 @@
 
     <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css>-->
 
-    <style>
+    <!--<style>
         html {
             /*height: 100%;
             background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);*/
@@ -132,7 +132,7 @@
             right: 0;
             color: #FFF;
             text-align: center;
-            font-family: lato, sans-serif;
+            font-family: Inter, sans-serif;
             font-weight: 300;
             font-size: 50px;
             letter-spacing: 10px;
@@ -154,19 +154,8 @@
                 transform: translateY(-2000px);
             }
         }
-    </style>
+    </style>-->
 
-    <script>
-        window.console = window.console || function (t) {
-        };
-    </script>
-
-
-    <script>
-        if (document.location.search.match(/type=embed/gi)) {
-            window.parent.postMessage(resize,);
-        }
-    </script>
     <script type="text/javascript">
         $(document).ready(function(){
             $("#menu").on("click","a", function (event) {
@@ -200,7 +189,12 @@
 </head>
 
 <body style="background-image: url('../assets/img/Orion.jpg');
-height: 100vh;">
+background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: 10%;
+    background-size: auto;
+    min-height: 680px;
+    height: 50vw;">
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P2MDVR9"
                   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -296,7 +290,9 @@ height: 100vh;">
 <div id='stars'></div>
 <div id='stars2'></div>
 <div id='stars3'></div>
+<!--<figure class="tile-image" style="background: url(../assets/img/LogoOpenCore.svg) 100% 100% no-repeat;">-->
 <div id='title'>
+
   <span>
     OpenCore
   </span>
