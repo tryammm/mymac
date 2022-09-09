@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="01d9a3f7-266f-4431-a495-ea7000d4b880" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/open-core.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/open-core.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/nvidia-graphics-hackintosh.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/nvidia-graphics-hackintosh.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +68,8 @@
       <workItem from="1662385871518" duration="598000" />
       <workItem from="1662388938358" duration="610000" />
       <workItem from="1662654692302" duration="6139000" />
-      <workItem from="1662662995948" duration="59000" />
+      <workItem from="1662662995948" duration="566000" />
+      <workItem from="1662748587458" duration="130000" />
     </task>
     <servers />
   </component>
