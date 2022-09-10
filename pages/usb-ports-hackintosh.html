@@ -228,29 +228,93 @@
     </div>
 </div>
 
-<section id="ethernet"
-         class="product help" style="max-width: 80%;margin-left: 10%;height: 100vh;">
-    <h1 alt="Настройка сетевых карт (ethernet) хакинтош">Настройка сетевых карт (ethernet)</h1>
-    <h2 alt="Как завести сетевую карту (ethernet) hackintosh" style="font-size: 23px;margin-bottom: 20px;">Как завести сетевую карту (ethernet)</h2>
-    <small class="form-text text-center text-muted" style="margin-bottom: 10px;font-size: 16px;">
-        Для завода сетевых карт, достаточно добавить кекст в загрузчик, особых приготовлений и прописей не надо.<br>
-        В некоторых, редких случаях, нужна корректировка сетевого интерфейса, <br>для правильно работы сервисов iMassage, FaceTime, iCloud<br><br><br><br>
+<section id="usb_ports" class="product help" style="max-width: 80%;margin-left: 10%;">
+    <h1>Настройка USB</h1>
+    <h2 style="font-size: 23px;margin-bottom: 20px;">Как настроить usb</h2>
+    <p class="form-text text-center text-muted" style="margin-bottom: 10px;font-size: 16px;">
+        Перед реализацией действий (после прочтения текста целиком) стоит убедиться,<br>
+        что Inject USB, FixUSB и смежные настройки загрузчика выключены.<br><br>
 
-        <a style="text-decoration: none;border: 1px solid #2A2F3A;border-radius: 15px;padding: 5px 15px 5px 15px;background: #2A2F3A;color: #f3f3f2;" href="/downloads/BCM5722D.kext.zip">Broadcom</a><br><br>
-        <a style="text-decoration: none;border: 1px solid #2A2F3A;border-radius: 15px;padding: 5px 15px 5px 15px;background: #2A2F3A;color: #f3f3f2;" href="/downloads/Realtek.zip">Realtek</a><br><br>
-        <a style="text-decoration: none;border: 1px solid #2A2F3A;border-radius: 15px;padding: 5px 15px 5px 15px;background: #2A2F3A;color: #f3f3f2;" href="/downloads/Intel.zip">Intel</a><br><br>
-        <a style="text-decoration: none;border: 1px solid #2A2F3A;border-radius: 15px;padding: 5px 15px 5px 15px;background: #2A2F3A;color: #f3f3f2;" href="/downloads/Atheros.zip">Atheros</a><br><br>
+    <p style="font-weight: bold;"> 1. Лимит портов.</p>
+    <p style="color: #fafafa">
+    По умолчанию в большинстве десктопных плат в DSDT описано значительное количество USB портов,<br>
+    например, по спекам Intel Skylake их может быть до 24.<br>
+    Большинство реально никуда не разведены, однако macOS инициализирует только первые 15, остальные отбрасывает.<br>
+        Учтите, что USB 3.0 порты считаются два раза (один раз в начале в режиме USB 2.0, затем в конце в режиме USB 3.0).<br><br></p>
 
-        <!--        <p style="color: red">Не используйте оба способа одновременно!</p><br>-->
-        <h3 alt="Speed Test" style="font-size: 23px;margin-bottom: 20px;">Speed Test</h3>
-        <a href="javascript:;" onclick='window.open("https://2ip.ua/ru/myspeed","speedo","width=575"+",height=600,left="+(screen.width - 575)/2+",top="+(screen.height - 600)/2+",scrollbars=yes,resizable=yes" );' title="Тест скорости Интернет соединения">
-            <img src="https://2ip.ua/images/speedometr/1.png" style="width:160px;">
-        </a>
+    <p style="font-weight: bold;"> 2. Свойства с токами.</p>
+    <p style="color: #fafafa">
+    В случае с токами есть простая проблема,<br>
+    у Apple минимальный максимально допустимый ток на каждый порт — это 2100 мА (миллиампер) в режиме сна<br>
+    и 3200 мА в режиме нормальной работы. Так было в старых iMac и большинстве MacBook. <br>
+    В новых моделях значения обычно 4700 мА или 5100 мА. iPad в пике потребляет 2100 мА, <br>
+    iPhone — 500 мА, отсюда ниже 2100 мА у Apple не бывает. <br>
+
+
+    Спецификация USB не требует более 500 мА от USB 2.0 портов и более 900 мА от USB 3.0 портов. <br>
+    Как следствие, на большинстве плат Haswell и старее <br>
+    реальный максимально доступный ток на порт порядка 2400-2600 мА. Более того, <br>
+    общий ток на все порты также ограничен и по факту может быть в районе 4000 мА, <br>
+    потому, к примеру, зарядить 2 iPad не получится, будет предупреждение:<br><br>
+    <img class="center" src="../../assets/img/usb_message.jpg" alt="Установка Hackintosh Москва" style="display: block;margin-left: auto;margin-right: auto;width: 40%;"/><br><br>
+    Начиная со Skylake ситуация получше, и фактические показатели схожи с теми, <br>
+    что у Apple, однако всё равно инициализируются некорректно.<br><br>
+
+    Как следствие, при втыкании жёсткого диска USB или iPad в USB порт <br>
+    будет происходить постоянное подключение/отключение устройства, <br>
+    так как при инициализации драйвер будет понимать, <br>
+    что указанные лимиты токов в Info.plist (или кексте) <br>
+    не соответствуют реально доступным и вырубать устройство.<br><br>
+
+    Для решения этой проблемы нужно:<br>
+    — указать свойства kUSB в IOKitPersonalities AppleUSBMergeNub.<br>
+    — на Skylake их также нужно продублировать в устройство USBX.<br>
+
+    Внимание!!! В свойства (kUSBWakePortCurrentLimit, kUSBSleepPortCurrentLimit и остальных) <br>
+    должны быть указаны реальные значениями с вашего ПК. <br>
+    При использовании USBX вместе с plist-only кекстов свойства должны совпадать!<br><br>
+
+    Для вычисления совместимых значений может помочь тяжёлый USB HDD или iPad, <br>
+    2100 мА, скорее всего, будет у всех, увеличиваете по 100 мА и смотрите, не возникает ли проблем. <br>
+    Лучше пороговое значение указывать ниже максимально достигнутого на 100 мА. <br>
+    На Skylake и новее в большинстве случаев можно взять значения с "настоящика". <br>
+    Значения могут (и часто должны) быть разными для 4 свойств, например, <br>
+    в режиме сна порт может выдавать меньше, чем при нормальной работе.<br><br>
+
+    Для 10.10 и старее эти же свойства (но с другими названиями с префиксами AAPL) <br>
+    указывались через ACPI/Device Properties для соответствующих устройств. <br>
+    Однако в 10.11 Apple читают эти свойства свойства по оригинальным именам из ACPI <br>
+    только для туннелированных карт типа Thunderbolt ←→ USB. Табличка соотношения для переноса:<br><br>
+    kUSBWakePortCurrentLimit ← AAPL,current-available<br>
+    kUSBSleepPortCurrentLimit ← AAPL,max-port-current-in-sleep<br>
+    kUSBWakePowerSupply ← AAPL,current-extra<br>
+    kUSBSleepPowerSupply ← AAPL,current-extra-in-sleep<br><br>
+    Если планируется использовать старые системы, <br>
+        то можно (и нужно) указывать эти свойства через ACPI/Device Properties вместе с plist-only кекстом.<br><br></p>
+
+    <p style="font-weight: bold;">3. Конфликты имён устройств</p>
+    <p style="color: #fafafa">
+    В кекстах для инициализации USB 2.0 (EHC0, EHC1…) и USB 3.0 (XHC, XHCI, XHC1, XHC2…) <br>
+    могут уже быть прописаны описания доступных портов (ports) <br>
+    для данной модели для USB контроллера с именем, совпадающим с вашим. <br>
+
+    В случае совпадения имён произойдёт конфликт, который приведёт к нерабочим USB. <br>
+    Для его решения необходимо заменить имена устройств USB контроллеров на любые другие (несуществующее).<br>
+
+    Например:<br>
+    EHC1 → EH01,<br>
+    EHC2 → EH02, <br>
+    XHCI → SHCI и так далее.<br>
+    При использовании Clover можно добавить нужные патчи <br>
+        в раздел config.plist DSDT → ACPI → Patches.<br><br></p>
+
+    <p style="font-weight: bold;">4. Legacy USB kext</p>
+    <a style="text-decoration: none;" href="/downloads/Legacy_InternalHub-EHCx.kext.zip">Legacy_InternalHub-EHCx.kext</a><br>
+    <a style="text-decoration: none;" href="/downloads/Legacy_USB3.kext.zip">Legacy_USB3.kext</a><br>
+    <a style="text-decoration: none;" href="/downloads/SSDT-EHCx_OFF.aml.zip">SSDT-EHCx OFF</a><br>
     </small>
 
     <div class="links"></div>
-    <!--    <img class="img-fluid" src="assets/img/macos-high-sierra-terminal-create-bootable-installer.png" width="500"-->
-    <!--         style="padding-bottom: 50px;" alt="install macOS">-->
 
 </section>
 
