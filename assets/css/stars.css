@@ -4,11 +4,11 @@
     /*background: url(Orion.jpg) no-repeat top center;*/
     /*overflow: hidden;*/
 /*}*/
-.page-bg {
-    background: #111 url(/assets/img/Orion.jpg) no-repeat top center;
-    background-size: 100vh;
-    z-index: -1;
-}
+/*.page-bg {*/
+/*    background: #111 url(/assets/img/Orion.jpg) no-repeat top center;*/
+/*    background-size: 100vh;*/
+/*    z-index: -1;*/
+/*}*/
 
 /*.page-bg, .animation-wrapper {*/
 /*    position: fixed;*/
@@ -113,7 +113,7 @@
     height: 500px;
     width: 500px;
     margin-right: -820px;
-    margin-top: 20px;
+    margin-top: -126px;
     border-radius: 75px;
     border: 1px solid rgba(247, 241, 247, 0.23);
     backdrop-filter: blur(120px);
@@ -150,14 +150,14 @@ h1 {
     height: 150px;
 }
 @supports (backdrop-filter: blur(12px)) {
-    .visually-hidden {
+    .visually {
         position: absolute;
         top: -9999px;
         left: -9999px;
     }
     h1 {
         backdrop-filter: blur(120px);
-        background: rgba(165,249,221, .3);
+        background: rgba(160,88,206, .3);
         clip-path: url(#lockup-headline-mask-path);
     }
 }
