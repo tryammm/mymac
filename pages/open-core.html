@@ -23,11 +23,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../assets/css/headline.css">
     <!--    <link rel="stylesheet" href="../../assets/slider/css/slider.css">-->
     <!--    <link rel="stylesheet" href="../../assets/slider/css/fractionslider.css">-->
 
     <link rel="stylesheet" href="../assets/css/landing.css">
-    <link rel="stylesheet" href="../assets/css/stars.css">
+<!--    <link rel="stylesheet" href="../assets/css/stars.css">-->
 
     <!--<link rel="stylesheet" href="css/article-dark-mode-v3.css">-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
@@ -215,24 +216,29 @@
     </div>
 </nav> -->
 
-<header class="masthead text-center text-white d-flex" style="background-image:url(../assets/img/header.jpg);height: 100vh;min-height: 650px;background-size: cover;">
+<header class="masthead text-center text-white d-flex" style="background-image:url(../assets/img/Orion.jpg);height: 100vh;min-height: 650px;background-size: cover;">
     <div class="container my-auto">
         <div class="row" style="margin-left: 5px;">
             <div class="col-lg-10 mx-auto">
-                <h1 class="text-uppercase">
-                    <strong style="font-weight: bolder;color: white;font-size: 1.5em;">AMD Ryzen</strong>
+                <h1 class="headline">
+                    <span class="visually-hidden">Open Core</span>
+                    <svg aria-hidden="true" id="lockup-headline-mask" class="headline lockup-headline-mask visually-hidden">
+                        <clipPath id="lockup-headline-mask-path">
+                            <text dominant-baseline="hanging" text-anchor="middle" x="50%" y="0em" dy="0.125em">Open Core</text>
+                        </clipPath>
+                    </svg>
                 </h1>
                 <hr style="border-color: #f3f3f2;">
             </div>
         </div>
         <div class="col-lg-8 mx-auto">
-            <p class="text-faded mb-5" style="color: #FFFFFF;">Установка macOS на AMD Ryzen</p>
-            <a class="btn btn-primary btn-xl js-scroll-trigger" role="button" href="../pages/order.html" style="color: #f3f3f2;">заказать</a>
+            <p class="text-faded mb-5" style="color: #FFFFFF;">macOS Bootloader</p>
+            <a class="btn btn-primary btn-xl js-scroll-trigger" role="button" href="../downloads/OpenCore-0.8.4-RELEASE.zip" style="color: #f3f3f2;border-radius: 20px">Download</a>
         </div>
     </div>
 </header>
-<section id="hackintosh" class="product ipad" style="background:url(/assets/img/ryzen-bg-2.jpg);background-size: cover;width: auto;background-color: #1d2124;overflow: hidden;">
-    <h1 data-analytics-title="macOS Ryzen" style="padding-top: 50px;color: #f3f3f2;"><strong>Комплектующие</strong></h1>
+<section id="hackintosh" class="product ipad" style="background:url(/assets/img/ryzen-bg-2.jpg);background-size: cover;width: auto;background-color: #1d2124;overflow: hidden;display: none;visibility: hidden;">
+    <h2 data-analytics-title="macOS Ryzen" style="padding-top: 50px;color: #f3f3f2;"><strong>Комплектующие</strong></h2>
     <h2 data-analytics-title="Hackintosh Ryzen" style="padding-top: 50px;color: #f3f3f2;"><strong>Процессоры</strong></h2>
     <h3 data-analytics-title="Выбор комплектующих для Hackintosh Ryzen" style="font-weight: normal;font-size: 23px;color: #f3f3f2;max-width: 80%;margin-left: 10%;margin-right: 10%;">
         Полная поддержка:<br>

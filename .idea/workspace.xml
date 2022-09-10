@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="01d9a3f7-266f-4431-a495-ea7000d4b880" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/css/headline.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/open-core.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/open-core.html" afterDir="false" />
     </list>
@@ -20,6 +21,7 @@
       <list>
         <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -40,6 +42,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="MTConfigurable" />
@@ -82,7 +85,7 @@
       <workItem from="1662654692302" duration="6139000" />
       <workItem from="1662662995948" duration="566000" />
       <workItem from="1662748587458" duration="164000" />
-      <workItem from="1662796546562" duration="17961000" />
+      <workItem from="1662796546562" duration="20573000" />
     </task>
     <servers />
   </component>
