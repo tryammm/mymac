@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="01d9a3f7-266f-4431-a495-ea7000d4b880" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/pages/macos-installer.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/macos-installer.html" afterDir="false" />
-    </list>
+    <list default="true" id="01d9a3f7-266f-4431-a495-ea7000d4b880" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -90,7 +88,7 @@
       <workItem from="1662966654634" duration="1668000" />
       <workItem from="1665070648555" duration="4000" />
       <workItem from="1667063691220" duration="271000" />
-      <workItem from="1667143429327" duration="303000" />
+      <workItem from="1667143429327" duration="468000" />
     </task>
     <servers />
   </component>
