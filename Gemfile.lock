@@ -94,8 +94,6 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll
-  jekyll-feed
-  jekyll-seo-tag
   jekyll-sitemap
   nokogiri
   rack (~> 2.2.4)
