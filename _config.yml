@@ -1,6 +1,0 @@
-url: "https://mymac.github.io" # the base hostname & protocol for your site
-plugins:
-  - jekyll-sitemap
-
-whitelist:
-  - jekyll-sitemap
