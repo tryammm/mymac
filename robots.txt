@@ -1,8 +1,8 @@
 User-agent: Googlebot
 User-agent: Yandex
-# Disallow: https://mymacos.ml/assets/bootstrap
-# Disallow: https://mymacos.ml/assets/css
-# Disallow: https://mymacos.ml/assets/js
+Disallow: assets/bootstrap
+Disallow: assets/css
+Disallow: assets/js
 Host: https://mymacos.ml
 Sitemap: https://mymacos.ml/sitemap.xml
 # Sitemap: http://www.mymacos.ml/sitemap.xml
