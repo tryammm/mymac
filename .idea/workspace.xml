@@ -103,26 +103,9 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="493" y="100" key="#Notifications" timestamp="1661075137849">
-      <screen x="0" y="25" width="1920" height="997" />
+    <state x="625" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1689958216898">
+      <screen x="0" y="25" width="1920" height="987" />
     </state>
-    <state x="493" y="100" key="#Notifications/0.25.1920.997@0.25.1920.997" timestamp="1661075137849" />
-    <state x="538" y="25" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1661077692157">
-      <screen x="0" y="25" width="1920" height="997" />
-    </state>
-    <state x="538" y="25" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.25.1920.997@0.25.1920.997" timestamp="1661077692157" />
-    <state x="721" y="119" key="SettingsEditor" timestamp="1661075939002">
-      <screen x="0" y="25" width="1920" height="997" />
-    </state>
-    <state x="563" y="150" key="SettingsEditor/0.25.1920.996@0.25.1920.996" timestamp="1661061280971" />
-    <state x="721" y="119" key="SettingsEditor/0.25.1920.997@0.25.1920.997" timestamp="1661075939002" />
-    <state x="602" y="80" width="951" height="880" key="find.popup" timestamp="1662225774774">
-      <screen x="0" y="25" width="1920" height="1000" />
-    </state>
-    <state x="602" y="80" width="951" height="880" key="find.popup/0.25.1920.1000@0.25.1920.1000" timestamp="1662225774774" />
-    <state x="602" y="80" width="781" height="876" key="find.popup/0.25.1920.996@0.25.1920.996" timestamp="1661069419158" />
-    <state x="602" y="80" width="788" height="877" key="find.popup/0.25.1920.997@0.25.1920.997" timestamp="1661076065569" />
-    <state x="602" y="80" width="951" height="878" key="find.popup/0.25.1920.998@0.25.1920.998" timestamp="1661629054631" />
-    <state x="602" y="80" width="951" height="879" key="find.popup/0.25.1920.999@0.25.1920.999" timestamp="1661781708311" />
+    <state x="625" y="344" key="com.intellij.ide.util.TipDialog/0.25.1920.987@0.25.1920.987" timestamp="1689958216898" />
   </component>
 </project>
