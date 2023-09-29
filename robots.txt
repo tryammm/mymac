@@ -1,5 +1,5 @@
 User-agent: Googlebot
 User-agent: Yandex
 Host: http://mymacos.site
-Sitemap: https://mymacos.site/sitemap.xml
+Sitemap: http://mymacos.site/sitemap.xml
 Sitemap: http://www.mymacos.site/sitemap.xml
