@@ -2,7 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="01d9a3f7-266f-4431-a495-ea7000d4b880" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/yandex_afa90b0fdaaad1e3.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image-sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/image-sitemap.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/#order.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/#order.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/amd-graphics-hackintosh.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/amd-graphics-hackintosh.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/amd-ryzen.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/amd-ryzen.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/apple-alc.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/apple-alc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/asrock-bios-setup-hackintosh.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/asrock-bios-setup-hackintosh.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/asus-bios-setup-hackintosh.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/asus-bios-setup-hackintosh.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/brightness-notebook-hackintosh.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/brightness-notebook-hackintosh.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/faq.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/faq.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/gigabyte-bios-setup-hackintosh.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/gigabyte-bios-setup-hackintosh.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/hackintosh-ethernet.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/hackintosh-ethernet.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/intel-hd-graphics-hackintosh.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/intel-hd-graphics-hackintosh.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/macos-installer.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/macos-installer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/msi-bios-setup-hackintosh.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/msi-bios-setup-hackintosh.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/nvidia-graphics-hackintosh.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/nvidia-graphics-hackintosh.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/open-core.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/open-core.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/usb-ports-hackintosh.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/usb-ports-hackintosh.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/wi-fi-modules-hackintosh.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/wi-fi-modules-hackintosh.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/robots.txt" beforeDir="false" afterPath="$PROJECT_DIR$/robots.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ror.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ror.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sitemap.html" beforeDir="false" afterPath="$PROJECT_DIR$/sitemap.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sitemap.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/urllist.txt" beforeDir="false" afterPath="$PROJECT_DIR$/urllist.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yandex_e1488da47866379d.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,6 +121,7 @@
       <workItem from="1667143429327" duration="468000" />
       <workItem from="1689871884776" duration="1138000" />
       <workItem from="1689958215977" duration="721000" />
+      <workItem from="1695973970107" duration="243000" />
     </task>
     <servers />
   </component>
@@ -104,9 +132,14 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="625" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1689958216898">
-      <screen x="0" y="25" width="1920" height="987" />
+    <state x="625" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1695973970834">
+      <screen x="0" y="25" width="1920" height="1001" />
     </state>
+    <state x="625" y="349" key="com.intellij.ide.util.TipDialog/0.25.1920.1001@0.25.1920.1001" timestamp="1695973970834" />
     <state x="625" y="344" key="com.intellij.ide.util.TipDialog/0.25.1920.987@0.25.1920.987" timestamp="1689958216898" />
+    <state x="612" y="151" width="816" height="729" key="find.popup" timestamp="1695974210854">
+      <screen x="0" y="25" width="1920" height="1001" />
+    </state>
+    <state x="612" y="151" width="816" height="729" key="find.popup/0.25.1920.1001@0.25.1920.1001" timestamp="1695974210854" />
   </component>
 </project>
