@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="01d9a3f7-266f-4431-a495-ea7000d4b880" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/downloads/Clover-5155-X64.iso.7z" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/downloads/CloverV2-5155.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/bottom_w.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/up-w.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/amd-graphics-hackintosh.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/amd-graphics-hackintosh.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +97,7 @@
       <workItem from="1667143429327" duration="468000" />
       <workItem from="1689871884776" duration="1138000" />
       <workItem from="1689958215977" duration="721000" />
-      <workItem from="1695973970107" duration="1892000" />
+      <workItem from="1695973970107" duration="2464000" />
     </task>
     <servers />
   </component>
