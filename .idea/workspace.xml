@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="01d9a3f7-266f-4431-a495-ea7000d4b880" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/robots.txt" beforeDir="false" afterPath="$PROJECT_DIR$/robots.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/amd-graphics-hackintosh.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/amd-graphics-hackintosh.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +96,8 @@
       <workItem from="1667143429327" duration="468000" />
       <workItem from="1689871884776" duration="1138000" />
       <workItem from="1689958215977" duration="721000" />
-      <workItem from="1695973970107" duration="3507000" />
+      <workItem from="1695973970107" duration="3696000" />
+      <workItem from="1696065837452" duration="120000" />
     </task>
     <servers />
   </component>
@@ -105,10 +108,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="625" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1695973970834">
+    <state x="625" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1696065844217">
       <screen x="0" y="25" width="1920" height="1001" />
     </state>
-    <state x="625" y="349" key="com.intellij.ide.util.TipDialog/0.25.1920.1001@0.25.1920.1001" timestamp="1695973970834" />
+    <state x="625" y="349" key="com.intellij.ide.util.TipDialog/0.25.1920.1001@0.25.1920.1001" timestamp="1696065844217" />
     <state x="625" y="344" key="com.intellij.ide.util.TipDialog/0.25.1920.987@0.25.1920.987" timestamp="1689958216898" />
     <state x="612" y="151" width="816" height="729" key="find.popup" timestamp="1695979041438">
       <screen x="0" y="25" width="1920" height="1001" />
