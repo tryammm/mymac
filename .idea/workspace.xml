@@ -3,7 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="01d9a3f7-266f-4431-a495-ea7000d4b880" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/amd-graphics-hackintosh.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/amd-graphics-hackintosh.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/amd-ryzen.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/amd-ryzen.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/faq.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/faq.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/intel-hd-graphics-hackintosh.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/intel-hd-graphics-hackintosh.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/macos-installer.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/macos-installer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/wi-fi-modules-hackintosh.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/wi-fi-modules-hackintosh.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +102,7 @@
       <workItem from="1689958215977" duration="721000" />
       <workItem from="1695973970107" duration="3696000" />
       <workItem from="1696065837452" duration="635000" />
-      <workItem from="1696271309392" duration="220000" />
+      <workItem from="1696271309392" duration="644000" />
     </task>
     <servers />
   </component>
