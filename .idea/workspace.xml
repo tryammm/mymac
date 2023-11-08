@@ -3,7 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="01d9a3f7-266f-4431-a495-ea7000d4b880" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/amd-graphics-hackintosh.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/amd-graphics-hackintosh.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/amd-ryzen.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/amd-ryzen.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/faq.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/faq.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/macos-installer.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/macos-installer.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,6 +105,8 @@
       <workItem from="1696605184033" duration="228000" />
       <workItem from="1699102013498" duration="327000" />
       <workItem from="1699113723795" duration="110000" />
+      <workItem from="1699114837903" duration="95000" />
+      <workItem from="1699470744135" duration="245000" />
     </task>
     <servers />
   </component>
@@ -111,12 +117,12 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="625" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1699114839638">
+    <state x="625" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1699470745132">
       <screen x="0" y="25" width="1920" height="1003" />
     </state>
     <state x="625" y="349" key="com.intellij.ide.util.TipDialog/0.25.1920.1001@0.25.1920.1001" timestamp="1696065844217" />
     <state x="625" y="349" key="com.intellij.ide.util.TipDialog/0.25.1920.1002@0.25.1920.1002" timestamp="1696271310092" />
-    <state x="625" y="349" key="com.intellij.ide.util.TipDialog/0.25.1920.1003@0.25.1920.1003" timestamp="1699114839638" />
+    <state x="625" y="349" key="com.intellij.ide.util.TipDialog/0.25.1920.1003@0.25.1920.1003" timestamp="1699470745132" />
     <state x="612" y="151" width="816" height="729" key="find.popup" timestamp="1695979041438">
       <screen x="0" y="25" width="1920" height="1001" />
     </state>
